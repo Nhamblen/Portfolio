@@ -1,0 +1,6 @@
+fix website make it fancy
+....
+chatbot at the bottom right for questions and appointment scheduling
+contact info
+
+schedule a visit (separate button instead of NAV)

@@ -1,0 +1,130 @@
+/*
+     Noah Hamblen
+     fishcreek.css
+     INFO1311
+     Olberding
+     01/15/21
+*/
+
+* { box-sizing: border-box;}
+body { background-color: #5280C5;
+      color: #003366;
+	  font-family: Verdana, Arial, sans-serif;
+	  margin: 0;
+}
+#wrapper { background-color: #F0F0F0;
+}
+header { background-color: #000066;
+         background-image: url(lilfish.gif);
+		 background-position: center;
+		 background-repeat: no-repeat;
+		 color: #F0F0F0;
+		 font-family: Georgia, "Times New Roman", serif;
+		 padding: 1em;
+		 text-align: center;
+}
+header a { text-decoration: none; }
+header a:link       { color: #F0F0F0; }
+header a:visited { color: #F0F0F0; }
+header a:hover     { color: #AEC3E3; }
+h1 { font-size: 2em;
+     padding: 0.2em;
+	 text-shadow: 3px 3px 3px #CCC; }
+h2 { font-size: 1.2em;
+     text-shadow: 1px 1px 1px #777; 	 }
+nav { text-align: center;}
+nav ul { display: flex;
+	     flex-direction: column;
+	     margin: 0;
+	     padding: 0;
+	     font-size: 1em;
+	     list-style-type: none; 
+}
+nav li { padding-top: .5em;
+ 		 padding-bottom: .5em;
+		 width: 100%;
+	     border-bottom: 1px solid #000066;
+}
+nav a { text-decoration: none; }
+nav a:link       { color: #000066; }
+nav a:visited { color: #5280C5; }
+nav a:hover     { color: #3262A3; }
+main { background-color: #FFF;
+      border: 1px solid #AEC3E3;
+	  display: block;
+	  overflow: auto;
+      padding-left: 2em;
+      padding-right: 2em;
+}
+dt { color: #5280C5;
+     font-size: 1.1em;
+	 font-family: Georgia, "Times New Roman", serif; 
+	 font-weight: bold; 
+}
+section { background-color: #EAEAEA;
+		margin-bottom: 1em;
+		margin-right: 1em;
+		padding: 0;
+ }
+ section h3 { background-color: #AEc3E3;
+           font-size: 110%;
+           margin-bottom: 0;
+           margin-top: 0;
+		   padding: .25em;
+}
+section p { padding: 0 .25em .25em .25em; }
+.category { color: #5380C5;
+            font-family: Georgia, "Times New Roman", serif; 
+            font-weight: bold;
+}
+.address { clear: left; }
+
+footer { background-color: #AEC3E3;
+         font-size: .70em;
+         font-style: italic;
+		 padding: 1em;
+		 text-align: center;
+}
+
+#mobile { display: inline; }
+#desktop { display: none; }
+
+
+
+@media (min-width: 600px) {
+	header {background-image: url(bigfish.gif);}
+	h1 {font-size: 3em;}
+	nav ul {display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;}
+	nav li {border-bottom: none;}
+	#flow {display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;}
+	section {min-width: 30%;
+	flex: 1;}
+	#mobile {display: none;}
+	#desktop {display: inline;}}
+
+
+
+@media (min-width: 1024px) {
+	header {display: grid;
+		grid-area: header;}
+	nav {display: grid;
+		grid-area: nav;}
+	main {display: grid;
+		grid-area: main;}
+	footer {display: grid;
+		grid-area: footer;}
+	#wrapper {display: grid;
+			grid-template:
+					"header header"
+					"nav    main"
+					" nav    footer"
+					/ 180px    ; }
+	nav ul {display: flex;
+		flex-direction: column;
+		font-size: 1.25em;
+		font-weight: bold;}}

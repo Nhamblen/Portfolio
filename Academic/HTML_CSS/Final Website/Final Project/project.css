@@ -1,0 +1,70 @@
+/*
+     Noah Hamblen
+     project.css
+     INFO1311
+     Olberding
+     02/13/22
+*/ 
+
+*{ box-sizing: border-box;}
+body { background-color: rgb(255, 224, 177);
+      color: rgb(0, 0, 0);
+	  font-family: Verdana, Arial, sans-serif;
+	  height: 100%;;
+}
+
+html {height: 100%;}
+
+header { background-color: #9ec53d;
+        background-image: url(logo.png);
+        background-size: auto;
+        background-position: left;
+        background-repeat: no-repeat;
+		color: rgb(0, 0, 0);
+		font-family: Verdana, Arial, sans-serif;
+		padding: 1em;
+		text-align: center;
+        margin: 0%;
+}
+h1 {font-size: 3em}
+h2 {font-size: 1em}
+nav { text-align: center;
+	list-style-type: none;}
+nav ul { display: flex;
+	    flex-direction: column;
+	    margin: 0;
+		padding: 0;
+	    font-size: 1em;
+	    list-style-type: none; 
+}
+
+#wrapper {width: 100%;}
+
+nav a:link       { color: blue; }
+nav a:visited { color: purple; }
+nav a:hover     { color: blue; }
+
+footer {
+	display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+	flex-direction: column;
+	width: 80%;
+   	}
+
+@media (min-width: 800px) {
+	#wrapper {width: 80%;
+	align-content: center;
+	margin: auto;}
+	nav ul {display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;}
+	nav li {border-bottom: none;}}
+
+@media (max-width: 799px) {
+	.resize {
+		width: 450px;
+		height: 187.5px;
+	}}

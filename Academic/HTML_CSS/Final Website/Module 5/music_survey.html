@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<title>Noah Hamblen's INFO1311 Music Survey</title>
+	<meta charset="utf-8">
+    <link href="music_survey.css" rel="stylesheet">
+</head>
+
+
+
+<header>
+    <h1>Music Survey</h1>
+    <p>This survey will show you your music type</p>
+</header>
+
+
+
+<body>
+
+
+<!-- Noah Hamblen
+music_survey.html
+INFO1311
+Olberding
+01/29/21
+-->
+
+<form method="post" action="https://www.mccinfo.net/webresources/cgi-bin/formmail.asp"> 
+    <table>
+        <tbody>
+        <tr>
+            <td>First Name: </td>
+        </tr>
+        <tr>
+            <td><input maxlength="20" size="20" name="First name"></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+        </tr>
+        <tr>
+            <td><input maxlength="20" size="20" name="Last name"></td>
+        </tr>
+        <tr>
+            <td>E-mail: </td>
+        </tr>
+        <tr>
+            <td><input size="20" name="Email"></td>
+        </tr>
+
+        <tr>
+        <td>
+        <fieldset>
+        <legend>Select your favorite types of music: </legend>
+        <input type="checkbox" name="Pop" id="GO1" value="Yes">
+        Pop<br>
+        <input type="checkbox" name="Classical" id="GO2" value="Yes">
+        Classical<br>
+         <input type="checkbox" name="Rock" id="GO3" value="Yes">
+        Rock<br>
+        <input type="checkbox" name="Folk" id="GO4" value="Yes">
+        Folk<br>
+        <input type="checkbox" name="Rap" id="GO5" value="Yes">
+        Rap<br>
+        <input type="checkbox" name="Other" id="GO6" value="Yes">
+        Other
+        </fieldset>
+        </td>
+        </tr>
+
+        <tr>
+        <td>
+        <fieldset>
+        <legend>Select how often you purchase music CDs:</legend>
+        <input type="radio" id="Weekly" name="How often you purchase CDs" value="Weekly">
+        <label for="Weekly">Weekly</label><br>
+        <input type="radio" id="Yearly" name="How often you purchase CDs" value="A few CDs each year">
+        <label for="Yearly">A few CDs each year</label><br>
+        <input type="radio" id="Monthly" name="How often you purchase CDs" value="Monthly">
+        <label for="Monthly">Monthly<br></label>
+        <input type="radio" id="Never" name="How often you purchase CDs" value="Never purchase">
+        <label for="Never">Never purchase</label>
+        </fieldset>
+        </td>
+        </tr>
+
+        <tr>
+        <td>Select the method you use most often to purchase music: </td>
+        </tr>
+        <tr>
+        <td><select name="Method used to purchase music">
+                <option value="Empty">Empty</option>
+                <option value="Online">Online</option>
+                <option value="Retail">Retail store</option>
+                <option value="Other">Other</option>
+            </select></td>
+        </tr>
+
+        <tr>
+        <td>What role does music play in your life?
+        <br>
+        <textarea name="Comments" rows="4" cols="60"></textarea>
+        <br></tr>
+        </tbody>
+        </table>
+    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+    <input name="Recipient" type="hidden" value="nhamblen21@gmail.com">
+    <input type="hidden" name="subject" value="INFO1311 Form Assignment">
+</form>
+
+
+
+
+<footer>
+    <hr>
+</footer>
+
+</body>
+
+</html>

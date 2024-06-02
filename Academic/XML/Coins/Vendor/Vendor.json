@@ -1,0 +1,41 @@
+{
+    "Vendor": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xsi:noNamespaceSchemaLocation": "nrhamblen_Vendor.xsd",
+        "Vendor1": {
+            "Vendor_ID": 1,
+            "Name": "DSS Coin Bullion",
+            "Contact_Name": "Coin Dealer",
+            "WebSite": "https://dsscoinandbullion.com/",
+            "Phone_Num": "(402)502-2885"
+        },
+        "Vendor2": {
+            "Vendor_ID": 2,
+            "Name": "Millard Jewelry Coin",
+            "Contact_Name": "Coin Dealer",
+            "WebSite": "http://www.millardjewelry.com/",
+            "Phone_Num": "(402)896-3877"
+        },
+        "Vendor3": {
+            "Vendor_ID": 3,
+            "Name": "Coinhuskers",
+            "Contact_Name": "Coin Husker",
+            "WebSite": "http://www.coinhuskers.com/",
+            "Phone_Num": "(402)517-2213"
+        },
+        "Vendor4": {
+            "Vendor_ID": 4,
+            "Name": "JJ Coins",
+            "Contact_Name": "JJ",
+            "WebSite": "http://www.jj-coin.com/",
+            "Phone_Num": "(402)734-1470"
+        },
+        "Vendor5": {
+            "Vendor_ID": 5,
+            "Name": "A Coin Shop",
+            "Contact_Name": "Coin Dealer",
+            "WebSite": "https://www.acoinshop.com/",
+            "Phone_Num": "(402)502-9539"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "Rarity": {
+        "Coin1": {
+            "Rarity_ID": 1,
+            "Type": "Mysia Winged Boar",
+            "Rare": "Original",
+            "Purchase_Date": 2022,
+            "Value": "$5,276"
+        },
+        "Coin2": {
+            "Rarity_ID": 2,
+            "Type": "Edward III Florin",
+            "Rare": "Original",
+            "Purchase_Date": 2006,
+            "Value": "$6,800,000"
+        },
+        "Coin3": {
+            "Rarity_ID": 3,
+            "Type": "Saint-Gaudens Double Eagle",
+            "Rare": "Original",
+            "Purchase_Date": 1933,
+            "Value": "$20,165,100"
+        },
+        "Coin4": {
+            "Rarity_ID": 4,
+            "Type": "Flowing Hair Silver Dollar",
+            "Rare": "Original",
+            "Purchase_Date": 2010,
+            "Value": "$13,280,850"
+        },
+        "Coin5": {
+            "Rarity_ID": 5,
+            "Type": "Brasher Doubloon",
+            "Rare": "Original",
+            "Purchase_Date": 2021,
+            "Value": "$9,986,500"
+        }
+    }
+}

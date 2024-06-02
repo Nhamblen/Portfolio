@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-stylesheet type="text/xsl" href="Vendor.xsl"?>
+
+<Vendor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="nrhamblen_Vendor.xsd">
+
+    <Vendor1>
+        
+        <Vendor_ID>1</Vendor_ID>
+        
+        <Name>DSS Coin Bullion</Name>
+        
+        <Contact_Name>Coin Dealer</Contact_Name>
+        
+        <WebSite>https://dsscoinandbullion.com/</WebSite>
+        
+        <Phone_Num>(402)502-2885</Phone_Num>
+        
+    </Vendor1>
+    
+    <Vendor2>
+        
+        <Vendor_ID>2</Vendor_ID>
+        
+        <Name>Millard Jewelry Coin</Name>
+        
+        <Contact_Name>Coin Dealer</Contact_Name>
+        
+        <WebSite>http://www.millardjewelry.com/</WebSite>
+        
+        <Phone_Num>(402)896-3877</Phone_Num>
+        
+    </Vendor2>
+    
+    <Vendor3>
+        
+        <Vendor_ID>3</Vendor_ID>
+        
+        <Name>Coinhuskers</Name>
+        
+        <Contact_Name>Coin Husker</Contact_Name>
+        
+        <WebSite>http://www.coinhuskers.com/</WebSite>
+        
+        <Phone_Num>(402)517-2213</Phone_Num>
+        
+    </Vendor3>
+    
+    <Vendor4>
+        
+        <Vendor_ID>4</Vendor_ID>
+        
+        <Name>JJ Coins</Name>
+        
+        <Contact_Name>JJ</Contact_Name>
+        
+        <WebSite>http://www.jj-coin.com/</WebSite>
+        
+        <Phone_Num>(402)734-1470</Phone_Num>
+        
+    </Vendor4>
+    
+    <Vendor5>
+        
+        <Vendor_ID>5</Vendor_ID>
+        
+        <Name>A Coin Shop</Name>
+        
+        <Contact_Name>Coin Dealer</Contact_Name>
+        
+        <WebSite>https://www.acoinshop.com/</WebSite>
+        
+        <Phone_Num>(402)502-9539</Phone_Num>
+  
+    </Vendor5>
+    
+</Vendor>

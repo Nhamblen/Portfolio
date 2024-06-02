@@ -1,0 +1,8 @@
+<Company>
+	<Employee>
+		<EmployeeID>7</EmployeeID>
+		<FirstName>Noah</FirstName>
+		<LastName>Hamblen</LastName>
+		<Payrate>13</Payrate>
+	</Employee>
+</Company>

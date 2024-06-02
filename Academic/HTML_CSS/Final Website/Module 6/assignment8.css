@@ -1,0 +1,92 @@
+/*
+     Noah Hamblen
+     project.css
+     INFO1311
+     Olberding
+     02/13/22
+*/ 
+
+*{ box-sizing: border-box;}
+body { background-color: rgba(0, 0, 0, 0.979);
+      color: white;
+	  font-family: Verdana, Arial, sans-serif;
+	  height: 100%;;
+}
+
+html {height: 100%;}
+
+header { background-color: orangered;
+        background-image: url(three.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+		color: white;
+		font-family: Verdana, Arial, sans-serif;
+		padding: 1em;
+		padding-top: 50px;
+		text-align: center;
+        margin: 0%;
+}
+h1 {font-size: 2em}
+h2 {font-size: 1em}
+nav { text-align: center;}
+nav ul { display: flex;
+	    flex-direction: column;
+	    margin: 0;
+		padding: 0;
+	    font-size: 1em;
+	    list-style-type: none; 
+}
+
+nav a:link       { color: white; }
+nav a:visited { color: orangered; }
+nav a:hover     { color: white; }
+
+footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 2.5rem;      
+   }
+
+#mobile { display: inline; }
+#desktop { display: none; }
+
+@media (min-width: 600px) {
+	header {background-image: url(three.jpg);
+     margin: 0%;}
+	h1 {font-size: 3em;}
+	nav ul {display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;}
+	nav li {border-bottom: none;}
+	#flow {display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;}
+	section {min-width: 30%;
+	flex: 1;}
+	#mobile {display: none;}
+	#desktop {display: inline;}}
+
+
+
+@media (min-width: 1024px) {
+	header {display: grid;
+		grid-area: header;}
+	nav {display: grid;
+		grid-area: nav;}
+	main {display: grid;
+		grid-area: main;}
+	footer {display: grid;
+		grid-area: footer;}
+	#wrapper {display: grid;
+			grid-template:
+					"header header"
+					"nav    main"
+					" nav    footer"
+					/ 180px    ; }
+	nav ul {display: flex;
+		flex-direction: column;
+		font-size: 1.25em;
+		font-weight: bold;}}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Inventory SYSTEM "nrhamblen_Inventory.dtd">
+
+<?xml-stylesheet type="text/xsl" href="Inventory.xsl"?>
+
+<Inventory>
+
+    <Coin1>
+        
+        <Coin_ID>1</Coin_ID>
+        
+        <Issue_Date>1943</Issue_Date>
+        
+        <Category>USmint</Category>
+        
+        <Type>Steel</Type>
+        
+        <Value>$30</Value>
+        
+    </Coin1>
+    
+    <Coin2>
+        
+        <Coin_ID>2</Coin_ID>
+        
+        <Issue_Date>2021</Issue_Date>
+        
+        <Category>USmint</Category>
+        
+        <Type>Silver</Type>
+        
+        <Value>$200</Value>
+        
+    </Coin2>
+    
+    <Coin3>
+        
+        <Coin_ID>3</Coin_ID>
+        
+        <Issue_Date>1921</Issue_Date>
+        
+        <Category>USmint</Category>
+        
+        <Type>Silver</Type>
+        
+        <Value>$50</Value>
+        
+    </Coin3>
+    
+    <Coin4>
+        
+        <Coin_ID>4</Coin_ID>
+        
+        <Issue_Date>1909</Issue_Date>
+        
+        <Category>USmint</Category>
+        
+        <Type>Copper</Type>
+        
+        <Value>$20</Value>
+        
+    </Coin4>
+    
+    <Coin5>
+        
+        <Coin_ID>5</Coin_ID>
+        
+        <Issue_Date>2022</Issue_Date>
+        
+        <Category>USmint</Category>
+        
+        <Type>Gold</Type>
+        
+        <Value>$45,491</Value>
+        
+    </Coin5>
+
+</Inventory>

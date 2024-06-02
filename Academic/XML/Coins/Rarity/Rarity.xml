@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Rarity SYSTEM "nrhamblen_Rarity.dtd">
+
+<?xml-stylesheet type="text/xsl" href="Rarity.xsl"?>
+
+<Rarity>
+    
+    <Coin1>
+        
+        <Rarity_ID>1</Rarity_ID>
+        
+        <Type>Mysia Winged Boar</Type>
+   
+        <Rare>Original</Rare>
+    
+        <Purchase_Date>2022</Purchase_Date>
+    
+        <Value>$5,276</Value>
+        
+    </Coin1>
+    
+    <Coin2>
+        
+        <Rarity_ID>2</Rarity_ID>
+        
+        <Type>Edward III Florin</Type>
+        
+        <Rare>Original</Rare>
+        
+        <Purchase_Date>2006</Purchase_Date>
+        
+        <Value>$6,800,000</Value>
+        
+    </Coin2>
+    
+    <Coin3>
+        
+        <Rarity_ID>3</Rarity_ID>
+        
+        <Type>Saint-Gaudens Double Eagle</Type>
+        
+        <Rare>Original</Rare>
+        
+        <Purchase_Date>1933</Purchase_Date>
+        
+        <Value>$20,165,100</Value>
+
+    </Coin3>
+    
+    <Coin4>
+        
+        <Rarity_ID>4</Rarity_ID>
+        
+        <Type>Flowing Hair Silver Dollar</Type>
+        
+        <Rare>Original</Rare>
+        
+        <Purchase_Date>2010</Purchase_Date>
+        
+        <Value>$13,280,850</Value>
+        
+    </Coin4>
+    
+    <Coin5>
+       
+        <Rarity_ID>5</Rarity_ID>
+       
+        <Type>Brasher Doubloon</Type>
+        
+        <Rare>Original</Rare>
+        
+        <Purchase_Date>2021</Purchase_Date>
+        
+        <Value>$9,986,500</Value>
+        
+    </Coin5>
+    
+</Rarity>
