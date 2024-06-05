@@ -1,3 +1,5 @@
+image size on html and css
+
 fix website make it fancy
 ....
 chatbot at the bottom right for questions and appointment scheduling
