@@ -23,3 +23,24 @@ img {
     padding: 10px;
     border-image: url(../img/border.png) 30 round;
 }
+
+.smallimg {
+    width: 200px;
+    height: auto;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.left {
+    text-align: left;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.transparent {
+    mix-blend-mode: multiply;
+}
