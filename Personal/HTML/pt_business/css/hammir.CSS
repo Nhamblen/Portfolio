@@ -13,15 +13,16 @@ html {
   margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-	padding: 0;
+h1 {
+  margin-left: 100px;
 }
 
-li {
-  float: left;
-  padding: 5px;
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  margin: 0;
+	padding: 0;
 }
 
 a {
@@ -44,7 +45,6 @@ em {
 }
 
 footer {
-  display: flex;
   position: absolute;
   bottom: 0;
   height: 2.5rem;
