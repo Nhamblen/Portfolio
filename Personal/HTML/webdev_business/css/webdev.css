@@ -3,9 +3,40 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Arial, sans-serif;
+    text-align: center;
 }
 
 a {
-    color: darkgrey;
+    font-size: 18px;
+    color: #E5E7EB;
     text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.headerbox {
+    background-color: #1F2937;
+}
+
+.headercontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #F9FAF8;
 }
