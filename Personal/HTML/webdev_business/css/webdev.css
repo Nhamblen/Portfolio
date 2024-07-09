@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Arial, sans-serif;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -22,6 +21,8 @@ main {
     flex: 1;
     display: flex;
     align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .headerbox {
@@ -36,7 +37,41 @@ main {
     margin-right: 200px;
 }
 
+.subheadercontent {
+    padding: 70px 0 70px 0;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
 h1 {
     font-size: 24px;
     color: #F9FAF8;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.subheadercontent p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+img {
+    border-radius: 8px;
+    max-width: 30%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
 }
