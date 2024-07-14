@@ -66,6 +66,7 @@ main h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .quotebox p {
@@ -75,8 +76,7 @@ main h2 {
     color: #1F2937;
     display: flex;
     justify-content: flex-end;
-    
-    
+    min-width: 300px;
 }
 
 .quotebox blockquote {
@@ -86,7 +86,8 @@ main h2 {
     color: #1F2937;
     display: flex;
     justify-content: center;
-
+    flex: 1;
+    min-width: 300px;
 }
 
 .headerbox {
@@ -110,7 +111,7 @@ main h2 {
     justify-content: center;
 }
 
-.left{
+.subleft{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,12 +119,11 @@ main h2 {
     flex: 1;
 }
 
-.right {
+.subright {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
-
 
 nav {
     display: flex;
@@ -157,7 +157,7 @@ img {
 footer {
     text-align: center;
     background-color: #1F2937;
-    padding: 10px;
+    padding: 20px;
     color: #E5E7EB;
 }
 
@@ -170,3 +170,29 @@ button {
     color: #F9FAF8;
     font-weight: bold;
 }
+
+.bluebox {
+    margin: 100px 0px 100px 0px;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #3882F6;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.bluebox p {
+    color: white;
+}
+
+.bluebox h3 {
+    color: white;
+}
+
+.bluebox button {
+    border: solid 2px white;
+}
+
+
