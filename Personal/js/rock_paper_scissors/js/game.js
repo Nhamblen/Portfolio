@@ -4,7 +4,7 @@
 
 <head>
     <title>Rock Paper Scissors Game</title>
-    <script src="js/game.js" async></script>
+    <script src="" async></script>
 </head>
 
 
