@@ -34,13 +34,13 @@ function playRound (userChoice, computerChoice) {
         (userChoice === 'scissors' && computerChoice === 'paper')
     ){
         console.log(`You win! ${capitalize(userChoice)} beats ${capitalize(computerChoice)}`);
+        userScore += 1;
     } else {
         console.log(`You lose! ${capitalize(computerChoice)} beats ${capitalize(userChoice)}`);
+        computerScore += 1;
     }
 
     // add a point onto the score of the winner
-    userScore += 1;
-    computerScore += 1;
     console.log(`User : ${userScore} Computer : ${computerScore}`);
 }
 
