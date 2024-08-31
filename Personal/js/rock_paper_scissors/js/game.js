@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+// get a random choice between rock paper or scissors with a function
+function getComputerChoice () {
+    const choice = [Rock, Paper, Scissors]
+    let randomChoice = Math.floor(Math.random()*words.length + 1)
+    console.log(choice[randomChoice])
 
-<html>
+}
 
-<head>
-    <title>Rock Paper Scissors Game</title>
-    <script src="" async></script>
-</head>
+getComputerChoice()
+
+// get a choice from the user to pick rock paper or scissors with a function
 
 
-</html>
+
+// create variable to track wins and losses
+
+// print variable and if the user won or lost
