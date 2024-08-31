@@ -49,35 +49,29 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// make a playGame function that calls playRound if the user wants to play again and limits to 5 rounds
-function playGame (){
-    let roundsPlayed = 0;
-    while (roundsPlayed <= 4) {
+// make a playGame function that calls playRound and limits it to 5 rounds
+function playGame (){   
+
+    for (let roundsPlayed = 0; roundsPlayed < 5; roundsPlayed++) {
         // create variables to assign the user and computer choice to
         const computerSelection = getComputerChoice();
         const humanSelection = getUserChoice();
 
         // calls the function to play a round and pass the choices into it
-        playRound(humanSelection, computerSelection)
-
-        // increment the number of rounds played
-        roundsPlayed += 1;
-
-        // ask if user wants to play again
-        playAgain = prompt ('Do you want to play again: Yes or No?').toLowerCase();
-
-        while (playAgain !== 'yes' && playAgain !== 'no'){
-            console.log('Error! Invalid choice!');
-            playAgain = prompt ('Do you want to play again: Yes or No?').toLowerCase();
-        }
-
-        if (playAgain === 'no'){
-            break;
-        }
-
+        playRound(humanSelection, computerSelection);
     }
-        
-        
+
+    if (userScore > computerScore) {
+        console.log ('YOU WIN THE GAME! 🎉')
+    }
+
+    else if (userScore === computerScore) {
+        console.log ('You tied the game. 🤔')
+    }
+
+    else {
+        console.log ('You lose the game. 😭')
+    }
 }
 
 // plays the game!
