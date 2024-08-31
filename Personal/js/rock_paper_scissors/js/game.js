@@ -2,14 +2,14 @@
 function getComputerChoice () {
     const computerChoice = ['Rock', 'Paper', 'Scissors'];
     let randomChoice = [Math.floor(Math.random()*computerChoice.length)];
-    console.log(computerChoice[randomChoice]);
+    return (computerChoice[randomChoice]);
 
 }
 
 
 // get a choice from the user to pick rock paper or scissors with a function
 function getUserChoice () {
-    let userChoice = prompt ("Please enter a choice. Rock Paper or Scissors?");
+    let userChoice = prompt ("Please enter a choice. Rock, Paper, or Scissors?").toLowerCase();
     if (userChoice === 'Rock' || userChoice === 'Paper' || userChoice === 'Scissors')
         return userChoice;
     else {
@@ -17,11 +17,14 @@ function getUserChoice () {
         getUserChoice();
     }
 }
+ 
 
-getUserChoice();
+// create two variables to track wins and losses
+let humanScore = 0
+let computerScore = 0
 
-// create two variables to track wins and losses and print them
 
+// takes user and computer choices as arguments and pass them through a function that plays a round, increments the score, and announces a winner
+function playRound (userChoice, computerChoice) {
 
-
-// takes player choices as arguments and pass them through a function that plays a round, increments the score, and announces a winner
+}
