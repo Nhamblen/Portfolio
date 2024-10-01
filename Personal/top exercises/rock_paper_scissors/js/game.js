@@ -39,6 +39,10 @@ function playRound (userChoice, computerChoice) {
     // update result and score on the page
     document.getElementById('result').textContent = resultMessage;
     document.getElementById('score').textContent = `User: ${userScore} | Computer: ${computerScore}`;
+
+    if (checkGameOver()) {
+        displayResults();
+    }
 }
 
 // captialize the first letter in the rock, paper or scissors string
@@ -50,7 +54,6 @@ function capitalize(str) {
 function checkGameOver() {
     
     if (roundsPlayed >= totalRounds) {
-        displayResults();
         return true; // game over
     }
     return false; // game continues
@@ -62,7 +65,7 @@ function displayResults() {
     let finalMessage;
 
     if (userScore > computerScore) {
-        finalMessageMessage = 'YOU WIN THE GAME! 🎉';
+        finalMessage = 'YOU WIN THE GAME! 🎉';
     } else if (userScore === computerScore) {
         finalMessage = 'You tied the game. 🤔';
     } else {
