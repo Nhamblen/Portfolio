@@ -3,11 +3,16 @@ body {
     padding: 0;
 }
 
+header {
+    text-align: center;
+    font-size: 40px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
 }
 
