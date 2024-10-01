@@ -5,4 +5,33 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.textContainer {
+    text-align: center;
 }
