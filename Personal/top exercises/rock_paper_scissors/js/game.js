@@ -49,10 +49,13 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// make a playGame function that calls playRound and limits it to 5 rounds
+// make a playGame function that calls playRound and calculates the scores
 function playGame (){   
 
-    for (let roundsPlayed = 0; roundsPlayed < 5; roundsPlayed++) {
+    /* Old function that plays 5 rounds
+    for (let roundsPlayed = 0; roundsPlayed < 5; roundsPlayed++)*/
+
+    while (true){
         // create variables to assign the user and computer choice to
         const computerSelection = getComputerChoice();
         const humanSelection = getUserChoice();
