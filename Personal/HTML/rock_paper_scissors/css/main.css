@@ -101,14 +101,14 @@ img {
 
 .img-pixel:nth-child(2) { 
     margin-left: -60px;
+    margin-bottom: 25px;
 }
 
 .img-pixel:nth-child(4) { 
     margin-left: -80px;
-    margin-top: 20px;
+
 
 }
 .img-pixel:nth-child(6) { 
     margin-left: -75px;
-    margin-top: 20px;
 }
