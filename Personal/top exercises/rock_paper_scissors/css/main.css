@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../font/Minecraft.ttf') format('truetype'),
+         url('../font/Minecraft.woff2') format('woff2'),
+         url('../font/Minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #f0f8ff;
+    font-family: 'Minecraft', monospace;
 }
 
 header {
@@ -14,6 +25,7 @@ header {
     align-items: center;
     height: 70vh;
     justify-content: center;
+
 }
 
 .buttonContainer {
@@ -32,6 +44,7 @@ button {
     color: white; 
     cursor: pointer;
     transition: background-color 0.5s;
+    font-family: 'Minecraft', monospace;
 }
 
 button:hover {
@@ -40,6 +53,7 @@ button:hover {
 
 .textContainer {
     text-align: center;
+    padding-bottom: 150px;
 }
 
 #score {
@@ -48,4 +62,53 @@ button:hover {
 
 #result {
     font-size: 25px
+}
+
+img {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+    margin: 0 -10px;
+}
+
+#paperimg {
+    width: 110px;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#title {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+
+.title-word {
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.img-pixel {
+    position: relative;
+    z-index: 0;
+
+}
+
+.img-pixel:nth-child(2) { 
+    margin-left: -60px;
+}
+
+.img-pixel:nth-child(4) { 
+    margin-left: -80px;
+    margin-top: 20px;
+
+}
+.img-pixel:nth-child(6) { 
+    margin-left: -75px;
+    margin-top: 20px;
 }
