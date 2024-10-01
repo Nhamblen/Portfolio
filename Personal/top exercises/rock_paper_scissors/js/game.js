@@ -1,6 +1,9 @@
-// create two variables to track wins and losses
+// two variables to track wins and losses
 let userScore = 0;
 let computerScore = 0;
+// two variables to track rounds played and the max rounds
+let roundsPlayed = 0;
+const totalRounds = 5;
 
 // get a random choice between rock paper or scissors with a function
 function getComputerChoice () {
@@ -12,8 +15,11 @@ function getComputerChoice () {
 
 // take user and computer choices as arguments and pass them through a function that plays a round, increments the score, and announces a winner
 function playRound (userChoice, computerChoice) {
-    let resultMessage;
+    roundsPlayed++; // increment the rounds played
 
+    let resultMessage; // variable to show message of round win or loss
+
+    // includes logic of the game whether its a win, loss, or tie
     if (userChoice === computerChoice){
         resultMessage = `It's a tie! ${capitalize(userChoice)} ties ${capitalize(computerChoice)}`;
     }
@@ -30,28 +36,58 @@ function playRound (userChoice, computerChoice) {
         computerScore += 1;
     }
 
-    // Update result and score on the page
+    // update result and score on the page
     document.getElementById('result').textContent = resultMessage;
     document.getElementById('score').textContent = `User: ${userScore} | Computer: ${computerScore}`;
 }
 
-// captialize the first letter in the rock, paper or scissors console.log string
+// captialize the first letter in the rock, paper or scissors string
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// checks if the game should continue or not
+function checkGameOver() {
+    
+    if (roundsPlayed >= totalRounds) {
+        displayResults();
+        return true; // game over
+    }
+    return false; // game continues
+
+}
+
+// displays the final message
+function displayResults() {
+    let finalMessage;
+
+    if (userScore > computerScore) {
+        finalMessageMessage = 'YOU WIN THE GAME! 🎉';
+    } else if (userScore === computerScore) {
+        finalMessage = 'You tied the game. 🤔';
+    } else {
+        finalMessage = 'You lose the game. 😭';
+    }
+
+    // update the final result message on the page
+    document.getElementById('result').textContent = finalMessage;
+}
+
+// inputs rock and plays a round with the HTML button
 document.getElementById('rock').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('rock', getComputerChoice());
 }
 })
 
+// inputs paper and plays a round with the HTML button
 document.getElementById('paper').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('paper', getComputerChoice());
 }
 })
 
+// inputs scissors and plays a round with the HTML button
 document.getElementById('scissors').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('scissors', getComputerChoice());
