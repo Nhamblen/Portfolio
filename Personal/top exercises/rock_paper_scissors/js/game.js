@@ -40,6 +40,20 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-document.getElementById('rock').addEventListener('click', () => playRound('rock', getComputerChoice()));
-document.getElementById('paper').addEventListener('click', () => playRound('paper', getComputerChoice()));
-document.getElementById('scissors').addEventListener('click', () => playRound('scissors', getComputerChoice()));
+document.getElementById('rock').addEventListener('click', () => {
+    if (!checkGameOver()) {
+    playRound('rock', getComputerChoice());
+}
+})
+
+document.getElementById('paper').addEventListener('click', () => {
+    if (!checkGameOver()) {
+    playRound('paper', getComputerChoice());
+}
+})
+
+document.getElementById('scissors').addEventListener('click', () => {
+    if (!checkGameOver()) {
+    playRound('scissors', getComputerChoice());
+}
+})
