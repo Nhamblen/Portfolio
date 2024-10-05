@@ -76,6 +76,16 @@ function displayResults() {
     document.getElementById('result').textContent = finalMessage;
 }
 
+function resetGame () {
+    userScore = 0;
+    computerScore = 0;
+    roundsPlayed = 0;
+    clearMessage = "";
+    clearScore = "";
+    document.getElementById('result').textContent = clearMessage;
+    document.getElementById('score').textContent = clearScore;
+}
+
 // inputs rock and plays a round with the HTML button
 document.getElementById('rock').addEventListener('click', () => {
     if (!checkGameOver()) {
@@ -96,3 +106,6 @@ document.getElementById('scissors').addEventListener('click', () => {
     playRound('scissors', getComputerChoice());
 }
 })
+
+// resets the game with the HTML button
+document.getElementById('reset').addEventListener('click', () => resetGame());

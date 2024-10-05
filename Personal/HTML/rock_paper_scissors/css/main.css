@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     justify-content: center;
 
 }
@@ -37,6 +37,7 @@ header {
 
 button {
     font-size: 40px;
+    margin-top: 400px;
     padding: 15px 30px;
     border: none;
     border-radius: 8px;
@@ -47,7 +48,18 @@ button {
     font-family: 'Minecraft', monospace;
 }
 
+#reset {
+    background-color: rgb(135, 135, 248);
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
 button:hover {
+    background-color: lightblue;
+}
+
+#reset:hover {
     background-color: lightblue;
 }
 
