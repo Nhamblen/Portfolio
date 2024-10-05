@@ -4,6 +4,8 @@ let computerScore = 0;
 // two variables to track rounds played and the max rounds
 let roundsPlayed = 0;
 const totalRounds = 5;
+// set the score text at the start of loading the page
+document.getElementById('score').textContent = 'User: 0 | Computer: 0';
 
 // get a random choice between rock paper or scissors with a function
 function getComputerChoice () {
@@ -76,36 +78,35 @@ function displayResults() {
     document.getElementById('result').textContent = finalMessage;
 }
 
+// resets the scores, rounds played, and text content on the page
 function resetGame () {
     userScore = 0;
     computerScore = 0;
     roundsPlayed = 0;
-    clearMessage = "";
-    clearScore = "";
-    document.getElementById('result').textContent = clearMessage;
-    document.getElementById('score').textContent = clearScore;
+    document.getElementById('result').textContent = '';
+    document.getElementById('score').textContent = 'User: 0 | Computer: 0';
 }
 
-// inputs rock and plays a round with the HTML button
+// inputs rock as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
 document.getElementById('rock').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('rock', getComputerChoice());
 }
 })
 
-// inputs paper and plays a round with the HTML button
+// inputs paper as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
 document.getElementById('paper').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('paper', getComputerChoice());
 }
 })
 
-// inputs scissors and plays a round with the HTML button
+// inputs scissors as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
 document.getElementById('scissors').addEventListener('click', () => {
     if (!checkGameOver()) {
     playRound('scissors', getComputerChoice());
 }
 })
 
-// resets the game with the HTML button
+// resets the game with the HTML button and resetGame function
 document.getElementById('reset').addEventListener('click', () => resetGame());
