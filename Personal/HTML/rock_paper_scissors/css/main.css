@@ -101,7 +101,7 @@ img {
     margin: 0 -10px;
 }
 
-#paperimg {
+#paperImg {
     width: 110px;
     height: auto;
     padding-left: 50px;
@@ -116,42 +116,42 @@ img {
     margin-top: -50px;    
 }
 
-.title-word {
+.titleWord {
     margin: 0 10px;
     position: relative;
     z-index: 1;
 }
 
 
-.img-pixel {
+.imgPixel {
     position: relative;
     z-index: 0;
 
 }
 
-.img-pixel:nth-child(2) { 
+.imgPixel:nth-child(2) { 
     margin-left: -60px;
     margin-bottom: 25px;
     
 }
 
-.img-pixel:nth-child(4) { 
+.imgPixel:nth-child(4) { 
     margin-left: -80px;
 
 
 }
-.img-pixel:nth-child(6) { 
+.imgPixel:nth-child(6) { 
     margin-left: -75px;
 }
 
-.animate-crush {
+.animateCrush {
     animation: crush 1s forwards;
 }
 
-.animate-cover {
+.animateCover {
     animation: cover 1s forwards;
 }
 
-.animate-cut {
+.animateCut {
     animation: cut 1s forwards;
 }
