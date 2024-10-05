@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Minecraft';
-    src: url('../font/Minecraft.ttf') format('truetype'),
-         url('../font/Minecraft.woff2') format('woff2'),
-         url('../font/Minecraft.woff') format('woff');
+    src: url('../font/PixelifySans.ttf') format('truetype'),
+         url('../font/PixelifySans.woff2') format('woff2'),
+         url('../font/PixelifySans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
