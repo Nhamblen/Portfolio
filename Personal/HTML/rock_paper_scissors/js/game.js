@@ -50,24 +50,19 @@ function playRound (userChoice, computerChoice) {
     userImg.classList.remove('animateCrush', 'animateCover', 'animateCut');
     computerImg.classList.remove('animateCrush', 'animateCover', 'animateCut');
     
-    // apply animation classes based on who wins
+    // apply animation classes and sounds if you win
     if (resultMessage.includes('win')) {
         if (userChoice === 'rock' && computerChoice === 'scissors') {
             userImg.classList.add('animateCrush');
+            playSound('rock');
         } else if (userChoice === 'paper' && computerChoice === 'rock') {
             userImg.classList.add('animateCover');
+            playSound('paper');
         } else if (userChoice === 'scissors' && computerChoice === 'paper') {
             userImg.classList.add('animateCut');
+            playSound('scissors');
         }
-    } else if (resultMessage.includes('lose')) {
-        if (userChoice === 'rock' && computerChoice === 'scissors') {
-            computerImg.classList.add('animateCut');
-        } else if (userChoice === 'paper' && computerChoice === 'rock') {
-            computerImg.classList.add('animateCrush');
-        } else if (userChoice === 'scissors' && computerChoice === 'paper') {
-            computerImg.classList.add('animateCover');
-        }
-    }
+    } 
 
     if (checkGameOver()) {
         displayResults();
@@ -104,6 +99,12 @@ function displayResults() {
 
     // update the final result message on the page
     document.getElementById('result').textContent = finalMessage;
+}
+
+// takes the sound file and plays it with function
+function playSound(sound) {
+    const audio = new Audio(`sounds/${sound}.wav`); // path to the sound file
+    audio.play();
 }
 
 // resets the scores, rounds played, and text content on the page
