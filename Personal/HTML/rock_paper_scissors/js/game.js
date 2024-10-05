@@ -42,9 +42,37 @@ function playRound (userChoice, computerChoice) {
     document.getElementById('result').textContent = resultMessage;
     document.getElementById('score').textContent = `User: ${userScore} | Computer: ${computerScore}`;
 
+    // determine the animation to apply based on the result
+    let userImg = document.getElementById(`${userChoice}img`);
+    let computerImg = document.getElementById(`${computerChoice}img`);
+    
+    // remove previous animations
+    userImg.classList.remove('animate-crush', 'animate-cover', 'animate-cut');
+    computerImg.classList.remove('animate-crush', 'animate-cover', 'animate-cut');
+    
+    // apply animation classes based on who wins
+    if (resultMessage.includes('win')) {
+        if (userChoice === 'rock' && computerChoice === 'scissors') {
+            userImg.classList.add('animate-crush');
+        } else if (userChoice === 'paper' && computerChoice === 'rock') {
+            userImg.classList.add('animate-cover');
+        } else if (userChoice === 'scissors' && computerChoice === 'paper') {
+            userImg.classList.add('animate-cut');
+        }
+    } else if (resultMessage.includes('lose')) {
+        if (userChoice === 'rock' && computerChoice === 'scissors') {
+            computerImg.classList.add('animate-cut');
+        } else if (userChoice === 'paper' && computerChoice === 'rock') {
+            computerImg.classList.add('animate-crush');
+        } else if (userChoice === 'scissors' && computerChoice === 'paper') {
+            computerImg.classList.add('animate-cover');
+        }
+    }
+
     if (checkGameOver()) {
         displayResults();
     }
+
 }
 
 // captialize the first letter in the rock, paper or scissors string

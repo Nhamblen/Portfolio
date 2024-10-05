@@ -7,6 +7,24 @@
     font-style: normal;
 }
 
+@keyframes crush {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes cover {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes cut {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -114,6 +132,7 @@ img {
 .img-pixel:nth-child(2) { 
     margin-left: -60px;
     margin-bottom: 25px;
+    
 }
 
 .img-pixel:nth-child(4) { 
@@ -123,4 +142,16 @@ img {
 }
 .img-pixel:nth-child(6) { 
     margin-left: -75px;
+}
+
+.animate-crush {
+    animation: crush 1s forwards;
+}
+
+.animate-cover {
+    animation: cover 1s forwards;
+}
+
+.animate-cut {
+    animation: cut 1s forwards;
 }
