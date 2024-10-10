@@ -9,3 +9,9 @@ function createGrid (size) {
 }
 
 createGrid(16);
+
+container.addEventListener('mouseover', (e) => {
+    if (e.target.tagName === 'DIV') {
+        e.target.style.backgroundColor = 'black';
+    }
+});
