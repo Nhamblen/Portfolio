@@ -11,10 +11,13 @@ function createGrid (size) {
 
     for (let i = 0; i < size * size; i++) {
         const div = document.createElement('div');
+        div.style.width = `${squareSize}px`;
+        div.style.height = `${squareSize}px`;
+        div.style.border = '1px solid black';
+        div.style.boxSizing = 'border-box'
         container.appendChild(div);
+        }
     }
-
-}
 
 container.addEventListener('mouseover', (e) => {
     if (e.target.tagName === 'DIV') {
