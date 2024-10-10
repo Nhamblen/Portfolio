@@ -2,6 +2,13 @@ const container = document.getElementById('container')
 const button = document.getElementById('sizeButton')
 
 function createGrid (size) {
+    container.innerHTML = '';
+    const totalSize = 960;
+    const squareSize = totalSize / size;
+
+    container.style.width = `${totalSize}px`
+    container.style.height = `${totalSize}px`
+
     for (let i = 0; i < size * size; i++) {
         const div = document.createElement('div');
         container.appendChild(div);
@@ -16,11 +23,11 @@ container.addEventListener('mouseover', (e) => {
 });
 
 button.addEventListener('click', () => {
-    let squaresPerSide = prompt ('Enter the number of squares you would like for the new grid');
-    squaresPerSide = parseInt(squaresPerSide);
+    let size = prompt ('Enter the number of squares you would like for the new grid');
+    size = parseInt(size);
 
-    if (!isNaN(squaresPerSide) && squaresPerSide > 0) {
-        createGrid(squaresPerSide);
+    if (!isNaN(size) && size > 0) {
+        createGrid(size);
     }
     else {
         alert ('Please enter a valid number');
