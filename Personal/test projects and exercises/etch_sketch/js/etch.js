@@ -3,7 +3,7 @@ const button = document.getElementById('sizeButton')
 
 function createGrid (size) {
     container.innerHTML = '';
-    const totalSize = 960;
+    const totalSize = 800;
     const squareSize = totalSize / size;
 
     container.style.width = `${totalSize}px`
@@ -26,12 +26,18 @@ container.addEventListener('mouseover', (e) => {
 });
 
 button.addEventListener('click', () => {
-    let size = prompt ('Enter the number of squares you would like for the new grid');
+    let size = prompt ('Enter the number of squares you would like for the new grid (max 100)');
     size = parseInt(size);
 
-    if (!isNaN(size) && size > 0) {
+    if (size > 100){
+        alert ('Please enter a valid number');
+    }
+
+
+    else if (!isNaN(size) && size > 0) {
         createGrid(size);
     }
+
     else {
         alert ('Please enter a valid number');
     }
