@@ -1,6 +1,8 @@
+// Get container and sizeButton IDs and apply them to variables
 const container = document.getElementById('container')
 const button = document.getElementById('sizeButton')
 
+// Creates the grid and each individual box with a loop
 function createGrid (size) {
     container.innerHTML = '';
     const totalSize = 800;
@@ -19,18 +21,20 @@ function createGrid (size) {
         }
     }
 
+// Changes a box color to black on mouseover
 container.addEventListener('mouseover', (e) => {
     if (e.target.tagName === 'DIV') {
         e.target.style.backgroundColor = 'black';
     }
 });
 
+// When new grid button is clicked, prompt the user, validate the input, and create a new grid if valid
 button.addEventListener('click', () => {
     let size = prompt ('Enter the number of squares you would like for the new grid (max 100)');
     size = parseInt(size);
 
     if (size > 100){
-        alert ('Please enter a valid number');
+        alert ('Please enter a number between 1 and 100');
     }
 
 
@@ -43,4 +47,5 @@ button.addEventListener('click', () => {
     }
 })
 
+// Creates the initial grid
 createGrid(16);
