@@ -2,7 +2,7 @@
 const container = document.getElementById('container')
 const button = document.getElementById('sizeButton')
 
-// Creates the grid and each individual box with a loop
+// Creates the grid with the size variable, each individual box with a loop, and some other css styling
 function createGrid (size) {
     container.innerHTML = '';
     const totalSize = 800;
