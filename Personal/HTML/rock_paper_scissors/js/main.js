@@ -45,11 +45,11 @@ function playRound (userChoice, computerChoice) {
     // determine the animation to apply based on the result
     let userImg = document.getElementById(`${userChoice}Img`);
     let computerImg = document.getElementById(`${computerChoice}Img`);
-    
+
     // remove previous animations
     userImg.classList.remove('animateCrush', 'animateCover', 'animateCut');
     computerImg.classList.remove('animateCrush', 'animateCover', 'animateCut');
-    
+
     // apply animation classes and sounds if you win
     if (resultMessage.includes('win')) {
         if (userChoice === 'rock' && computerChoice === 'scissors') {
@@ -62,7 +62,7 @@ function playRound (userChoice, computerChoice) {
             userImg.classList.add('animateCut');
             playSound('scissors');
         }
-    } 
+    }
 
     if (checkGameOver()) {
         displayResults();
@@ -77,7 +77,7 @@ function capitalize(str) {
 
 // checks if the game should continue or not
 function checkGameOver() {
-    
+
     if (roundsPlayed >= totalRounds) {
         return true; // game over
     }

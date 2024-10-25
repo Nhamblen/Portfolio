@@ -39,7 +39,7 @@ def create_or_load_files(root):  #Create file_names and write to them
 
     style = ttk.Style()
     style.configure("Vertical.TScrollbar", troughcolor="#555", sliderlength=30, width=12)
-    
+
     scrollbar = ttk.Scrollbar(root, command=text_box.yview, style="Vertical.TScrollbar")
     scrollbar.pack(side="right", fill="y")
     text_box.config(yscrollcommand=scrollbar.set)
@@ -86,3 +86,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     create_or_load_files(root)
     root.mainloop()
+

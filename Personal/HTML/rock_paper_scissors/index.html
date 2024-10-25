@@ -3,47 +3,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A simple rock paper scissors game">
-    <title>Rock Paper Scissors Game</title>
-    <script src="js/game.js" defer></script>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A simple rock paper scissors game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1 id="title">
-            <span class="titleWord">Rock</span>
-            <img class="imgPixel" id="rockImg" src="img/rock.png" alt="Pixel Art Rock">
-            <span class="titleWord">Paper</span>
-            <img class="imgPixel" id="paperImg" src="img/paper.png" alt="Pixel Art Paper">
-            <span class="titleWord">Scissors</span>
-            <img class="imgPixel" id="scissorsImg" src="img/scissors.png" alt="Pixel Art Scissors">
-        </h1>
-    </header>
+  <header>
+    <h1 id="title">
+      <span class="titleWord">Rock</span>
+      <img class="imgPixel" id="rockImg" src="img/rock.png" alt="Pixel Art Rock">
+      <span class="titleWord">Paper</span>
+      <img class="imgPixel" id="paperImg" src="img/paper.png" alt="Pixel Art Paper">
+      <span class="titleWord">Scissors</span>
+      <img class="imgPixel" id="scissorsImg" src="img/scissors.png" alt="Pixel Art Scissors">
+    </h1>
+  </header>
 
-    <div class="container">
+  <div class="container">
 
-        <div class="buttonContainer">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
-            <button id="reset">Reset</button>
-        </div>
-
-        <div class="textContainer">
-            <div id="score"></div>
-            <div id="result"></div>
-        </div>
-
+    <div class="buttonContainer">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+      <button id="reset">Reset</button>
     </div>
 
-    <audio id="rockSound" src="sounds/rock.wav" preload="auto"></audio>
-    <audio id="paperSound" src="sounds/paper.wav" preload="auto"></audio>
-    <audio id="scissorsSound" src="sounds/scissors.wav" preload="auto"></audio>
+    <div class="textContainer">
+      <div id="score"></div>
+      <div id="result"></div>
+    </div>
+
+  </div>
+
+  <audio id="rockSound" src="sounds/rock.wav" preload="auto"></audio>
+  <audio id="paperSound" src="sounds/paper.wav" preload="auto"></audio>
+  <audio id="scissorsSound" src="sounds/scissors.wav" preload="auto"></audio>
 </body>
 
 

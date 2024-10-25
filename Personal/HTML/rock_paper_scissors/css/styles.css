@@ -60,7 +60,7 @@ button {
     border: none;
     border-radius: 8px;
     background-color: rgb(164, 164, 248);
-    color: white; 
+    color: white;
     cursor: pointer;
     transition: background-color 0.5s;
     font-family: 'Minecraft', monospace;
@@ -109,11 +109,11 @@ img {
 }
 
 #title {
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -50px;    
+    margin-top: -50px;
 }
 
 .titleWord {
@@ -129,18 +129,18 @@ img {
 
 }
 
-.imgPixel:nth-child(2) { 
+.imgPixel:nth-child(2) {
     margin-left: -60px;
     margin-bottom: 25px;
-    
+
 }
 
-.imgPixel:nth-child(4) { 
+.imgPixel:nth-child(4) {
     margin-left: -80px;
 
 
 }
-.imgPixel:nth-child(6) { 
+.imgPixel:nth-child(6) {
     margin-left: -75px;
 }
 
