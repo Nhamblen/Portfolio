@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Minecraft';
+    font-family: 'Pixel';
     src: url('../font/PixelifySans.ttf') format('truetype'),
          url('../font/PixelifySans.woff2') format('woff2'),
          url('../font/PixelifySans.woff') format('woff');
@@ -7,17 +7,20 @@
     font-style: normal;
 }
 
+/* Reusable animation for scaling elements (crush, cover, and cut) */
 @keyframes crush {
     0% { transform: scale(1); }
     50% { transform: scale(1.5); }
     100% { transform: scale(1); }
 }
 
+
 @keyframes cover {
     0% { transform: scale(1); }
     50% { transform: scale(1.5); }
     100% { transform: scale(1); }
 }
+
 
 @keyframes cut {
     0% { transform: scale(1); }
@@ -29,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
-    font-family: 'Minecraft', monospace;
+    font-family: 'Pixel', monospace;
 }
 
 header {
@@ -62,15 +65,15 @@ button {
     color: white;
     cursor: pointer;
     transition: background-color 0.5s;
-    font-family: 'Minecraft', monospace;
-    margin-top: 1000px;
+    font-family: 'Pixel', monospace;
+    margin-top: 1000px; /* Adjusted to space out buttons */
 }
 
 #reset {
     background-color: rgb(135, 135, 248);
     font-size: 30px;
     padding: 10px 20px;
-    margin-left: 50px;
+    margin-left: 50px; /* Spacing from other buttons */
 }
 
 button:hover {
@@ -113,61 +116,69 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -50px;
+    margin-top: -50px; /* Adjusted for layout */
 }
 
+/* Allow images to overlap with title words for better visuals */
 .titleWord {
     margin: 0 10px;
     position: relative;
     z-index: 1;
 }
 
-
+/* Image settings to maintain overlapping effect */
 .imgPixel {
     position: relative;
     z-index: 0;
 }
 
+/* Rock image alignment */
 .imgPixel:nth-child(2) {
     margin-left: -60px;
     margin-bottom: 25px;
 
 }
 
+/* Paper image alignment */
 .imgPixel:nth-child(4) {
     margin-left: -80px;
 
 
 }
+
+/* Scissor image alignment */
 .imgPixel:nth-child(6) {
     margin-left: -75px;
 }
 
+/* Animation for rock when winning a round */
 .animateCrush {
     animation: crush 1s forwards;
 }
 
+/* Animation for paper when winning a round */
 .animateCover {
     animation: cover 1s forwards;
 }
 
+/* Animation for scissors when winning a round */
 .animateCut {
     animation: cut 1s forwards;
 }
 
-/* Only apply this on smaller screens (mobile) */
+/* Style for smaller screens (mobile) */
 @media only screen and (max-width: 600px) {
   header {
       font-size: 28px;
   }
 
   .container {
-      height: auto;
+      height: auto; /* Adjusted for mobile layout */
       padding: 10px;
   }
 
   .buttonContainer {
-      flex-direction: column;
+      flex-direction: column; /* Stack buttons in a column */
       gap: 5px;
       margin: 10px 0;
   }
@@ -194,7 +205,7 @@ img {
 
   img {
       width: 150px;
-      z-index: 1;
+      z-index: 1; /* Allow images to overlap with title words */
   }
 
   #paperImg {
@@ -203,10 +214,11 @@ img {
       padding-right: 30px;
   }
 
+
   #title {
-      flex-direction: column;
+      flex-direction: column; /* Switch to column layout for mobile */
       margin-top: 0px;
-      z-index: 0;
+      z-index: 0; /* Allow images to overlap with title words */
       position: relative;
       margin-bottom: 0px;
   }
@@ -214,31 +226,31 @@ img {
   .imgPixel:nth-child(2),
   .imgPixel:nth-child(4),
   .imgPixel:nth-child(6) {
-      margin-left: -5px;
+      margin-left: -5px; /* Adjust for alignment */
+    }
 
-  }
+
 
   .imgPixel:nth-child(2) {
-    margin-top: -60px;
+    margin-top: -60px; /* Adjusted for overlap */
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
 
-.imgPixel:nth-child(4) {
-    margin-top: -10px;
+  .imgPixel:nth-child(4) {
+    margin-top: -10px; /* Adjusted for overlap */
 
 
   }
-.imgPixel:nth-child(6) {
-    margin-top: -45px;
+  .imgPixel:nth-child(6) {
+    margin-top: -45px; /* Adjusted for overlap */
   }
 
-.titleWord:nth-child(3) {
-    margin-top: -50px;
+  .titleWord:nth-child(3) {
+    margin-top: -50px; /* Adjusted for overlap */
   }
 
   .titleWord:nth-child(5) {
-    margin-top: -20px;
+    margin-top: -20px; /* Adjusted for overlap */
   }
-
 }
