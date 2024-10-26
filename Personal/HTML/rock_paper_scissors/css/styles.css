@@ -214,7 +214,6 @@ img {
       padding-right: 30px;
   }
 
-
   #title {
       flex-direction: column; /* Switch to column layout for mobile */
       margin-top: 0px;
@@ -229,8 +228,6 @@ img {
       margin-left: -5px; /* Adjust for alignment */
     }
 
-
-
   .imgPixel:nth-child(2) {
     margin-top: -60px; /* Adjusted for overlap */
     padding-bottom: 0px;
@@ -243,7 +240,7 @@ img {
   }
   .imgPixel:nth-child(6) {
     margin-top: -45px; /* Adjusted for overlap */
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
   .titleWord:nth-child(3) {
@@ -253,4 +250,89 @@ img {
   .titleWord:nth-child(5) {
     margin-top: -20px; /* Adjusted for overlap */
   }
+}
+
+/* Style for medium screens (tablet) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    font-size: 28px;
+}
+
+.container {
+    height: auto; /* Adjusted for mobile layout */
+    padding: 10px;
+}
+
+.buttonContainer {
+    gap: 5px;
+    margin: 10px 0;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#reset {
+    font-size: 20px;
+    padding: 8px 16px;
+    margin-left: 0;
+}
+
+#score {
+    font-size: 24px;
+}
+
+#result {
+    font-size: 20px;
+}
+
+img {
+    width: 150px;
+    z-index: 1; /* Allow images to overlap with title words */
+}
+
+#paperImg {
+    width: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#title {
+    flex-direction: column; /* Switch to column layout for mobile */
+    margin-top: 0px;
+    z-index: 0; /* Allow images to overlap with title words */
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.imgPixel:nth-child(2),
+.imgPixel:nth-child(4),
+.imgPixel:nth-child(6) {
+    margin-left: -5px; /* Adjust for alignment */
+  }
+
+.imgPixel:nth-child(2) {
+  margin-top: -60px; /* Adjusted for overlap */
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.imgPixel:nth-child(4) {
+  margin-top: -10px; /* Adjusted for overlap */
+
+}
+.imgPixel:nth-child(6) {
+  margin-top: -45px; /* Adjusted for overlap */
+  padding-bottom: 200px;
+}
+
+.titleWord:nth-child(3) {
+  margin-top: -50px; /* Adjusted for overlap */
+}
+
+.titleWord:nth-child(5) {
+  margin-top: -20px; /* Adjusted for overlap */
+}
 }
