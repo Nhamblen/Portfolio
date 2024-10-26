@@ -240,10 +240,10 @@ img {
   .imgPixel:nth-child(4) {
     margin-top: -10px; /* Adjusted for overlap */
 
-
   }
   .imgPixel:nth-child(6) {
     margin-top: -45px; /* Adjusted for overlap */
+    padding-bottom: 50px;
   }
 
   .titleWord:nth-child(3) {
