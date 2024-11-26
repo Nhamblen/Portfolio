@@ -11,3 +11,9 @@
   width: 5em;
   height: auto;
 }
+
+.header_1 {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  gap: 40px; /* Adds space between the logo and heading */
+}
