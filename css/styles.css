@@ -24,7 +24,8 @@
   display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
   gap: 20px; /* Adds space between the logo and heading */
-  background-color: #c8c8ff;
+  background-color: #e2e2fc;
+  padding-bottom: 5em;
 }
 
 /* Style rules for h1 title */
@@ -37,4 +38,34 @@
 .header_1 img {
   width: 5em;
   height: auto;
+}
+
+/* Style rules for mobile nav div */
+.mobile_nav {
+  display: flex;
+  justify-content: center;
+  position: sticky; /* Buttons stick to bottom of page */
+}
+
+.mobile_nav ul {
+  list-style: none;
+  display: flex; /* Flex so li items become a row */
+  padding: 2em;
+  gap: 20px;
+}
+
+/* Style rules for body and main */
+body {
+  min-height: 100vh; /* Makes the body take up the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Allows main content to take up remaining space */
+}
+
+/* Disable desktop navigation in mobile design */
+.desktop_nav {
+  display: none;
 }
