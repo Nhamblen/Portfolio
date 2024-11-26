@@ -6,14 +6,35 @@
 
 /* CSS started as a mobile first design */
 
-/* Style rules for logo on the top left */
-.logo {
-  width: 5em;
-  height: auto;
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
+/* Links dance font to CSS */
+@font-face {
+  font-family: "dance";
+  src: url("../font/dancing.ttf") format("truetype");
+}
+
+/* Style rules for logo and h1 title */
 .header_1 {
-  display: flex;
+  display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
-  gap: 40px; /* Adds space between the logo and heading */
+  gap: 20px; /* Adds space between the logo and heading */
+  background-color: #c8c8ff;
+}
+
+/* Style rules for h1 title */
+.header_1 h1 {
+  font-family: "dance", sans-serif; /* Apply font "dance" to title */
+  font-size: 3.5em;
+}
+
+/* Style rules for logo */
+.header_1 img {
+  width: 5em;
+  height: auto;
 }
