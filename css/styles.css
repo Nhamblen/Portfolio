@@ -19,25 +19,40 @@
   src: url("../font/dancing.ttf") format("truetype");
 }
 
-/* Style rules for logo and h1 title */
+/* Style rules for header, header content, logo, and h1 title */
+header {
+  background-color: #e2e2fc;
+  padding-bottom: 2em;
+}
+
 .header_1 {
   display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
   gap: 20px; /* Adds space between the logo and heading */
-  background-color: #e2e2fc;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
-/* Style rules for h1 title */
 .header_1 h1 {
   font-family: "dance", sans-serif; /* Apply font "dance" to title */
   font-size: 3.5em;
 }
 
-/* Style rules for logo */
 .header_1 img {
   width: 5em;
   height: auto;
+}
+
+.header_2 {
+  display: flex;
+}
+
+.header_2_img {
+  background-color: #8b8bfa;
+  float: right;
+  width: 100em;
+}
+
+.header_2 img {
 }
 
 /* Style rules for mobile nav div */
