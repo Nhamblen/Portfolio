@@ -1,6 +1,13 @@
+/*
+  Student Name: Noah Hamblen
+  File Name: styles.css
+  Date: 11/25/24
+*/
+
+/* CSS started as a mobile first design */
+
 /* Style rules for logo on the top left */
 .logo {
-  width: 10em;
+  width: 5em;
   height: auto;
-  
 }
