@@ -22,14 +22,15 @@
 /* Style rules for header, header content, logo, and h1 title */
 header {
   background-color: #e2e2fc;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
+/* Class includes logo and title */
 .header_1 {
   display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
   gap: 20px; /* Adds space between the logo and heading */
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .header_1 h1 {
@@ -42,17 +43,21 @@ header {
   height: auto;
 }
 
+/* Class includes intro text and hero image */
 .header_2 {
   display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
 }
 
-.header_2_img {
+.header_2_imgbox {
   background-color: #8b8bfa;
-  float: right;
-  width: 100em;
-}
-
-.header_2 img {
+  height: 8em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style rules for mobile nav div */
@@ -60,8 +65,6 @@ header {
   display: flex;
   justify-content: center;
   position: sticky; /* Buttons stick to bottom of page */
-  bottom: 0;
-  width: 100%;
   z-index: 100; /* Ensures it's on top of other content */
 }
 
@@ -72,20 +75,24 @@ header {
   gap: 20px;
 }
 
-/* Style rules for body and main */
+/* Style rules for main content */
+main {
+  display: flex;
+  flex-grow: 1; /* Allows main content to take up remaining space */
+  padding-bottom: 4em; /* Adds space for footer */
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style rules for body and footer */
 body {
   min-height: 100vh; /* Makes the body take up the full height of the viewport */
   display: flex;
   flex-direction: column;
 }
 
-main {
-  flex-grow: 1; /* Allows main content to take up remaining space */
-  padding-bottom: 4em; /* Adds space for footer */
-}
-
 footer {
-  flex-shrink: 0;
   background-color: #e2e2fc;
 }
 
