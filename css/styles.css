@@ -65,6 +65,7 @@ header {
   display: flex;
   justify-content: center;
   position: sticky; /* Buttons stick to bottom of page */
+  bottom: 0;
   z-index: 100; /* Ensures it's on top of other content */
 }
 
@@ -72,7 +73,13 @@ header {
   list-style: none;
   display: flex; /* Flex so li items become a row */
   padding: 2em;
-  gap: 20px;
+  gap: 40px;
+}
+
+#mobile_nav ul li {
+  background-color: #8b8bfa;
+  border-radius: 1em;
+  padding: 10px 30px;
 }
 
 /* Style rules for main content */
@@ -84,7 +91,13 @@ main {
   padding: 1em;
   flex-direction: column; /* Column aligns two images and text vertically */
   align-items: center;
-  gap: 100px;
+  gap: 60px;
+}
+
+.subject_img {
+  background-color: #8b8bfa;
+  padding: 20px;
+  border-radius: 1em;
 }
 
 /* Style rules for body and footer */
