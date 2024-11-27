@@ -26,32 +26,32 @@ header {
 }
 
 /* Class includes logo and title */
-.header_1 {
+#header_1 {
   display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
   gap: 20px; /* Adds space between the logo and heading */
   padding-bottom: 1em;
 }
 
-.header_1 h1 {
+#header_1 h1 {
   font-family: "dance", sans-serif; /* Apply font "dance" to title */
   font-size: 3.5em;
 }
 
-.header_1 img {
+#header_1 img {
   width: 5em;
   height: auto;
 }
 
 /* Class includes intro text and hero image */
-.header_2 {
+#header_2 {
   display: flex;
   flex-direction: column;
   padding: 1em;
   gap: 1em;
 }
 
-.header_2_imgbox {
+#header_2_imgbox {
   background-color: #8b8bfa;
   height: 8em;
   border-radius: 1em;
@@ -61,14 +61,14 @@ header {
 }
 
 /* Style rules for mobile nav div */
-.mobile_nav {
+#mobile_nav {
   display: flex;
   justify-content: center;
   position: sticky; /* Buttons stick to bottom of page */
   z-index: 100; /* Ensures it's on top of other content */
 }
 
-.mobile_nav ul {
+#mobile_nav ul {
   list-style: none;
   display: flex; /* Flex so li items become a row */
   padding: 2em;
@@ -80,9 +80,11 @@ main {
   display: flex;
   flex-grow: 1; /* Allows main content to take up remaining space */
   padding-bottom: 4em; /* Adds space for footer */
+  margin-top: 2em; /* Adds space for header */
   padding: 1em;
-  flex-direction: column;
+  flex-direction: column; /* Column aligns two images and text vertically */
   align-items: center;
+  gap: 100px;
 }
 
 /* Style rules for body and footer */
@@ -97,6 +99,6 @@ footer {
 }
 
 /* Disable desktop navigation in mobile design */
-.desktop_nav {
+#desktop_nav {
   display: none;
 }
