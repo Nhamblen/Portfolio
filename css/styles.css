@@ -14,6 +14,12 @@
   font-family: "light", sans-serif; /* Apply font "light" to everything except the title */
 }
 
+/* Increase font size of p and li to make it more readable */
+p,
+li {
+  font-size: 1.5em;
+}
+
 /* Links dance and light font to CSS */
 @font-face {
   font-family: "dance";
@@ -103,7 +109,7 @@ main p {
 
 .subject_img {
   border-radius: 1em;
-  width: 20em;
+  width: 17em;
   height: auto;
 }
 
