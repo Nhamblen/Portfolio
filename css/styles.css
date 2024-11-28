@@ -6,6 +6,17 @@
 
 /* CSS started as a mobile first design */
 
+/* Links dance and light font to CSS */
+@font-face {
+  font-family: "dance";
+  src: url("../font/dancing.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../font/light.ttf") format("truetype");
+}
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -18,17 +29,6 @@
 p,
 li {
   font-size: 1.5em;
-}
-
-/* Links dance and light font to CSS */
-@font-face {
-  font-family: "dance";
-  src: url("../font/dancing.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "light";
-  src: url("../font/light.ttf") format("truetype");
 }
 
 /* Style rules for header, header content, logo, and h1 title */
@@ -82,7 +82,7 @@ header {
   list-style: none;
   display: flex; /* Flex so li items become a row */
   padding: 2em;
-  gap: 40px;
+  gap: 20px;
 }
 
 #mobile_nav ul li {
@@ -127,4 +127,45 @@ footer {
 /* Disable desktop navigation in mobile design */
 #desktop_nav {
   display: none;
+}
+
+/* Media query for tablet and desktop */
+@media (min-width: 600px) {
+  header,
+  main {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  #header_box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Style rules for desktop nav div */
+  #desktop_nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #desktop_nav ul {
+    list-style: none;
+    display: flex; /* Flex so li items become a row */
+    padding: 2em;
+    gap: 20px;
+  }
+
+  #desktop_nav ul li {
+    background-color: #8b8bfa;
+    border-radius: 1em;
+    padding: 10px 30px;
+  }
+
+  #mobile_nav {
+    display: none; /* Disable top links */
+  }
+
+  footer {
+    padding-top: 5em;
+  }
 }
