@@ -139,7 +139,7 @@ footer {
 }
 
 /* Media query for desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   /* Pushes left and right of content in */
   header,
   main {
@@ -219,4 +219,8 @@ footer {
   #goals_box {
     padding-left: 5em;
   }
+}
+
+/* Media query for tablet */
+@media (min-width: 768px) {
 }
