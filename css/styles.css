@@ -46,10 +46,14 @@ header {
 #header_2 {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Aligns image to center */
 }
 
 #header_2 img {
   padding-top: 1em;
+  border-radius: 3em;
+  height: auto;
+  width: 26em;
 }
 
 /* Style rules for mobile nav div */
@@ -88,6 +92,8 @@ main {
 
 .subject_img {
   border-radius: 1em;
+  width: 20em;
+  height: auto;
 }
 
 /* Style rules for body and footer */
