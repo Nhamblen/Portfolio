@@ -133,7 +133,7 @@ footer {
   background-color: #e2e2fc;
 }
 
-/* Disable desktop navigation in mobile design */
+/* Disable top links (desktop version) */
 #desktop_nav {
   display: none;
 }
@@ -199,7 +199,7 @@ footer {
   }
 
   #mobile_nav {
-    display: none; /* Disable top links */
+    display: none; /* Disable footer links (mobile version) */
   }
 
   footer {
