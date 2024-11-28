@@ -11,12 +11,18 @@
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: "light", sans-serif; /* Apply font "light" to everything except the title */
 }
 
-/* Links dance font to CSS */
+/* Links dance and light font to CSS */
 @font-face {
   font-family: "dance";
   src: url("../font/dancing.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("../font/light.ttf") format("truetype");
 }
 
 /* Style rules for header, header content, logo, and h1 title */
@@ -29,7 +35,7 @@ header {
   display: flex; /* Flexbox */
   align-items: center; /* Vertically centers items */
   gap: 20px; /* Adds space between the logo and heading */
-  padding-bottom: 1em;
+  padding: 1em;
 }
 
 #header_1 h1 {
@@ -47,6 +53,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; /* Aligns image to center */
+  padding: 1em;
 }
 
 #header_2 img {
@@ -54,6 +61,7 @@ header {
   border-radius: 3em;
   height: auto;
   width: 26em;
+  padding-bottom: 1em;
 }
 
 /* Style rules for mobile nav div */
@@ -88,6 +96,10 @@ main {
   flex-direction: column; /* Column aligns two images and text vertically */
   align-items: center;
   gap: 60px;
+}
+
+main p {
+  padding-bottom: 3em; /* Pushes footer down */
 }
 
 .subject_img {
