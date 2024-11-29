@@ -17,12 +17,17 @@
   src: url("../font/light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "handwriting";
+  src: url("../font/handwriting.ttf") format("truetype");
+}
+
 /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "light", sans-serif; /* Apply font "light" to everything except the title */
+  font-family: "handwriting", sans-serif; /* Apply font "light" to everything except the title */
 }
 
 /* Increase font size of p and li to make it more readable */
@@ -147,6 +152,10 @@ footer {
     padding-right: 5em;
   }
 
+  p {
+    font-size: 2em;
+  }
+
   /* Style rules for header elements */
   #header_box {
     display: flex;
@@ -164,7 +173,7 @@ footer {
   }
 
   #header_2 p {
-    padding-left: 10em;
+    padding-left: 0em;
     padding-right: 5em;
   }
 
