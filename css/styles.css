@@ -152,7 +152,7 @@ footer {
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for desktop */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) and (max-width: 2000px) {
   /* Pushes left and right of content in */
   header,
   main {
@@ -254,7 +254,7 @@ footer {
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for tablet */
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Pushes left and right of content in */
   header,
   main {
@@ -351,5 +351,121 @@ footer {
 
   #goals_box {
     padding-left: 3em;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media query for large desktops */
+@media (min-width: 2000px) {
+  /* Pushes left and right of content in */
+  header,
+  main {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  /* Style rules for header elements */
+  #header_box {
+    display: flex;
+    justify-content: space-between; /* Space logo and links apart */
+  }
+
+  #header_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #header_2 img {
+    height: auto;
+    width: 60em; /* Bigger hero image for desktop view */
+  }
+
+  #header_2 p {
+    padding-left: 0em;
+    padding-right: 5em;
+    font-size: 2em;
+  }
+
+  #header_1 h1 {
+    font-size: 5em; /* Bigger h1 for desktop view */
+  }
+
+  #header_1 img {
+    width: 10em; /* Bigger logo image for desktop view */
+    height: auto;
+  }
+
+  /* Style rules for desktop nav div */
+  #desktop_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desktop_nav ul {
+    list-style: none;
+    display: flex; /* Flex so li items become a row */
+    padding: 2em 0em 2em 2em;
+    gap: 20px;
+  }
+
+  #desktop_nav ul li {
+    background-color: #8b8bfa;
+    border-radius: 1em;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  #mobile_nav {
+    display: none; /* Disable footer links (mobile version) */
+  }
+
+  /* Style rules for footer */
+  footer {
+    position: static;
+  }
+
+  #footer_img_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #footer_img_box img {
+    height: auto;
+    width: 8em;
+  }
+
+  /* Style rules for main content */
+  main {
+    flex-direction: row; /* row aligns the two divs side by side */
+    background: linear-gradient(
+      to right,
+      #e2e2fc 0%,
+      #e2e2fc 3%,
+      #fff 5%,
+      #fff 95%,
+      #e2e2fc 97%,
+      #e2e2fc 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  #subject_img_box {
+    padding-left: 5em;
+    padding-right: 10em;
+    padding-top: 1em;
+  }
+
+  #goals_box {
+    padding-left: 5em;
   }
 }
