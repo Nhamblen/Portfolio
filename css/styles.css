@@ -70,6 +70,7 @@ header {
 
 #header_2 p {
   font-size: 1.3em; /* Bigger intro font size */
+  padding-top: 1em;
 }
 
 /* Style rules for mobile nav div */
@@ -231,5 +232,90 @@ footer {
 }
 
 /* Media query for tablet */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  /* Pushes left and right of content in */
+  header,
+  main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  /* Style rules for header elements */
+  #header_box {
+    display: flex;
+    justify-content: space-between; /* Space logo and links apart */
+  }
+
+  #header_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #header_2 img {
+    height: auto;
+    width: 30em; /* Bigger hero image for tablet view */
+  }
+
+  #header_2 p {
+    padding-left: 0em;
+    padding-right: 0.5em;
+    font-size: 1.6em;
+  }
+
+  #header_1 h1 {
+    font-size: 4em; /* Bigger h1 for tablet view */
+  }
+
+  #header_1 img {
+    width: 7em; /* Bigger logo image for tablet view */
+    height: auto;
+  }
+
+  /* Style rules for desktop (tablet view) nav div */
+  #desktop_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desktop_nav ul {
+    list-style: none;
+    display: flex; /* Flex so li items become a row */
+    padding: 2em 0em 2em 0em;
+    gap: 20px;
+  }
+
+  #desktop_nav ul li {
+    background-color: #8b8bfa;
+    border-radius: 1em;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  #mobile_nav {
+    display: none; /* Disable footer links (mobile version) */
+  }
+
+  footer {
+    padding-top: 5em;
+  }
+
+  /* Style rules for main content */
+  main {
+    flex-direction: row; /* row aligns the two divs side by side */
+  }
+
+  #subject_img_box {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #goals_box {
+    padding-left: 3em;
+  }
 }
