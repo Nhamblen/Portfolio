@@ -95,6 +95,7 @@ header {
   border-radius: 1em;
   padding: 15px 30px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Style rules for main content */
@@ -215,6 +216,7 @@ footer {
     padding: 20px 50px;
     font-weight: bold;
     font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
   }
 
   #mobile_nav {
@@ -317,6 +319,7 @@ footer {
     padding: 20px 30px;
     font-weight: bold;
     font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
   }
 
   #mobile_nav {
@@ -419,6 +422,7 @@ footer {
     padding: 20px 50px;
     font-weight: bold;
     font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
   }
 
   #mobile_nav {
@@ -467,5 +471,132 @@ footer {
 
   #goals_box {
     padding-left: 5em;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media query for print */
+@media print {
+  /* Reset margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hide elements that aren't needed in the print version */
+  nav,
+  footer {
+    display: none;
+  }
+
+  /* Make links print in a clear format */
+  a {
+    text-decoration: underline;
+    color: black; /* Links in black on print */
+  }
+
+  /* Remove background images/colors to save ink */
+  * {
+    background: transparent !important;
+    color: black !important;
+  }
+
+  /* Images are still visible (if needed) but without color */
+  img {
+    filter: grayscale(100%) !important; /* Converts images to grayscale */
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  /* Style rules for header elements */
+  header {
+    padding: 0;
+  }
+
+  #header_box {
+    display: flex;
+    justify-content: space-between; /* Space logo and links apart */
+  }
+
+  #header_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #header_2 img {
+    height: auto;
+    width: 15em; /* Hero image sized for print */
+  }
+
+  #header_2 p {
+    padding-left: 0em;
+    font-size: 1.3em;
+    filter: grayscale(100%) !important; /* Converts emoji to grayscale */
+  }
+
+  #header_1 h1 {
+    font-size: 3.5em; /* h1 for print */
+  }
+
+  #header_1 img {
+    width: 5em; /* logo image for print */
+    height: auto;
+  }
+
+  /* Style rules for desktop nav div */
+  #desktop_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desktop_nav ul {
+    list-style: none;
+    display: flex; /* Flex so li items become a row */
+    padding: 2em 0em 2em 2em;
+    gap: 20px;
+  }
+
+  #desktop_nav ul li {
+    background-color: #8b8bfa;
+    border-radius: 1em;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #mobile_nav {
+    display: none; /* Disable footer links (mobile version) */
+  }
+
+  /* Style rules for main content */
+  main {
+    flex-direction: row; /* row aligns the two divs side by side */
+    padding: 0;
+    margin: 0;
+  }
+
+  #goals_box {
+    padding: 0 0 5em 0;
+    filter: grayscale(100%) !important; /* Converts emoji to grayscale */
+  }
+
+  #subject_img_box {
+    padding: 0em;
+    padding-bottom: 5em;
+  }
+
+  .subject_img {
+    border-radius: 1em;
+    width: 12em;
+    height: auto;
+  }
+
+  /* Class to break the page */
+  .page_break {
+    page-break-before: always;
   }
 }
