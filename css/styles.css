@@ -93,7 +93,7 @@ header {
 #mobile_nav ul li {
   background-color: #8b8bfa;
   border-radius: 1em;
-  padding: 10px 30px;
+  padding: 15px 30px;
   font-weight: bold;
 }
 
@@ -135,6 +135,9 @@ body {
 
 footer {
   background-color: #e2e2fc;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
 }
 
 /* Disable top links (desktop version) */
@@ -142,6 +145,7 @@ footer {
   display: none;
 }
 
+/* -------------------------------------------------------------------------------------------- */
 /* Media query for desktop */
 @media (min-width: 1280px) {
   /* Pushes left and right of content in */
@@ -230,7 +234,7 @@ footer {
     padding-left: 5em;
   }
 }
-
+/* -------------------------------------------------------------------------------------------- */
 /* Media query for tablet */
 @media (min-width: 768px) and (max-width: 1280px) {
   /* Pushes left and right of content in */
