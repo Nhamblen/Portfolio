@@ -6,7 +6,7 @@
 
 /* CSS started as a mobile first design */
 
-/* Links dance and light font to CSS */
+/* Links dance, handwriting, and light fonts to CSS */
 @font-face {
   font-family: "dance";
   src: url("../font/dancing.ttf") format("truetype");
@@ -28,12 +28,6 @@
   padding: 0;
   border: 0;
   font-family: "handwriting", sans-serif; /* Apply font "light" to everything except the title */
-}
-
-/* Increase font size of p and li to make it more readable */
-p,
-li {
-  font-size: 1.5em;
 }
 
 /* Style rules for header, header content, logo, and h1 title */
@@ -72,6 +66,10 @@ header {
   height: auto;
   width: 26em;
   padding-bottom: 1em;
+}
+
+#header_2 p {
+  font-size: 1.3em; /* Bigger intro font size */
 }
 
 /* Style rules for mobile nav div */
@@ -204,8 +202,9 @@ footer {
   #desktop_nav ul li {
     background-color: #8b8bfa;
     border-radius: 1em;
-    padding: 10px 30px;
+    padding: 20px 50px;
     font-weight: bold;
+    font-size: 1.5em;
   }
 
   #mobile_nav {
