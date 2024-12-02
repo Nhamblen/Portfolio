@@ -96,6 +96,11 @@ header {
   padding: 15px 30px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+#mobile_nav ul li a {
+  text-decoration: none;
 }
 
 /* Style rules for main content */
@@ -217,6 +222,19 @@ footer {
     font-weight: bold;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  #desktop_nav ul li:hover {
+    background-color: #d0b9e5; /* Color change when hovering nav links */
   }
 
   #mobile_nav {
@@ -322,6 +340,10 @@ footer {
     font-family: "Roboto", sans-serif;
   }
 
+  #desktop_nav ul li a {
+    text-decoration: none;
+  }
+
   #mobile_nav {
     display: none; /* Disable footer links (mobile version) */
   }
@@ -423,6 +445,10 @@ footer {
     font-weight: bold;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
+  }
+
+  #desktop_nav ul li a {
+    text-decoration: none;
   }
 
   #mobile_nav {
@@ -566,6 +592,10 @@ footer {
     font-weight: bold;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
+  }
+
+  #desktop_nav ul li a {
+    text-decoration: none;
   }
 
   #mobile_nav {
