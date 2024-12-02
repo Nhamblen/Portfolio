@@ -1,5 +1,4 @@
-/*
-  Student Name: Noah Hamblen
+/* Student Name: Noah Hamblen
   File Name: styles.css
   Date: 11/25/24
 */
@@ -90,12 +89,20 @@ header {
   gap: 20px;
 }
 
-#mobile_nav ul li {
+#mobile_nav ul li a {
   background-color: #bcadca;
   border-radius: 1em;
   padding: 15px 30px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+li a {
   text-decoration: none;
 }
 
@@ -219,14 +226,11 @@ footer {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     transition: background-color 0.3s ease; /* Smooth transition for color change */
+    text-decoration: none;
   }
 
   a:visited {
     color: inherit;
-  }
-
-  li a {
-    text-decoration: none;
   }
 
   #desktop_nav ul li a:hover {
@@ -334,9 +338,6 @@ footer {
     font-weight: bold;
     font-size: 1.2em;
     font-family: "Roboto", sans-serif;
-  }
-
-  #desktop_nav ul li a {
     text-decoration: none;
   }
 
@@ -442,18 +443,15 @@ footer {
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     transition: background-color 0.3s ease; /* Smooth transition for color change */
-  }
-
-  li a {
     text-decoration: none;
   }
 
-  #desktop_nav ul li a:hover {
-    background-color: #d0b9e5; /* Color change when hovering nav links */
+  a:visited {
+    color: inherit;
   }
 
-  #desktop_nav ul li a:visited {
-    color: inherit;
+  #desktop_nav ul li a:hover {
+    background-color: #d0b9e5 !important; /* Color change when hovering nav links */
   }
 
   #mobile_nav {
