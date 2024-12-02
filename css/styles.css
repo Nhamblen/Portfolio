@@ -99,10 +99,6 @@ header {
   text-decoration: none;
 }
 
-#mobile_nav ul li a {
-  text-decoration: none;
-}
-
 /* Style rules for main content */
 main {
   display: flex;
@@ -215,11 +211,11 @@ footer {
     gap: 20px;
   }
 
-  #desktop_nav ul li {
+  #desktop_nav ul li a {
     background-color: #bcadca;
     border-radius: 1em;
-    padding: 20px 50px;
     font-weight: bold;
+    padding: 20px 50px;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
     transition: background-color 0.3s ease; /* Smooth transition for color change */
@@ -233,7 +229,7 @@ footer {
     text-decoration: none;
   }
 
-  #desktop_nav ul li:hover {
+  #desktop_nav ul li a:hover {
     background-color: #d0b9e5; /* Color change when hovering nav links */
   }
 
@@ -331,7 +327,7 @@ footer {
     gap: 20px;
   }
 
-  #desktop_nav ul li {
+  #desktop_nav ul li a {
     background-color: #bcadca;
     border-radius: 1em;
     padding: 20px 30px;
@@ -438,17 +434,26 @@ footer {
     gap: 20px;
   }
 
-  #desktop_nav ul li {
+  #desktop_nav ul li a {
     background-color: #bcadca;
     border-radius: 1em;
-    padding: 20px 50px;
     font-weight: bold;
+    padding: 20px 50px;
     font-size: 1.5em;
     font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
   }
 
-  #desktop_nav ul li a {
+  li a {
     text-decoration: none;
+  }
+
+  #desktop_nav ul li a:hover {
+    background-color: #d0b9e5; /* Color change when hovering nav links */
+  }
+
+  #desktop_nav ul li a:visited {
+    color: inherit;
   }
 
   #mobile_nav {
