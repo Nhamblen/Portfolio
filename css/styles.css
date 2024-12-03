@@ -234,6 +234,10 @@ footer {
     color: inherit;
   }
 
+  a:link {
+    color: inherit;
+  }
+
   #desktop_nav ul li a:hover {
     background-color: #d0b9e5; /* Color change when hovering nav links */
   }
@@ -274,6 +278,27 @@ footer {
 
   #about_p {
     padding-left: 5em;
+  }
+
+  /* Style rules for content on hobbies.html */
+  #hobby_main {
+    flex-direction: column; /* column aligns the content vertically */
+  }
+
+  video {
+    border-radius: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensures the corners are properly rounded */
+  }
+
+  /* Style rules for grid on hobbies.html */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
   }
 }
 
@@ -452,6 +477,10 @@ footer {
   }
 
   a:visited {
+    color: inherit;
+  }
+
+  a:link {
     color: inherit;
   }
 
