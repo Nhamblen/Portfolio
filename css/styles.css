@@ -263,7 +263,7 @@ footer {
     flex-direction: row; /* row aligns the two divs side by side */
   }
 
-  #subject_img_box {
+  .subject_img_box {
     padding-left: 5em;
     padding-right: 10em;
   }
@@ -271,6 +271,11 @@ footer {
   #goals_box {
     padding-left: 5em;
   }
+
+  #about_p {
+    padding-left: 5em;
+  }
+
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -367,7 +372,7 @@ footer {
     flex-direction: row; /* row aligns the two divs side by side */
   }
 
-  #subject_img_box {
+  .subject_img_box {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -493,7 +498,7 @@ footer {
     margin-top: 0;
   }
 
-  #subject_img_box {
+  .subject_img_box {
     padding-left: 5em;
     padding-right: 10em;
     padding-top: 1em;
@@ -618,7 +623,7 @@ footer {
     filter: grayscale(100%) !important; /* Converts emoji to grayscale */
   }
 
-  #subject_img_box {
+  .subject_img_box {
     padding: 0em;
     padding-bottom: 5em;
   }
