@@ -123,7 +123,7 @@ main p {
   padding-bottom: 1em; /* Pushes images down */
 }
 
-#subject_img_box {
+.subject_img_box {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -275,7 +275,6 @@ footer {
   #about_p {
     padding-left: 5em;
   }
-
 }
 
 /* -------------------------------------------------------------------------------------------- */
