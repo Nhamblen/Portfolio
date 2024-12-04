@@ -160,6 +160,34 @@ footer {
   display: none;
 }
 
+/* Style rules for content on hobbies.html */
+#hobby_main {
+  flex-direction: column; /* column aligns the content vertically */
+  margin-bottom: 5em;
+}
+
+video {
+  border-radius: 10px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensures the corners are properly rounded */
+}
+
+/* Style rules for grid on hobbies.html */
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+figure {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+}
+
+aside {
+  grid-column: 1 / span 1;
+}
+
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for desktop */
 @media (min-width: 1024px) and (max-width: 2000px) {
@@ -259,7 +287,7 @@ footer {
 
   #footer_img_box img {
     height: auto;
-    width: 8em;
+    width: 5em;
   }
 
   /* Style rules for main content */
@@ -388,7 +416,7 @@ footer {
 
   #footer_img_box img {
     height: auto;
-    width: 8em;
+    width: 5em;
   }
 
   /* Style rules for main content */
@@ -403,6 +431,31 @@ footer {
 
   #goals_box {
     padding-left: 3em;
+  }
+
+  /* Style rules for content on hobbies.html */
+  #hobby_main {
+    flex-direction: column; /* column aligns the content vertically */
+  }
+
+  video {
+    border-radius: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensures the corners are properly rounded */
+  }
+
+  /* Style rules for grid on hobbies.html */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  figure {
+    margin-right: 0;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
   }
 }
 
@@ -534,6 +587,27 @@ footer {
 
   #goals_box {
     padding-left: 5em;
+  }
+
+  /* Style rules for content on hobbies.html */
+  #hobby_main {
+    flex-direction: column; /* column aligns the content vertically */
+  }
+
+  video {
+    border-radius: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensures the corners are properly rounded */
+  }
+
+  /* Style rules for grid on hobbies.html */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
   }
 }
 
