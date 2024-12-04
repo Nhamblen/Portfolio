@@ -166,6 +166,11 @@ footer {
   margin-bottom: 5em;
 }
 
+#hobby_p {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
 video {
   border-radius: 10px; /* Adjust the value as needed */
   overflow: hidden; /* Ensures the corners are properly rounded */
@@ -193,6 +198,31 @@ aside {
   padding: 1rem;
   margin: 1rem 0;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sudo elements not covered in textbook (required) */
+/* Adds purple line under <p> */
+p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #e2e2fc; /* Match bioSite color scheme */
+  margin-top: 10px;
+}
+
+#goals_box p:first-of-type::after {
+  content: none; /* Remove line for first <p> on index.html */
+}
+
+ul:not(nav) li::before {
+  content: "🟣"; /* purple bullet point instead of default */
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+nav ul li::before {
+  content: ""; /* Remove purple bullet for navigation links */
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -318,6 +348,11 @@ aside {
   /* Style rules for content on hobbies.html */
   #hobby_main {
     flex-direction: column; /* column aligns the content vertically */
+  }
+
+  #hobby_p {
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   video {
@@ -450,6 +485,11 @@ aside {
   /* Style rules for content on hobbies.html */
   #hobby_main {
     flex-direction: column; /* column aligns the content vertically */
+  }
+
+  #hobby_p {
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   video {
@@ -613,6 +653,11 @@ aside {
   /* Style rules for content on hobbies.html */
   #hobby_main {
     flex-direction: column; /* column aligns the content vertically */
+  }
+
+  #hobby_p {
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   video {
