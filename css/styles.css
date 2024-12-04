@@ -186,6 +186,13 @@ figure {
 
 aside {
   grid-column: 1 / span 1;
+  /* Color and shadow on aside box (contains figure elements in a grid) */
+  background-color: #e2e2fc;
+  border: 3px solid #bcadca;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -327,6 +334,13 @@ aside {
 
   aside {
     grid-column: 1 / span 3;
+    /* Color and shadow on aside box (contains figure elements in a grid) */
+    background-color: #e2e2fc;
+    border: 3px solid #bcadca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -456,6 +470,13 @@ aside {
 
   aside {
     grid-column: 1 / span 2;
+    /* Color and shadow on aside box (contains figure elements in a grid) */
+    background-color: #e2e2fc;
+    border: 3px solid #bcadca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -608,6 +629,13 @@ aside {
 
   aside {
     grid-column: 1 / span 3;
+    /* Color and shadow on aside box (contains figure elements in a grid) */
+    background-color: #e2e2fc;
+    border: 3px solid #bcadca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
