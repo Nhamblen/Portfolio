@@ -182,17 +182,21 @@ video {
   overflow: hidden; /* Ensures the corners are properly rounded */
 }
 
-/* Style rules for grid on hobbies.html */
+/* Style rules for grid and figures on hobbies.html */
 .grid {
   display: grid;
   grid-template-columns: auto;
   gap: 10px;
+  padding: 2em;
 }
 
 figure {
   display: flex;
   width: 320px;
   justify-content: center;
+  align-items: center;
+  width: fit-content; /* Ensures content doesn't shrink */
+  flex-direction: column;
 }
 
 aside {
@@ -201,9 +205,13 @@ aside {
   background-color: #e2e2fc;
   border: 3px solid #bcadca;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1em;
   margin: 1rem 0;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  padding-top: 1em;
 }
 
 /* Sudo elements not covered in textbook (required) */
