@@ -238,6 +238,171 @@ ul:not(nav) li::before {
 nav ul li::before {
   content: ""; /* Remove purple bullet for navigation links */
 }
+/* -------------------------------------------------------------------------------------------- */
+/* Media query for tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Pushes left and right of content in */
+  header,
+  main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  /* Style rules for header elements */
+  #header_box {
+    display: flex;
+    justify-content: space-between; /* Space logo and links apart */
+  }
+
+  #header_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #header_2 img {
+    height: auto;
+    width: 30em; /* Bigger hero image for tablet view */
+  }
+
+  #header_2 p {
+    padding-left: 0em;
+    padding-right: 0.5em;
+    font-size: 1.6em;
+  }
+
+  #header_1 h1 {
+    font-size: 4em; /* Bigger h1 for tablet view */
+  }
+
+  #header_1 img {
+    width: 7em; /* Bigger logo image for tablet view */
+    height: auto;
+  }
+
+  /* Style rules for desktop (tablet view) nav div */
+  #desktop_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desktop_nav ul {
+    list-style: none;
+    display: flex; /* Flex so li items become a row */
+    padding: 2em 0em 2em 0em;
+    gap: 20px;
+  }
+
+  #desktop_nav ul li a {
+    background-color: #bcadca;
+    border-radius: 1em;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+  }
+
+  #mobile_nav {
+    display: none; /* Disable footer links (mobile version) */
+  }
+
+  /* Style rules for footer */
+  footer {
+    position: static;
+  }
+
+  #footer_img_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #footer_img_box img {
+    height: auto;
+    width: 5em;
+  }
+
+  /* Style rules for main content */
+  main {
+    flex-direction: row; /* row aligns the two divs side by side */
+  }
+
+  .subject_img_box {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #goals_box {
+    padding-left: 3em;
+  }
+
+  /* Style rules for content on hobbies.html */
+  #hobby_main {
+    flex-direction: column; /* column aligns the content vertically */
+  }
+
+  #hobby_p {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  video {
+    border-radius: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensures the corners are properly rounded */
+  }
+
+  /* Style rules for grid on hobbies.html */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  figure {
+    margin-right: 0;
+  }
+
+  aside {
+    /* Color and shadow on aside box (contains figure elements in a grid) */
+    grid-column: 1 / span 3;
+    background-color: #e2e2fc;
+    border: 3px solid #bcadca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* grid layout for tablet */
+  .grid figure:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(2) {
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(3) {
+    grid-column: 3;
+  }
+
+  .grid figure:nth-child(4) {
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(5) {
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(6) {
+    grid-column: 3;
+  }
+}
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for desktop */
@@ -383,147 +548,6 @@ nav ul li::before {
 
   aside {
     grid-column: 1 / span 3;
-    /* Color and shadow on aside box (contains figure elements in a grid) */
-    background-color: #e2e2fc;
-    border: 3px solid #bcadca;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  }
-}
-
-/* -------------------------------------------------------------------------------------------- */
-/* Media query for tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Pushes left and right of content in */
-  header,
-  main {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-  /* Style rules for header elements */
-  #header_box {
-    display: flex;
-    justify-content: space-between; /* Space logo and links apart */
-  }
-
-  #header_2 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #header_2 img {
-    height: auto;
-    width: 30em; /* Bigger hero image for tablet view */
-  }
-
-  #header_2 p {
-    padding-left: 0em;
-    padding-right: 0.5em;
-    font-size: 1.6em;
-  }
-
-  #header_1 h1 {
-    font-size: 4em; /* Bigger h1 for tablet view */
-  }
-
-  #header_1 img {
-    width: 7em; /* Bigger logo image for tablet view */
-    height: auto;
-  }
-
-  /* Style rules for desktop (tablet view) nav div */
-  #desktop_nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #desktop_nav ul {
-    list-style: none;
-    display: flex; /* Flex so li items become a row */
-    padding: 2em 0em 2em 0em;
-    gap: 20px;
-  }
-
-  #desktop_nav ul li a {
-    background-color: #bcadca;
-    border-radius: 1em;
-    padding: 20px 30px;
-    font-weight: bold;
-    font-size: 1.2em;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-  }
-
-  #mobile_nav {
-    display: none; /* Disable footer links (mobile version) */
-  }
-
-  /* Style rules for footer */
-  footer {
-    position: static;
-  }
-
-  #footer_img_box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #footer_img_box img {
-    height: auto;
-    width: 5em;
-  }
-
-  /* Style rules for main content */
-  main {
-    flex-direction: row; /* row aligns the two divs side by side */
-  }
-
-  .subject_img_box {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-
-  #goals_box {
-    padding-left: 3em;
-  }
-
-  /* Style rules for content on hobbies.html */
-  #hobby_main {
-    flex-direction: column; /* column aligns the content vertically */
-  }
-
-  #hobby_p {
-    padding-left: 5em;
-    padding-right: 5em;
-  }
-
-  video {
-    border-radius: 10px; /* Adjust the value as needed */
-    overflow: hidden; /* Ensures the corners are properly rounded */
-  }
-
-  /* Style rules for grid on hobbies.html */
-  .grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-  }
-
-  figure {
-    margin-right: 0;
-  }
-
-  aside {
-    grid-column: 1 / span 2;
     /* Color and shadow on aside box (contains figure elements in a grid) */
     background-color: #e2e2fc;
     border: 3px solid #bcadca;
