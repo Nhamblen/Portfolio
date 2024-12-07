@@ -238,6 +238,7 @@ ul:not(nav) li::before {
 nav ul li::before {
   content: ""; /* Remove purple bullet for navigation links */
 }
+
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -401,6 +402,18 @@ nav ul li::before {
 
   .grid figure:nth-child(6) {
     grid-column: 3;
+  }
+
+  figure .subject_img {
+    border-radius: 1em;
+    width: 15em;
+    height: auto;
+  }
+
+  figure .subject_vid {
+    border-radius: 1em;
+    width: 15em;
+    height: auto;
   }
 }
 
