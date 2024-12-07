@@ -210,8 +210,34 @@ aside {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* grid layout for mobile */
+.grid figure:nth-child(1) {
+  grid-row: 1;
+}
+
+.grid figure:nth-child(2) {
+  grid-row: 3;
+}
+
+.grid figure:nth-child(3) {
+  grid-row: 5;
+}
+
+.grid figure:nth-child(4) {
+  grid-row: 2;
+}
+
+.grid figure:nth-child(5) {
+  grid-row: 4;
+}
+
+.grid figure:nth-child(6) {
+  grid-row: 6;
+}
+
 figcaption {
-  padding-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 /* Sudo elements not covered in textbook (required) */
@@ -580,6 +606,37 @@ nav ul li::before {
     margin: 1rem 0;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
   }
+
+  /* grid layout for desktop */
+  .grid figure:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .grid figure:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(5) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+  }
 }
 
 /* -------------------------------------------------------------------------------------------- */
@@ -743,6 +800,37 @@ nav ul li::before {
     padding: 1rem;
     margin: 1rem 0;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* grid layout for desktop */
+  .grid figure:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .grid figure:nth-child(4) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(5) {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
   }
 }
 
