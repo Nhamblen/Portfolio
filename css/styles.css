@@ -360,8 +360,10 @@ nav ul li::before {
   /* Style rules for grid on hobbies.html */
   .grid {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 7px;
+    width: 40em;
   }
 
   figure {
@@ -370,7 +372,7 @@ nav ul li::before {
 
   aside {
     /* Color and shadow on aside box (contains figure elements in a grid) */
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     background-color: #e2e2fc;
     border: 3px solid #bcadca;
     border-radius: 8px;
@@ -382,26 +384,35 @@ nav ul li::before {
   /* grid layout for tablet */
   .grid figure:nth-child(1) {
     grid-column: 1;
+    grid-row: 1;
   }
 
   .grid figure:nth-child(2) {
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 2;
   }
 
   .grid figure:nth-child(3) {
-    grid-column: 3;
+    grid-column: 1;
+    grid-row: 3;
   }
 
   .grid figure:nth-child(4) {
-    grid-column: 1;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 5em; /* Padding to make content centered */
   }
 
   .grid figure:nth-child(5) {
     grid-column: 2;
+    grid-row: 2;
+    padding-left: 5em; /* Padding to make content centered */
   }
 
   .grid figure:nth-child(6) {
-    grid-column: 3;
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 5em; /* Padding to make content centered */
   }
 
   figure .subject_img {
@@ -412,7 +423,7 @@ nav ul li::before {
 
   figure .subject_vid {
     border-radius: 1em;
-    width: 15em;
+    width: 12em;
     height: auto;
   }
 }
