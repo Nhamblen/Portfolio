@@ -175,6 +175,7 @@ footer {
 #hobby_p {
   padding-left: 5em;
   padding-right: 5em;
+  padding-top: 1em;
 }
 
 video {
@@ -761,12 +762,17 @@ nav ul li::before {
 
   .subject_img_box {
     padding-left: 5em;
-    padding-right: 10em;
+    padding-right: 20em;
     padding-top: 1em;
   }
 
   #goals_box {
     padding-left: 5em;
+  }
+
+  .about_p {
+    padding-left: 10em;
+    padding-right: 5em;
   }
 
   /* Style rules for content on hobbies.html */
@@ -775,8 +781,9 @@ nav ul li::before {
   }
 
   #hobby_p {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 5em;
   }
 
   video {
@@ -859,6 +866,7 @@ nav ul li::before {
   * {
     background: transparent !important;
     color: black !important;
+    filter: grayscale(100%) !important; /* Converts entire page to grayscale */
   }
 
   /* Images are still visible (if needed) but without color */
@@ -948,6 +956,11 @@ nav ul li::before {
     filter: grayscale(100%) !important; /* Converts emoji to grayscale */
   }
 
+  #hobby_p {
+    padding: 0 0 5em 0;
+    filter: grayscale(100%) !important; /* Converts emoji to grayscale */
+  }
+
   .subject_img_box {
     padding: 0em;
     padding-bottom: 5em;
@@ -968,5 +981,69 @@ nav ul li::before {
   /* Class to break the page */
   .page_break {
     page-break-before: always;
+  }
+
+  /* Style rules for content on hobbies.html */
+  #hobby_main {
+    flex-direction: column; /* column aligns the content vertically */
+  }
+
+  #hobby_p {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  video {
+    display: none; /* Turn off videos for printing */
+  }
+
+  #hobby_p {
+    padding-top: 5em;
+  }
+
+  /* Style rules for grid on hobbies.html */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
+    /* Color and shadow on aside box (contains figure elements in a grid) */
+    background-color: #e2e2fc;
+    border: 3px solid #bcadca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* grid layout for desktop */
+  .grid figure:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .grid figure:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .grid figure:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .grid figure:nth-child(4) {
+    display: none;
+  }
+
+  .grid figure:nth-child(5) {
+    display: none;
+  }
+
+  .grid figure:nth-child(6) {
+    display: none;
   }
 }
