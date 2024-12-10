@@ -378,6 +378,7 @@ nav ul li::before {
 
   #goals_box {
     padding-left: 3em;
+    width: 50%;
   }
 
   /* Style rules for content on hobbies.html */
@@ -484,7 +485,7 @@ nav ul li::before {
   }
 
   table {
-    width: 100%;
+    width: 50%;
     margin: 20px auto;
     border-collapse: collapse;
   }
@@ -634,6 +635,7 @@ nav ul li::before {
 
   #goals_box {
     padding-left: 5em;
+    width: 50%;
   }
 
   .about_p {
