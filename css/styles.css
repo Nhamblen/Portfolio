@@ -241,6 +241,23 @@ figcaption {
   padding-bottom: 1em;
 }
 
+/* Styles for mobile list on about page */
+#mobile_list {
+  padding-bottom: 5em;
+}
+
+.language_list {
+  list-style-type: none; /* Removes the default bullet point */
+  padding: 0; /* Removes extra padding */
+  margin: 0;
+}
+
+.language_list li {
+  padding-left: 1.8em;
+  position: relative;
+  padding-bottom: 1em;
+}
+
 /* Disable the table in mobile view (use list view) */
 #desktop_table {
   display: none;
@@ -263,8 +280,10 @@ p::after {
 
 ul:not(nav) li::before {
   content: "🟣"; /* purple bullet point instead of default */
-  margin-right: 8px;
   font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: -0.2em; /* Centers the bullet vertically with the text */
 }
 
 nav ul li::before {
