@@ -1,3 +1,10 @@
+Portfolio
+---------
 link the files together
 add a back button to each project
 finish portfolio
+fix my error (i didnt move thing with git and created issues)
+
+Maki's Corner
+-------------
+Fix link color (blue when unvisited) on mobile
