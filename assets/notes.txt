@@ -1,0 +1,3 @@
+link the files together
+add a back button to each project
+finish portfolio
