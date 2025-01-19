@@ -8,3 +8,7 @@ fix my error (i didnt move thing with git and created issues)
 Maki's Corner
 -------------
 Fix link color (blue when unvisited) on mobile
+
+Entertainment List
+------------------
+Make this open in my portfolio html
