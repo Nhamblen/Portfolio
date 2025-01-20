@@ -59,8 +59,11 @@ body {
   font-family: "Pixel", monospace;
 }
 
-a {
-  float: left;
+.back_button {
+  font-size: 0.5em;
+  right: 28em;
+  position: relative;
+  z-index: 3;
 }
 
 header {
@@ -144,6 +147,7 @@ img {
   align-items: center;
   position: relative;
   margin-top: -50px; /* Adjusted for layout */
+  pointer-events: none;
 }
 
 /* Allow images to overlap with title words for better visuals */
