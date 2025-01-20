@@ -13,7 +13,7 @@ Check out the live version of my portfolio: [noahhamblen.com](https://www.noahha
 A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean and engaging design.
 
 - **Technologies**: HTML, CSS, JavaScript
-- **Live Demo**: [Visit Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/index.html)
+- **Live Demo**: [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/index.html)
 - **Repository**: [Maki's Corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
 
 #### 2. rock_paper_scissors
@@ -21,15 +21,15 @@ A biography site dedicated to my girlfriend, Maki, showcasing her story and pers
 A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.
 
 - **Technologies**: HTML, CSS, JavaScript
-- **Live Demo**: [Visit Rock Paper Scissors](https://www.noahhamblen.com/projects/rock_paper_scissors/index.html)
-- **Repository**: [rock_paper_scissors Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/rock_paper_scissors)
+- **Live Demo**: [Rock Paper Scissors](https://www.noahhamblen.com/projects/rock_paper_scissors/index.html)
+- **Repository**: [Rock Paper Scissors Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/rock_paper_scissors)
 
 #### 3. Hamblen Design (Work in Progress)
 
 A custom website built from scratch, inspired by a professional template. The project demonstrates my ability to translate design into code.
 
 - **Technologies**: HTML, CSS, JavaScript
-- **Live Demo**: [Visit Hamblen Design](https://www.noahhamblen.com/projects/hamblen_design/index.html)
+- **Live Demo**: [Hamblen Design](https://www.noahhamblen.com/projects/hamblen_design/index.html)
 - **Repository**: [Hamblen Design Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/hamblen_design)
 
 ## 💻 Technologies Used
