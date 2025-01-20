@@ -1,0 +1,26 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+#header_box {
+  display: flex;
+  justify-content: space-between; /* Space logo and links apart */
+}
+
+#header_1 {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  gap: 10px; /* Adds space between the logo and heading */
+}
+
+#header_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Vertically centers items */
+  gap: 20px; /* Adds space between the logo and heading */
+}
