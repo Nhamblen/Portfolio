@@ -30,6 +30,11 @@ main h2 {
   padding: 50px;
 }
 
+.back_button {
+  left: 1em;
+  position: relative;
+}
+
 .mainbox {
   display: flex;
   gap: 40px;
