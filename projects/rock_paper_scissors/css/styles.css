@@ -205,6 +205,11 @@ img {
     padding: 10px;
   }
 
+  .back_button {
+    right: 5.5em;
+    font-size: 1em;
+  }
+
   .buttonContainer {
     flex-direction: column; /* Stack buttons in a column */
     gap: 5px;
@@ -293,6 +298,11 @@ img {
   .buttonContainer {
     gap: 5px;
     margin: 10px 0;
+  }
+
+  .back_button {
+    right: 12em;
+    font-size: 1em;
   }
 
   button {
