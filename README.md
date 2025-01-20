@@ -13,7 +13,7 @@ Check out the live version of my portfolio: noahhamblen.com
 A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean and engaging design.
 
     Technologies: HTML, CSS, JavaScript
-    Live Demo: Visit [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/index.html)
+    Live Demo: Visit [Maki's Corner](<https://www.noahhamblen.com/projects/makis_corner/index.html>)
     Repository: [makis_corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
 
 #### 2. rock_paper_scissors
