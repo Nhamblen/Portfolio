@@ -21,7 +21,7 @@ A biography site dedicated to my girlfriend, Maki, showcasing her story and pers
 A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.
 
     Technologies: HTML, CSS, JavaScript
-    Live Demo: Visit [Rock Paper Scissors] ()
+    Live Demo: Visit [Rock Paper Scissors] (https://www.noahhamblen.com/projects/rock_paper_scissors/index.html)
     Repository: rock_paper_scissors Repository
 
 3. Hamblen Design (Work in Progress)
@@ -38,8 +38,7 @@ A custom website built from scratch, inspired by a professional template. The pr
     Hosting: GitHub Pages, Squarespace domain
 
 📞 Contact
-Feel free to reach out:
 
     Email: nhamblen21@gmail.com
-    LinkedIn: linkedin.com/in/noahhamblen
     Portfolio: noahhamblen.com
+    LinkedIn: linkedin.com/in/noahhamblen
