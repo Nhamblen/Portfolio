@@ -32,9 +32,18 @@ A custom website built from scratch, inspired by a professional template. The pr
 - **Live Demo**: [Hamblen Design](https://www.noahhamblen.com/projects/hamblen_design/index.html)
 - **Repository**: [Hamblen Design Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/hamblen_design)
 
+#### 4. Entertainment List (Work in Progress)
+
+A Python program that helps your organize and manage lists for shows, anime, books, favorites, and finished. Includes multiple features. Planned to add this directly into the website (for now the link just downloads the file)
+
+- **Technologies**: Python
+- **Live Demo**: [Entertainment List](https://www.noahhamblen.com/projects/entertainment_list/hamblen_lists.pyw)
+- **Repository**: [Entertainment List Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/entertainment_list)
+
 ## 💻 Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript
+- **Frontend**: HTML5, CSS, JavaScript
+- **Backend**: Python
 - **Hosting**: GitHub Pages, Squarespace
 
 ## 📞 Contact
