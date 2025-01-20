@@ -12,7 +12,7 @@ Check out the live version of my portfolio: [noahhamblen.com](https://www.noahha
 
 A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean and engaging design.
 
-- **Technologies**: HTML, CSS, JavaScript
+- **Technologies**: HTML, CSS
 - **Live Demo**: [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/index.html)
 - **Repository**: [Maki's Corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
 
@@ -28,7 +28,7 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 
 A custom website built from scratch, inspired by a professional template. The project demonstrates my ability to translate design into code.
 
-- **Technologies**: HTML, CSS, JavaScript
+- **Technologies**: HTML, CSS
 - **Live Demo**: [Hamblen Design](https://www.noahhamblen.com/projects/hamblen_design/index.html)
 - **Repository**: [Hamblen Design Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/hamblen_design)
 
