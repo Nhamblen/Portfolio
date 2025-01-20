@@ -52,6 +52,4 @@ A Python program that helps your organize and manage lists for shows, anime, boo
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 
----
-
 **Updated**: 1/19/25 - Added new project and enhanced README layout.
