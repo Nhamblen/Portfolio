@@ -16,7 +16,7 @@ A biography site dedicated to my girlfriend, Maki, showcasing her story and pers
 - **Live Demo**: [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/index.html)
 - **Repository**: [Maki's Corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
 
-#### 2. rock_paper_scissors
+#### 2. Rock Paper Scissors
 
 A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.
 
