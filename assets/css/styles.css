@@ -1,3 +1,10 @@
+/*
+  Author Name: Noah Hamblen
+  File Name: index.html
+  Date: 1/18/25
+  CSS made with a mobile-first approach (tablet and desktop views at the bottom)
+*/
+
 /* CSS Reset */
 * {
   margin: 0;
@@ -9,20 +16,18 @@
 /* Header styling */
 #header_box {
   display: flex;
-  justify-content: space-between; /* Space logo and links apart */
+  justify-content: space-evenly;
 }
 
 #header_1 {
   display: flex;
   align-items: center; /* Vertically centers items */
-  gap: 10px; /* Adds space between the logo and heading */
 }
 
 #header_2 {
   display: flex;
   flex-direction: row;
   align-items: center; /* Vertically centers items */
-  gap: 20px; /* Adds space between the logo and heading */
 }
 
 nav a {
