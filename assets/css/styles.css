@@ -20,7 +20,9 @@
   justify-content: flex-start;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 3000;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
 }
 
 #header_1 {
@@ -63,8 +65,7 @@
   position: fixed;
   top: 2vh;
   right: -1.5vw;
-  background-image: radial-gradient(#e6f6fc, #e6f6fc);
-  z-index: 1000;
+  background-color: white;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -72,7 +73,6 @@
   height: 60vh;
   position: fixed;
   top: 0;
-  z-index: 1500;
   transition: all 0.8s;
   opacity: 0;
   width: 0;
@@ -94,7 +94,7 @@
   display: inline-block;
   font-size: 1.4em;
   font-weight: 300;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   color: black;
   text-decoration: none;
   background-size: 220%;
@@ -108,8 +108,8 @@
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
-  width: 50%;
-  right: 3em;
+  width: 38%;
+  right: 4em;
 }
 
 /* styling hamb ICON */
@@ -125,7 +125,7 @@
 .icon::after {
   width: 2rem;
   height: 2px;
-  background-color: gray;
+  background-color: black;
   display: inline-block;
 }
 
