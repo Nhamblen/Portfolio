@@ -16,7 +16,8 @@
 /* Header styling */
 #header_box {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: space-around;
 }
 
 #header_1 {
@@ -24,10 +25,8 @@
   align-items: center; /* Vertically centers items */
 }
 
-#header_2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Vertically centers items */
+#header_1 h1 {
+  font-size: 2em;
 }
 
 nav a {
@@ -83,28 +82,25 @@ nav a {
 
 #toggle_1:checked ~ .menu_1 {
   height: 340px;
+  width: 150px;
 }
 
-/* Menu */
+/* Adjust positioning for the dropdown menu */
 .menu_1 {
   width: 100%;
   background-color: #02173f;
   margin: 0;
-  display: -ms-grid;
   display: grid;
   grid-template-rows: 1fr repeat(4, 0.5fr);
   grid-row-gap: 25px;
   padding: 0;
   list-style: none;
-  clear: both;
-  width: auto;
   text-align: center;
   height: 0px;
   overflow: hidden;
   transition: height 0.4s ease;
   z-index: 120;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  position: absolute;
 }
 
 .menu_1 a:first-child {
