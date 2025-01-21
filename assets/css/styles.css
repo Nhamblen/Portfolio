@@ -58,11 +58,11 @@
 }
 
 .background {
-  height: 3rem;
+  height: 100vh;
   width: 0.5rem;
   position: fixed;
   top: 2vh;
-  right: 0.5vh;
+  right: -1.5vw;
   background-image: radial-gradient(#e6f6fc, #e6f6fc);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -72,16 +72,16 @@
   height: 60vh;
   position: fixed;
   top: 0;
-  right: -60vw;
   z-index: 1500;
+  transition: all 0.8s;
   opacity: 0;
   width: 0;
-  transition: all 0.8s;
+  right: -60vw;
 }
 
 .list {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 75%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -108,8 +108,8 @@
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
-  width: 100%;
-  right: 0;
+  width: 50%;
+  right: 3em;
 }
 
 /* styling hamb ICON */
