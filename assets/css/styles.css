@@ -17,7 +17,7 @@
 #header_box {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 #header_1 {
@@ -43,32 +43,31 @@
 .button {
   position: relative;
   background-color: white;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   position: fixed;
-  top: 5vh;
-  right: 5vw;
+  top: 2vh;
+  right: 1vw;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
   text-align: center;
   cursor: pointer;
 }
 
 .background {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   position: fixed;
-  top: 5.5vh;
-  right: 5.5vw;
-  background-image: radial-gradient(white, white);
+  top: 2vh;
+  right: 0.5vh;
+  background-image: radial-gradient(#d1ecf7, #d1ecf7);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .nav {
-  height: 100vh;
+  height: 60vh;
   position: fixed;
   top: 0;
   right: -60vw;
@@ -123,7 +122,7 @@
 .icon,
 .icon::before,
 .icon::after {
-  width: 3rem;
+  width: 2rem;
   height: 2px;
   background-color: gray;
   display: inline-block;
