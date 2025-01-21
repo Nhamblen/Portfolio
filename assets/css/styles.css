@@ -61,7 +61,7 @@
   position: fixed;
   top: 2vh;
   right: 0.5vh;
-  background-image: radial-gradient(#d1ecf7, #d1ecf7);
+  background-image: radial-gradient(#e6f6fc, #e6f6fc);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -95,7 +95,6 @@
   padding: 1rem 2rem;
   color: black;
   text-decoration: none;
-  text-transform: uppercase;
   background-size: 220%;
   transition: all 0.4s;
   cursor: pointer;
