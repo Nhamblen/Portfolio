@@ -41,7 +41,7 @@
 
 /* Hamburger and menu styling */
 .off_screen_menu {
-  background-color: rgb(34, 37, 49);
+  background-color: white;
   height: 100vh;
   width: 100%;
   max-width: 450px;
@@ -57,27 +57,40 @@
   transform: 0.3 ease;
 }
 
+.off_screen_menu li {
+  margin: 1rem 0;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.off_screen_menu a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Link color */
+  font-size: 2rem;
+}
+
 .off_screen_menu.active {
   right: 0;
 }
 
 .ham_menu {
   height: 50px;
-  width: 50px;
+  width: 40px;
   margin-left: auto;
   position: relative;
+  z-index: 1000;
+  cursor: pointer;
 }
 
 .ham_menu span {
   height: 5px;
   width: 100%;
-  background-color: rgb(34, 37, 49);
+  background-color: black;
   border-radius: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3 ease;
+  transition: all 0.3 ease;
 }
 
 .ham_menu span:nth-child(1) {
