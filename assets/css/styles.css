@@ -1,6 +1,6 @@
 /*
   Author Name: Noah Hamblen
-  File Name: index.html
+  File Name: styles.css
   Date: 1/18/25
   CSS made with a mobile-first approach (tablet and desktop views at the bottom)
 */
@@ -39,127 +39,65 @@
   width: 5em;
 }
 
-/* Hamburger styling */
-
-.checkbox {
-  display: none;
-}
-
-.button {
-  position: relative;
-  background-color: white;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 2vh;
-  right: 1vw;
-  z-index: 2000;
-  text-align: center;
-  cursor: pointer;
-}
-
-.background {
+/* Hamburger and menu styling */
+.off_screen_menu {
+  background-color: rgb(34, 37, 49);
   height: 100vh;
-  width: 0.5rem;
-  position: fixed;
-  top: 2vh;
-  right: -1.5vw;
-  background-color: white;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.nav {
-  height: 60vh;
+  width: 100%;
+  max-width: 450px;
   position: fixed;
   top: 0;
-  transition: all 0.8s;
-  opacity: 0;
-  width: 0;
-  right: -60vw;
-}
-
-.list {
-  position: absolute;
-  top: 40%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  list-style: none;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-size: 3rem;
+  transform: 0.3 ease;
+}
+
+.off_screen_menu.active {
+  right: 0;
+}
+
+.ham_menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham_menu span {
+  height: 5px;
   width: 100%;
-}
-
-.link:link,
-.link:visited {
-  display: inline-block;
-  font-size: 1.4em;
-  font-weight: 300;
-  padding: 1rem 0rem;
-  color: black;
-  text-decoration: none;
-  background-size: 220%;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-
-/* Hamburger Functionality */
-.checkbox:checked ~ .background {
-  transform: scale(50);
-}
-.checkbox:checked ~ .nav {
-  opacity: 1;
-  width: 38%;
-  right: 4em;
-}
-
-/* styling hamb ICON */
-.icon {
+  background-color: rgb(34, 37, 49);
+  border-radius: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.3 ease;
 }
 
-.icon,
-.icon::before,
-.icon::after {
-  width: 2rem;
-  height: 2px;
-  background-color: black;
-  display: inline-block;
+.ham_menu span:nth-child(1) {
+  top: 25%;
 }
 
-.icon::before,
-.icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
+.ham_menu span:nth-child(3) {
+  top: 75%;
 }
 
-.icon::before {
-  top: -0.8rem;
-}
-.icon::after {
-  top: 0.8rem;
+.ham_menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.button:hover icon:before {
-  top: -1rem;
-}
-.button:hover icon::after {
-  top: 1rem;
+.ham_menu.active span:nth-child(2) {
+  opacity: 0;
 }
 
-.checkbox:checked + .button .icon {
-  background-color: transparent;
-}
-
-.checkbox:checked + .button .icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-.checkbox:checked + .button .icon::after {
-  top: 0;
-  transform: rotate(-135deg);
+.ham_menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
