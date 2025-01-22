@@ -11,6 +11,16 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  font-size: 2rem;
+}
+a:visited {
+  color: black;
 }
 
 /* Header styling */
@@ -59,7 +69,7 @@
   align-items: center;
   text-align: center;
   font-size: 3rem;
-  transform: 0.3 ease;
+  transition: 0.3 ease;
 }
 
 nav {
@@ -67,17 +77,6 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.off_screen_menu li {
-  margin: 1rem 0;
-  list-style-type: none; /* Remove bullet points */
-}
-
-.off_screen_menu a {
-  text-decoration: none; /* Remove underline */
-  color: black; /* Link color */
-  font-size: 2rem;
 }
 
 .off_screen_menu.active {
@@ -105,7 +104,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.3 ease;
+  transition: 0.3 ease;
 }
 
 .ham_menu span:nth-child(1) {
