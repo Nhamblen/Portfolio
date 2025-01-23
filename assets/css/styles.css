@@ -203,5 +203,34 @@ nav {
 #resume {
   justify-content: center;
   width: 100%;
-  height: 560px;
+  height: 570px;
+  padding-top: 1em;
+}
+
+/* Resume iframe styling (resume.html) */
+#resume_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) {
+  /* Resume iframe styling (resume.html) */
+  #resume {
+    padding-top: 1.5em;
+    width: 80%;
+    height: 800px;
+  }
+}
+
+/* Styles for desktops and larger devices */
+@media (min-width: 1024px) {
+  /* Resume iframe styling (resume.html) */
+  #resume {
+    padding-top: 2em;
+    justify-content: center;
+    width: 60%;
+    height: 1410px;
+  }
 }
