@@ -36,4 +36,4 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 
-**Updated**: 1/19/25 - Added new project and enhanced README layout.
+**Updated**: 1/22/25 - Removed work in progress projects (to be added back later).
