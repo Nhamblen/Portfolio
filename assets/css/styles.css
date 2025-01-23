@@ -148,3 +148,52 @@ nav {
   display: block; /* Show overlay when menu is active */
   pointer-events: auto; /* Allows interaction with menu */
 }
+
+/* Projects and grid styling (index.html) */
+.projects {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project_item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project_preview {
+  border: 1px solid #ccc;
+}
+
+.project_item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project_item h3 {
+  margin: 1rem 0;
+}
+
+.project_item a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #072b4b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 1rem;
+}

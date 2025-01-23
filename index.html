@@ -63,18 +63,33 @@
 
 
   <body>
-    <!-- Main content of the page-->
+    <!-- Main content of the page -->
     <main>
+      <!-- Dark overlay when hamburger menu is active -->
       <div class="overlay"></div>
-      <!-- Links to different project pages-->
-      <div id="projects">
-        <ul>
-          <li><a href="projects/makis_corner/index.html">Maki's Corner</a></li>
-          <li><a href="projects/rock_paper_scissors/index.html">Rock Paper Scissors</a></li>
-          <li><a href="projects/hamblen_design/index.html">Hamblen Design</a></li>
-          <li><a href="projects/entertainment_list/hamblen_lists.pyw">Entertainment List</a></li>
-        </ul>
-      </div>
+
+      <!-- Links and descriptions of projects -->
+      <section class="projects">
+        <h2>My Projects</h2>
+        <div class="projects_grid">
+
+          <div class="project_item">
+            <img class="project_preview" src="assets/img/maki_preview.JPG" alt="Project 1">
+            <h3>Maki's Corner</h3>
+            <p>A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean
+              and engaging design.</p>
+            <a href="projects/makis_corner/index.html">View Project</a>
+          </div>
+
+          <div class="project_item">
+            <img class="project_preview" src="assets/img/rock_preview.JPG" alt="Project 2">
+            <h3>Rock Paper Scissors</h3>
+            <p>A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.</p>
+            <a href="projects/rock_paper_scissors/index.html">View Project</a>
+          </div>
+
+        </div>
+      </section>
     </main>
   </body>
 
