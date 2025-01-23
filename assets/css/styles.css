@@ -207,8 +207,8 @@ nav {
   padding-top: 1em;
 }
 
-/* Resume iframe styling (resume.html) */
 #resume_container {
+  /* Center resume in container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +220,7 @@ nav {
   #resume {
     padding-top: 1.5em;
     width: 80%;
-    height: 800px;
+    height: 880px;
   }
 }
 
