@@ -24,6 +24,13 @@ a:visited {
   color: black;
 }
 
+#about_img {
+  width: 30%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header styling */
 #header_box {
   display: flex;
