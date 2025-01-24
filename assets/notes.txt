@@ -4,6 +4,7 @@ link the files together
 finish portfolio
 add linkedin, github, and resume
 buttons that detail the technology used
+make pages go to proper path (portfolio/about) instead of (portfolio/about.html)
 
 Maki's Corner
 -------------
