@@ -1,22 +1,21 @@
 ALL
 ---
 update comments
-ids and classes changed to underscores
 
 Portfolio
 ---------
-link the files together
-finish portfolio
-add linkedin, github, and resume
+add linkedin, github, and resume (to a footer ?)
 buttons that detail the technology used
 add box shadows
-canva logo
+canva logo (new one?)
 bigger project grid items
 adjust tablet and desktop views
+add favicons
 
 Rock Paper Scissors
 --------------------
 win screen/animation when you win or lose
+add favicons
 
 Maki's Corner
 -------------

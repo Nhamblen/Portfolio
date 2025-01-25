@@ -28,7 +28,7 @@ a:visited {
 #header_box {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
   top: 0;
   z-index: 5000;
@@ -52,7 +52,8 @@ a:visited {
 
 #nh_logo {
   height: auto;
-  width: 3em;
+  width: 2em;
+  margin: 0.2em 0.5em 0 0.5em;
 }
 
 /* Hamburger, nav, and menu styling */
@@ -96,6 +97,7 @@ nav {
   z-index: 10000;
   cursor: pointer;
   left: 0;
+  margin-right: 0.5em;
 }
 
 .ham_menu span {
