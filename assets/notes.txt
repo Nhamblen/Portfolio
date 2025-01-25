@@ -4,7 +4,11 @@ link the files together
 finish portfolio
 add linkedin, github, and resume
 buttons that detail the technology used
-make pages go to proper path (portfolio/about) instead of (portfolio/about.html)
+configure live server to work with new html pagel inks
+
+Rock Paper Scissors
+--------------------
+smaller back button
 
 Maki's Corner
 -------------

@@ -25,10 +25,11 @@ a:visited {
 }
 
 #about_img {
-  width: 30%;
+  width: 80%;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  display: block; /* Make image a block-level element */
+  margin: 0 auto; /* Center image horizontally */
+  padding-top: 2em;
 }
 
 /* Header styling */
