@@ -189,7 +189,7 @@ nav {
   margin: 1rem 0;
 }
 
-.project_item a {
+.project_item .button {
   display: inline-block;
   padding: 0.5rem 1rem;
   background-color: #072b4b;
@@ -218,6 +218,7 @@ nav {
 #about_box p {
   padding: 1em;
   font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 /* Resume iframe styling (resume.html) */
