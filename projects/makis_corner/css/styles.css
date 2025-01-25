@@ -100,7 +100,11 @@ header {
 }
 
 a:visited {
-  color: inherit;
+  color: black;
+}
+
+a:link {
+  color: black;
 }
 
 li a {
@@ -609,11 +613,11 @@ nav ul li::before {
   }
 
   a:visited {
-    color: inherit;
+    color: black;
   }
 
   a:link {
-    color: inherit;
+    color: black;
   }
 
   #desktop_nav ul li a:hover {
@@ -846,11 +850,11 @@ nav ul li::before {
   }
 
   a:visited {
-    color: inherit;
+    color: black;
   }
 
   a:link {
-    color: inherit;
+    color: black;
   }
 
   #desktop_nav ul li a:hover {
