@@ -76,7 +76,7 @@ p {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  position: fixed;
+  position: relative;
   bottom: 0;
   z-index: 5000;
   border-top: 3px solid #faa18b;
