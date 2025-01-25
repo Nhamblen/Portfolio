@@ -87,6 +87,11 @@ p {
 #footer_box a {
   color: white;
   font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#footer_box a:hover {
+  color: #faa18b;
 }
 
 /* Hamburger, nav, and menu styling */
@@ -112,6 +117,10 @@ p {
 
 .off_screen_menu a {
   color: white;
+}
+
+.off_screen_menu a:hover {
+  color: #faa18b;
 }
 
 nav {
