@@ -2,7 +2,6 @@ ALL
 ---
 update comments
 ids and classes changed to underscores
-configure live server to work with new html pagel inks
 
 Portfolio
 ---------
@@ -13,10 +12,10 @@ buttons that detail the technology used
 add box shadows
 canva logo
 bigger project grid items
+adjust tablet and desktop views
 
 Rock Paper Scissors
 --------------------
-smaller back button
 win screen/animation when you win or lose
 
 Maki's Corner
