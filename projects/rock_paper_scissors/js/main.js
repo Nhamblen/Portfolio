@@ -1,76 +1,76 @@
 // two variables to track wins and losses
-let userScore = 0;
-let computerScore = 0;
+let user_score = 0;
+let computer_score = 0;
 // two variables to track rounds played and the max rounds
-let roundsPlayed = 0;
-const totalRounds = 5;
+let rounds_played = 0;
+const total_rounds = 5;
 // set the score text at the start of loading the page
 document.getElementById("score").textContent = "User: 0 | Computer: 0";
 
 // get a random choice between rock paper or scissors with a function
-function getComputerChoice() {
-  const computerChoice = ["rock", "paper", "scissors"];
-  let randomChoice = Math.floor(Math.random() * computerChoice.length);
-  return computerChoice[randomChoice];
+function get_computer_choice() {
+  const computer_choice = ["rock", "paper", "scissors"];
+  let random_choice = Math.floor(Math.random() * computer_choice.length);
+  return computer_choice[random_choice];
 }
 
 // take user and computer choices as arguments and pass them through a function that plays a round, increments the score, and announces a winner
-function playRound(userChoice, computerChoice) {
-  roundsPlayed++; // increment the rounds played
+function play_round(user_choice, computer_choice) {
+  rounds_played++; // increment the rounds played
 
-  let resultMessage; // variable to show message of round win or loss
+  let result_message; // variable to show message of round win or loss
 
   // includes logic of the game whether its a win, loss, or tie
-  if (userChoice === computerChoice) {
-    resultMessage = `It's a tie! ${capitalize(userChoice)} ties ${capitalize(
-      computerChoice
+  if (user_choice === computer_choice) {
+    result_message = `It's a tie! ${capitalize(user_choice)} ties ${capitalize(
+      computer_choice
     )}`;
   } else if (
-    (userChoice === "rock" && computerChoice === "scissors") ||
-    (userChoice === "paper" && computerChoice === "rock") ||
-    (userChoice === "scissors" && computerChoice === "paper")
+    (user_choice === "rock" && computer_choice === "scissors") ||
+    (user_choice === "paper" && computer_choice === "rock") ||
+    (user_choice === "scissors" && computer_choice === "paper")
   ) {
-    resultMessage = `You win! ${capitalize(userChoice)} beats ${capitalize(
-      computerChoice
+    result_message = `You win! ${capitalize(user_choice)} beats ${capitalize(
+      computer_choice
     )}`;
-    userScore += 1;
+    user_score += 1;
   } else {
-    resultMessage = `You lose! ${capitalize(computerChoice)} beats ${capitalize(
-      userChoice
-    )}`;
-    computerScore += 1;
+    result_message = `You lose! ${capitalize(
+      computer_choice
+    )} beats ${capitalize(user_choice)}`;
+    computer_score += 1;
   }
 
   // update result and score on the page
-  document.getElementById("result").textContent = resultMessage;
+  document.getElementById("result").textContent = result_message;
   document.getElementById(
     "score"
-  ).textContent = `User: ${userScore} | Computer: ${computerScore}`;
+  ).textContent = `User: ${user_score} | Computer: ${computer_score}`;
 
   // determine the animation to apply based on the result
-  let userImg = document.getElementById(`${userChoice}Img`);
-  let computerImg = document.getElementById(`${computerChoice}Img`);
+  let userImg = document.getElementById(`${user_choice}_img`);
+  let computerImg = document.getElementById(`${computer_choice}_img`);
 
   // remove previous animations
-  userImg.classList.remove("animateCrush", "animateCover", "animateCut");
-  computerImg.classList.remove("animateCrush", "animateCover", "animateCut");
+  userImg.classList.remove("animate_crush", "animate_cover", "animate_cut");
+  computerImg.classList.remove("animate_crush", "animate_cover", "animate_cut");
 
   // apply animation classes and sounds if you win
-  if (resultMessage.includes("win")) {
-    if (userChoice === "rock" && computerChoice === "scissors") {
-      userImg.classList.add("animateCrush");
-      playSound("rock");
-    } else if (userChoice === "paper" && computerChoice === "rock") {
-      userImg.classList.add("animateCover");
-      playSound("paper");
-    } else if (userChoice === "scissors" && computerChoice === "paper") {
-      userImg.classList.add("animateCut");
-      playSound("scissors");
+  if (result_message.includes("win")) {
+    if (user_choice === "rock" && computer_choice === "scissors") {
+      userImg.classList.add("animate_crush");
+      play_sound("rock");
+    } else if (user_choice === "paper" && computer_choice === "rock") {
+      userImg.classList.add("animate_cover");
+      play_sound("paper");
+    } else if (user_choice === "scissors" && computer_choice === "paper") {
+      userImg.classList.add("animate_cut");
+      play_sound("scissors");
     }
   }
 
-  if (checkGameOver()) {
-    displayResults();
+  if (check_game_over()) {
+    display_results();
   }
 }
 
@@ -80,64 +80,64 @@ function capitalize(str) {
 }
 
 // checks if the game should continue or not
-function checkGameOver() {
-  if (roundsPlayed >= totalRounds) {
+function check_game_over() {
+  if (rounds_played >= total_rounds) {
     return true; // game over
   }
   return false; // game continues
 }
 
 // displays the final message
-function displayResults() {
-  let finalMessage;
+function display_results() {
+  let final_message;
 
-  if (userScore > computerScore) {
-    finalMessage = "YOU WIN THE GAME! 🎉";
-  } else if (userScore === computerScore) {
-    finalMessage = "You tied the game. 🤔";
+  if (user_score > computer_score) {
+    final_message = "YOU WIN THE GAME! 🎉";
+  } else if (user_score === computer_score) {
+    final_message = "You tied the game. 🤔";
   } else {
-    finalMessage = "You lose the game. 😭";
+    final_message = "You lose the game. 😭";
   }
 
   // update the final result message on the page
-  document.getElementById("result").textContent = finalMessage;
+  document.getElementById("result").textContent = final_message;
 }
 
 // takes the sound file and plays it with function
-function playSound(sound) {
+function play_sound(sound) {
   const audio = new Audio(`sounds/${sound}.wav`); // path to the sound file
   audio.play();
 }
 
 // resets the scores, rounds played, and text content on the page
-function resetGame() {
-  userScore = 0;
-  computerScore = 0;
-  roundsPlayed = 0;
+function reset_game() {
+  user_score = 0;
+  computer_score = 0;
+  rounds_played = 0;
   document.getElementById("result").textContent = "";
   document.getElementById("score").textContent = "User: 0 | Computer: 0";
 }
 
-// inputs rock as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
+// inputs rock as user_choice and plays a round with the HTML button if game is not over with check_game_over function
 document.getElementById("rock").addEventListener("click", () => {
-  if (!checkGameOver()) {
-    playRound("rock", getComputerChoice());
+  if (!check_game_over()) {
+    play_round("rock", get_computer_choice());
   }
 });
 
-// inputs paper as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
+// inputs paper as user_choice and plays a round with the HTML button if game is not over with check_game_over function
 document.getElementById("paper").addEventListener("click", () => {
-  if (!checkGameOver()) {
-    playRound("paper", getComputerChoice());
+  if (!check_game_over()) {
+    play_round("paper", get_computer_choice());
   }
 });
 
-// inputs scissors as userChoice and plays a round with the HTML button if game is not over with checkGameOver function
+// inputs scissors as user_choice and plays a round with the HTML button if game is not over with check_game_over function
 document.getElementById("scissors").addEventListener("click", () => {
-  if (!checkGameOver()) {
-    playRound("scissors", getComputerChoice());
+  if (!check_game_over()) {
+    play_round("scissors", get_computer_choice());
   }
 });
 
-// resets the game with the HTML button and resetGame function
-document.getElementById("reset").addEventListener("click", () => resetGame());
+// resets the game with the HTML button and reset_game function
+document.getElementById("reset").addEventListener("click", () => reset_game());
