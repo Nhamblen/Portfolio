@@ -1,18 +1,31 @@
+ALL
+---
+update comments
+ids and classes changed to underscores
+configure live server to work with new html pagel inks
+
 Portfolio
 ---------
 link the files together
 finish portfolio
 add linkedin, github, and resume
 buttons that detail the technology used
-configure live server to work with new html pagel inks
+add box shadows
+canva logo
+padding at bottom of about page
+bigger project grid items
+link projects to the project image previews
 
 Rock Paper Scissors
 --------------------
 smaller back button
+win screen/animation when you win or lose
 
 Maki's Corner
 -------------
 Fix link color (blue when unvisited) on mobile
+too much padding on makis corner hobbies page (mobile)
+fix no video thumbnail on mobile hobbies page
 
 Entertainment List
 ------------------
