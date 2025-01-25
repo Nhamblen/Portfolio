@@ -11,6 +11,7 @@ canva logo (new one?)
 bigger project grid items
 adjust tablet and desktop views
 add favicons
+make hamburger menu button turn #faa18b; on hover
 
 Rock Paper Scissors
 --------------------
