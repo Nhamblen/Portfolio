@@ -2,6 +2,12 @@
 
 Welcome to my portfolio! This repository showcases my web development projects and serves as a platform to explore my skills and creativity. Built with HTML, CSS, JavaScript, and more. Portfolio was made with a mobile-first design
 
+Brand Kit:
+
+Primary (header and footer): #1e242a
+Secondary (buttons and borders): #faa18b
+border-radius: 10px;
+
 ## 🚀 Live Demo
 
 Check out the live version of my portfolio: [noahhamblen.com](https://www.noahhamblen.com)
