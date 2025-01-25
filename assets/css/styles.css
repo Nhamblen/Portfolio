@@ -155,6 +155,7 @@ nav {
 .overlay.active {
   display: block; /* Show overlay when menu is active */
   pointer-events: auto; /* Allows interaction with menu */
+  z-index: 999;
 }
 
 /* Projects and grid styling (index.html) */
