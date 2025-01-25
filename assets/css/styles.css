@@ -266,6 +266,59 @@ nav {
   margin-bottom: 1em;
 }
 
+/* contact.html styles */
+.contact_container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact_container h2 {
+  padding-bottom: 1em;
+}
+
+.form_group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.submit_btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #faa18b;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #faa18b;
+  outline: none;
+}
+
 /* Resume iframe styling (resume.html) */
 #resume {
   justify-content: center;
