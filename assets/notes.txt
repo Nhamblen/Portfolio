@@ -19,8 +19,7 @@ add favicons
 
 Maki's Corner
 -------------
-Fix link color (blue when unvisited) on mobile
-too much padding on makis corner hobbies page (mobile)
+add more ways to break up big paragraphs (hobby page)
 fix no video thumbnail on mobile hobbies page
 
 Entertainment List
