@@ -24,20 +24,7 @@ a:visited {
   color: black;
 }
 
-#about_img {
-  width: 80%;
-  height: auto;
-  display: block; /* Make image a block-level element */
-  margin: 0 auto; /* Center image horizontally */
-  padding-top: 2em;
-}
-
-/* Header styling */
-header {
-  position: relative;
-  z-index: 5000; /* Higher than menu and overlay */
-}
-
+/* Header styles */
 #header_box {
   display: flex;
   width: 100%;
@@ -55,7 +42,7 @@ header {
 }
 
 #header_1 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 #header_2 {
@@ -145,7 +132,7 @@ nav {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* Opacity overlay styles */
+/* Dark overlay styles */
 .overlay {
   position: fixed;
   left: 0;
@@ -211,6 +198,26 @@ nav {
   border-radius: 5px;
   font-size: 1em;
   margin-top: 1rem;
+}
+
+/* about.html styles */
+#about_box img {
+  width: 80%;
+  height: auto;
+  display: block; /* Make image a block-level element */
+  margin: 0 auto; /* Center image horizontally */
+  padding-top: 2em;
+}
+
+#about_box h2 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+
+#about_box p {
+  padding: 1em;
+  font-size: 1.2em;
 }
 
 /* Resume iframe styling (resume.html) */
