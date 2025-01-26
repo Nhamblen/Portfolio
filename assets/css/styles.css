@@ -15,6 +15,20 @@
   text-decoration: none;
 }
 
+/* Make the entire page a flex container */
+html,
+body {
+  height: 100%;
+  margin: 0; /* Remove any margin from the body */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area (flex-grow allows it to expand to fill available space) */
+main {
+  flex-grow: 1;
+}
+
 /* Link styles */
 a {
   color: black;
@@ -48,6 +62,7 @@ p {
   border-bottom: 3px solid #faa18b;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
   background-color: #1e242a;
+  padding: 0.5em;
 }
 
 #header_1 {
@@ -68,7 +83,7 @@ p {
 #nh_logo {
   height: auto;
   width: 2em;
-  margin: 0.2em 0.5em 0 0.5em;
+  margin: 0.2em 0.5em 0 0.2em;
 }
 
 /* Footer styles */
@@ -81,7 +96,7 @@ p {
   z-index: 5000;
   border-top: 3px solid #faa18b;
   background-color: #1e242a;
-  padding: 0 1em 0 1em;
+  padding: 1em;
 }
 
 #footer_box a {
@@ -216,7 +231,7 @@ nav {
 }
 
 .project_item {
-  border: 2px solid #aaaaaa;
+  border: 3px solid #aaaaaa;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
@@ -338,7 +353,7 @@ textarea:focus {
 @media (min-width: 768px) {
   /* Resume iframe styling (resume.html) */
   #resume {
-    padding-top: 1.5em;
+    padding-top: 1.5em 0 1.5em 0;
     width: 80%;
     height: 880px;
   }
@@ -346,11 +361,89 @@ textarea:focus {
 
 /* Styles for desktops and larger devices */
 @media (min-width: 1024px) {
+  /* Font styles */
+  h2 {
+    font-size: 3em;
+  }
+
+  /* Header styles */
+  #header_box {
+    padding: 0 10em;
+  }
+
+  /* Footer styles */
+  #footer_box {
+    padding: 1em 20em;
+  }
+
+  /* about.html styles */
+  #about_box {
+    display: flex;
+    padding: 0 15em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about_box p {
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+  #about_box img {
+    width: 100%;
+    height: auto;
+    display: block; /* Make image a block-level element */
+    padding-top: 2em;
+  }
+
+  #mobile_about_h2 {
+    display: none;
+  }
+
+  #desktop_about_h2 {
+    display: block;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  /* Projects and grid styling (index.html) */
+  .project_item {
+    border: 3px solid #aaaaaa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .project_preview {
+    border: 2px solid #aaaaaa;
+  }
+
+  .project_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .project_item h3 {
+    margin: 1rem 0;
+  }
+
+  .project_item .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #faa18b;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-top: 1rem;
+  }
+
   /* Resume iframe styling (resume.html) */
   #resume {
-    padding-top: 2em;
+    padding: 2em 0 2em 0;
     justify-content: center;
     width: 60%;
-    height: 1410px;
+    height: 1440px;
   }
 }
