@@ -40,15 +40,15 @@ a:visited {
 
 /* font styles */
 h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /* Header styles */
@@ -254,12 +254,12 @@ nav {
 
 .project_item .button {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.6em 1.5em;
   background-color: #faa18b;
   text-decoration: none;
   border-radius: 15px;
-  font-size: 1em;
-  margin-top: 1rem;
+  font-size: 1.5em;
+  margin-top: 2em;
 }
 
 /* about.html styles */
@@ -273,7 +273,6 @@ nav {
 
 #about_box p {
   padding: 1em;
-  font-size: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -286,6 +285,7 @@ nav {
 .contact_container {
   max-width: 600px;
   margin: 50px auto;
+  margin-top: 7em;
   padding: 20px;
   background-color: #fff;
   border-radius: 15px;
@@ -365,7 +365,7 @@ textarea:focus {
 @media (min-width: 1024px) {
   /* Font styles */
   h2 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   h3 {
@@ -430,6 +430,15 @@ textarea:focus {
     gap: 50px;
   }
 
+  .project_item .button {
+    padding: 0.3em;
+    margin: 1em 5em;
+    font-size: 2em;
+  }
+  .projects h2 {
+    padding-bottom: 0.5em;
+  }
+
   /* Resume iframe styling (resume.html) */
   #resume {
     padding: 2em 0 2em 0;
@@ -442,5 +451,6 @@ textarea:focus {
   .contact_container {
     max-width: 1000px;
     padding: 6em;
+    margin-top: 5em;
   }
 }
