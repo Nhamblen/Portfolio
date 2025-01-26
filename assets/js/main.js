@@ -31,18 +31,12 @@ form.addEventListener("submit", function (event) {
   fetch(form.action, {
     method: "POST",
     body: new FormData(form),
-  })
-    .then((response) => {
-      if (response.ok) {
-        alert("Thank you for your message! I will get back to you soon.");
-        form.reset(); // Clear the form fields
-      } else {
-        alert(
-          "There was an issue sending your message. Please try again later."
-        );
-      }
-    })
-    .catch((error) => {
-      alert("There was an error. Please try again.");
-    });
+  }).then((response) => {
+    if (response.ok) {
+      alert("Thank you for your message! I will get back to you soon.");
+      form.reset(); // Clear the form fields
+    } else {
+      alert("There was an issue sending your message. Please try again later.");
+    }
+  });
 });
