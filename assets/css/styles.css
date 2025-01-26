@@ -80,11 +80,15 @@ p {
   align-items: center;
 }
 
-#nh_logo,
-#nh_logo_hover {
+#nh_logo {
   height: auto;
   width: 2em;
   margin: 0.2em 0.5em 0 0.2em;
+}
+
+#nh_logo:hover {
+  background-color: #faa18b;
+  border-radius: 20em;
 }
 
 /* Footer styles */
