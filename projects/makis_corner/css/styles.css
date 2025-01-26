@@ -296,7 +296,7 @@ nav ul li::before {
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 48rem) and (max-width: 64rem) {
   /* Pushes left and right of content in */
   header,
   main {
@@ -544,7 +544,7 @@ nav ul li::before {
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for desktop */
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 64rem) and (max-width: 125rem) {
   /* Pushes left and right of content in */
   header,
   main {
@@ -781,7 +781,7 @@ nav ul li::before {
 
 /* -------------------------------------------------------------------------------------------- */
 /* Media query for large desktops */
-@media (min-width: 2000px) {
+@media (min-width: 125rem) {
   /* Pushes left and right of content in */
   header,
   main {

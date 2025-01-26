@@ -498,7 +498,7 @@ textarea:focus {
 }
 
 /* Styles for tablets */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   /* Resume iframe styling (resume.html) */
   #resume {
     padding-top: 1.5em 0 1.5em 0;
@@ -513,7 +513,7 @@ textarea:focus {
 }
 
 /* Styles for desktops and larger devices */
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   /* Font styles */
   h2 {
     font-size: 4em;
