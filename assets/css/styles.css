@@ -67,7 +67,7 @@ p {
 
 #header_1 {
   display: flex;
-  align-items: center; /* Vertically centers items */
+  align-items: center;
 }
 
 #header_1 h1 {
@@ -84,29 +84,6 @@ p {
   height: auto;
   width: 2em;
   margin: 0.2em 0.5em 0 0.2em;
-  opacity: 1;
-}
-
-#nh_logo_hover {
-  height: auto;
-  width: 2em;
-  margin: 0.2em 0.5em 0 0.2em;
-  opacity: 0;
-  display: none;
-}
-
-#image_box:hover #nh_logo {
-  opacity: 0;
-  display: none;
-}
-
-#image_box:hover #nh_logo_hover {
-  display: block;
-  opacity: 1;
-}
-
-#image_box {
-  transition: opacity 0.3s ease;
 }
 
 /* Footer styles */
