@@ -50,6 +50,11 @@ h6 {
   font-family: "Merriweather", sans-serif;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-family: "Nunito", sans-serif;
+}
+
 /* Main content area (flex-grow allows it to expand to fill available space) */
 main {
   flex-grow: 1;

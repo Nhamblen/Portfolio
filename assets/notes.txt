@@ -6,10 +6,7 @@ remove px values in CSS and replace them with rem/em
 Portfolio
 ---------
 buttons that detail the technology used
-add box shadows
 canva logo (new one? and change favicon)
-adjust tablet view
-add animations to button hovers and box hovers
 
 Rock Paper Scissors
 --------------------
