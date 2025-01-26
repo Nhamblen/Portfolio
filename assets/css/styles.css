@@ -90,8 +90,8 @@ p {
   position: relative;
   top: 0;
   z-index: 5000;
-  border-bottom: 3px solid #faa18b;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  border-bottom: 0.1875rem solid #faa18b;
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
   background-color: #1e242a;
   padding: 0.5em;
 }
@@ -121,8 +121,10 @@ p {
 #nh_logo:hover {
   background-color: #faa18b;
   border-radius: 20em;
-  transform: translateY(-3px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  transform: translateY(
+    -0.1875rem
+  ); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 /* Footer styles */
@@ -133,7 +135,7 @@ p {
   position: relative;
   bottom: 0;
   z-index: 1000;
-  border-top: 3px solid #faa18b;
+  border-top: 0.1875rem solid #faa18b;
   background-color: #1e242a;
   padding: 1em;
 }
@@ -147,8 +149,10 @@ p {
 
 #footer_box a:hover {
   color: #faa18b;
-  transform: translateY(-3px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it */
+  transform: translateY(
+    -0.1875rem
+  ); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it */
 }
 
 /* Hamburger, nav, and menu styling */
@@ -156,10 +160,10 @@ p {
   background-color: #1e242a;
   height: 100vh;
   width: 100%;
-  max-width: 200px;
+  max-width: 12.5rem;
   position: fixed;
   top: 0;
-  right: -450px;
+  right: -28.125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +174,7 @@ p {
   justify-content: flex-start;
   padding-top: 2em;
   z-index: 1;
-  border-left: 3px solid #faa18b;
+  border-left: 0.1875rem solid #faa18b;
 }
 
 .off_screen_menu a {
@@ -180,8 +184,10 @@ p {
 
 .off_screen_menu a:hover {
   color: #faa18b;
-  transform: translateY(-3px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it */
+  transform: translateY(
+    -0.1875rem
+  ); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it */
 }
 
 nav {
@@ -197,8 +203,8 @@ nav {
 }
 
 .ham_menu {
-  height: 50px;
-  width: 40px;
+  height: 3.125rem;
+  width: 2.5rem;
   margin-left: auto;
   position: relative;
   z-index: 10000;
@@ -208,10 +214,10 @@ nav {
 }
 
 .ham_menu span {
-  height: 5px;
+  height: 0.3125rem;
   width: 100%;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -276,31 +282,31 @@ nav {
 
 .projects_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+  gap: 3.125rem;
 }
 
 .project_item {
-  border: 3px solid #aaaaaa;
+  border: 0.1875rem solid #aaaaaa;
   padding: 1rem;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .project_item:hover {
-  transform: translateY(-10px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 .project_preview {
-  border: 2px solid #aaaaaa;
+  border: 0.125rem solid #aaaaaa;
 }
 
 .project_item img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 
 .project_item h3 {
@@ -312,7 +318,7 @@ nav {
   padding: 0.6em 1.5em;
   background-color: #faa18b;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   font-size: 1.5em;
   margin-top: 2em;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
@@ -321,8 +327,8 @@ nav {
 .button:hover {
   background-color: #516877;
   color: white;
-  transform: translateY(-10px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 /* about.html styles */
@@ -331,7 +337,7 @@ nav {
   height: auto;
   display: block; /* Make image a block-level element */
   margin: 0 auto; /* Center image horizontally */
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   margin-top: 1em;
 }
 
@@ -347,13 +353,13 @@ nav {
 
 /* contact.html styles */
 .contact_container {
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 37.5rem;
+  margin: 3.125rem auto;
   margin-top: 7em;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 0.9375rem;
+  box-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.3);
 }
 
 .contact_container h2 {
@@ -362,21 +368,21 @@ nav {
 }
 
 .form_group {
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 label {
   display: block;
   font-size: 1.1em;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 15px;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.9375rem;
   font-size: 1em;
 }
 
@@ -386,10 +392,10 @@ textarea {
 
 button.submit_btn {
   width: 30%;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #faa18b;
   border: none;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   font-size: 1.2em;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
@@ -398,8 +404,8 @@ button.submit_btn {
 .submit_btn:hover {
   background-color: #516877;
   color: white;
-  transform: translateY(-10px); /* Makes the item pop out by moving it up */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 input:focus,
@@ -412,7 +418,7 @@ textarea:focus {
 #resume {
   justify-content: center;
   width: 100%;
-  height: 570px;
+  height: 35.625rem;
   padding-top: 1em;
 }
 
@@ -436,7 +442,7 @@ textarea:focus {
 /* Styling for the boxes container */
 .boxes {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 6.25rem 0;
   background: white;
   white-space: nowrap;
   position: relative;
@@ -446,7 +452,7 @@ textarea:focus {
 .boxes:after {
   position: absolute;
   top: 0;
-  width: 100px;
+  width: 6.25rem;
   height: 100%;
   content: "";
   z-index: 2;
@@ -471,13 +477,15 @@ textarea:focus {
 .boxes_slide {
   display: inline-flex; /* Use inline-flex to maintain layout */
   animation: slide 30s infinite linear; /* Adjust duration as needed */
-  width: calc((200px + 30px) * 10); /* (box width + margin) * number of boxes */
+  width: calc(
+    (12.5rem + 1.875rem) * 10
+  ); /* (box width + margin) * number of boxes */
 }
 
 .boxes_slide div {
-  width: 200px; /* Set a fixed width for each box */
-  margin: 0 30px;
-  height: 50px;
+  width: 12.5rem; /* Set a fixed width for each box */
+  margin: 0 1.875rem;
+  height: 3.125rem;
   background-color: #516877;
   display: flex;
   align-items: center;
@@ -485,7 +493,7 @@ textarea:focus {
   color: white;
   font-weight: bold;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   font-size: 1.1rem; /* Increase font size for better visibility */
 }
 
@@ -495,7 +503,7 @@ textarea:focus {
   #resume {
     padding-top: 1.5em 0 1.5em 0;
     width: 80%;
-    height: 880px;
+    height: 55rem;
   }
 
   /* about.html styles */
@@ -521,7 +529,7 @@ textarea:focus {
 
   /* Hamburger, nav, and menu styling */
   .off_screen_menu {
-    max-width: 250px;
+    max-width: 15.625rem;
   }
 
   /* Header styles */
@@ -541,7 +549,7 @@ textarea:focus {
   /* Carousel styles */
   .boxes:before,
   .boxes:after {
-    width: 250px; /* Set width of the gradient */
+    width: 15.625rem; /* Set width of the gradient */
   }
 
   /* about.html styles */
@@ -580,8 +588,8 @@ textarea:focus {
   }
 
   .projects_grid {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(31.25rem, 1fr));
+    gap: 3.125rem;
   }
 
   .project_item .button {
@@ -598,12 +606,12 @@ textarea:focus {
     padding: 2em 0 2em 0;
     justify-content: center;
     width: 60%;
-    height: 1440px;
+    height: 90rem;
   }
 
   /* contact.html styles */
   .contact_container {
-    max-width: 1000px;
+    max-width: 62.5rem;
     padding: 9em;
     margin-top: 5em;
   }

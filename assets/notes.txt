@@ -14,7 +14,7 @@ win screen/animation when you win or lose
 
 Maki's Corner
 -------------
-add more ways to break up big paragraphs (hobby page)
+
 
 Entertainment List
 ------------------
