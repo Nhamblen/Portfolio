@@ -80,7 +80,8 @@ p {
   align-items: center;
 }
 
-#nh_logo {
+#nh_logo,
+#nh_logo_hover {
   height: auto;
   width: 2em;
   margin: 0.2em 0.5em 0 0.2em;

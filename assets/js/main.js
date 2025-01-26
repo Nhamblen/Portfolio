@@ -2,7 +2,7 @@
 // File Name: main.js
 // Date: 1/18/25
 
-// Get the elements
+// Get the hamburger elements
 const hamburger_button = document.querySelector(".ham_menu"); // The hamburger button
 const menu = document.querySelector(".off_screen_menu"); // The hamburger menu
 const overlay = document.querySelector(".overlay"); // The overlay
@@ -22,6 +22,7 @@ overlay.addEventListener("click", () => {
   hamburger_button.classList.remove("active"); // Reset the hamburger animation
 });
 
+// JavaScript to block redirect and thank user for submitting form
 const form = document.getElementById("contact_form");
 
 form.addEventListener("submit", function (event) {
@@ -42,6 +43,7 @@ form.addEventListener("submit", function (event) {
         );
       }
     })
+    // Error occurs, but form is still sent so thank you message is added
     .catch((error) => {
       alert("Thank you for your message! I will get back to you soon.");
       form.reset(); // Clear the form fields
