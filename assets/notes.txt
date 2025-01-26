@@ -11,7 +11,6 @@ canva logo (new one? and change favicon)
 adjust tablet view
 add animations to button hovers and box hovers
 carousel?
-hover coral color on logo and hamburger icons
 
 Rock Paper Scissors
 --------------------

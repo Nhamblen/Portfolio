@@ -179,6 +179,10 @@ nav {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+.ham_menu:hover span {
+  background-color: #faa18b; /* Change color on hover */
+}
+
 .ham_menu span:nth-child(1) {
   top: 25%;
 }
@@ -366,6 +370,72 @@ textarea:focus {
   align-items: center;
 }
 
+/* Keyframes for sliding animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Styling for the boxes container */
+.boxes {
+  overflow: hidden;
+  padding: 100px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.boxes:before,
+.boxes:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+}
+
+.boxes:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.boxes:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.boxes:hover .boxes_slide {
+  animation-play-state: paused;
+}
+
+/* Updated width for the sliding container */
+.boxes_slide {
+  display: inline-flex; /* Use inline-flex to maintain layout */
+  animation: slide 30s infinite linear; /* Adjust duration as needed */
+  width: calc((200px + 30px) * 10); /* (box width + margin) * number of boxes */
+}
+
+.boxes_slide div {
+  width: 200px; /* Set a fixed width for each box */
+  margin: 0 30px;
+  height: 50px;
+  background-color: #516877;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.2rem; /* Increase font size for better visibility */
+}
+
 /* Styles for tablets */
 @media (min-width: 768px) {
   /* Resume iframe styling (resume.html) */
@@ -401,9 +471,19 @@ textarea:focus {
     padding: 0 10em;
   }
 
+  #header_1 h1 {
+    padding-left: 0.5em;
+  }
+
   /* Footer styles */
   #footer_box {
     padding: 1em 20em;
+  }
+
+  /* Carousel styles */
+  .boxes:before,
+  .boxes:after {
+    width: 250px; /* Set width of the gradient */
   }
 
   /* about.html styles */
