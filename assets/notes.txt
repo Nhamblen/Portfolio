@@ -4,14 +4,11 @@ update comments
 
 Portfolio
 ---------
-add linkedin, github, and resume (to a footer ?)
 buttons that detail the technology used
 add box shadows
 canva logo (new one?)
-bigger project grid items
 adjust tablet and desktop views
 add favicons
-make hamburger menu button turn #faa18b; on hover
 
 Rock Paper Scissors
 --------------------

@@ -93,7 +93,7 @@ p {
   justify-content: space-between;
   position: relative;
   bottom: 0;
-  z-index: 5000;
+  z-index: 1000;
   border-top: 3px solid #faa18b;
   background-color: #1e242a;
   padding: 1em;
@@ -126,8 +126,9 @@ p {
   font-size: 3rem;
   transition: right 0.4s ease;
   justify-content: flex-start;
-  padding-top: 1.5em;
+  padding-top: 2em;
   z-index: 1;
+  border-left: 3px solid #faa18b;
 }
 
 .off_screen_menu a {
@@ -293,6 +294,7 @@ nav {
 
 .contact_container h2 {
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .form_group {
@@ -372,6 +374,11 @@ textarea:focus {
 
   p {
     font-size: 2em;
+  }
+
+  /* Hamburger, nav, and menu styling */
+  .off_screen_menu {
+    max-width: 250px;
   }
 
   /* Header styles */
