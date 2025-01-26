@@ -233,7 +233,7 @@ nav {
 .project_item {
   border: 3px solid #aaaaaa;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -366,6 +366,14 @@ textarea:focus {
     font-size: 3em;
   }
 
+  h3 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
   /* Header styles */
   #header_box {
     padding: 0 10em;
@@ -409,34 +417,14 @@ textarea:focus {
 
   /* Projects and grid styling (index.html) */
   .project_item {
-    border: 3px solid #aaaaaa;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
-  .project_preview {
-    border: 2px solid #aaaaaa;
-  }
-
-  .project_item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .project_item h3 {
-    margin: 1rem 0;
-  }
-
-  .project_item .button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #faa18b;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1em;
-    margin-top: 1rem;
+  .projects_grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 50px;
   }
 
   /* Resume iframe styling (resume.html) */
