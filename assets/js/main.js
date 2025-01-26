@@ -25,18 +25,11 @@ overlay.addEventListener("click", () => {
 const form = document.getElementById("contact_form");
 
 form.addEventListener("submit", function (event) {
-  event.preventDefault();
+  event.preventDefault(); // Prevent form from linking to url
 
-  // Send form data using Fetch API
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-  }).then((response) => {
-    if (response.ok) {
-      alert("Thank you for your message! I will get back to you soon.");
-      form.reset(); // Clear the form fields
-    } else {
-      alert("There was an issue sending your message. Please try again later.");
-    }
-  });
+  // Display thank you message
+  alert("Thank you for your message! I will get back to you soon.");
+
+  // Reset the form
+  form.reset();
 });

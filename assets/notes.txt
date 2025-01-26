@@ -9,6 +9,8 @@ add box shadows
 canva logo (new one?)
 adjust tablet and desktop views
 add favicons
+add animations to button hovers and box hovers
+add color to button hovers
 
 Rock Paper Scissors
 --------------------
