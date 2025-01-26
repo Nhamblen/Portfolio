@@ -15,6 +15,18 @@
   text-decoration: none;
 }
 
+/* Merriweather Font */
+@font-face {
+  font-family: "Merriweather";
+  src: url("../font/Merriweather.ttf") format("truetype");
+}
+
+/* Nunito Font */
+@font-face {
+  font-family: "Nunito";
+  src: url("../font/Nunito.ttf") format("truetype");
+}
+
 /* Make the entire page a flex container */
 html,
 body {
@@ -22,6 +34,20 @@ body {
   margin: 0; /* Remove any margin from the body */
   display: flex;
   flex-direction: column;
+}
+
+/* Font Styles */
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", sans-serif;
 }
 
 /* Main content area (flex-grow allows it to expand to fill available space) */
