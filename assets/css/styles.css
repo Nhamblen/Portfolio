@@ -510,6 +510,11 @@ textarea:focus {
   #about_box img {
     width: 50%;
   }
+
+  /* contact.html styles */
+  .contact_container {
+    max-width: 42.5rem;
+  }
 }
 
 /* Styles for desktops and larger devices */
