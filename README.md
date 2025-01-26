@@ -2,13 +2,6 @@
 
 Welcome to my portfolio! This repository showcases my web development projects and serves as a platform to explore my skills and creativity. Built with HTML, CSS, JavaScript, and more. Portfolio was made with a mobile-first design
 
-Brand Kit:
-
-Primary (header and footer): #1e242a
-Secondary (buttons and borders): #faa18b
-Secondary (sections and hover): #516877
-border-radius: 15px;
-
 ## 🚀 Live Demo
 
 Check out the live version of my portfolio: [noahhamblen.com](https://www.noahhamblen.com)
@@ -44,3 +37,12 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 
 **Updated**: 1/22/25 - Removed work in progress projects (to be added back later).
+
+**Brand Kit**:
+
+Primary (header and footer): #1e242a
+Secondary (buttons and borders): #faa18b
+Secondary (sections and hover): #516877
+border-radius: 15px;
+Heading Font: Merriweather
+Body Font: Nunito
