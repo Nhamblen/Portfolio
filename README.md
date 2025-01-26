@@ -6,7 +6,8 @@ Brand Kit:
 
 Primary (header and footer): #1e242a
 Secondary (buttons and borders): #faa18b
-border-radius: 10px;
+Secondary (sections and hover): #516877
+border-radius: 15px;
 
 ## 🚀 Live Demo
 
