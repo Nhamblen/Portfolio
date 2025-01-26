@@ -271,15 +271,15 @@ nav {
   padding-top: 2em;
 }
 
-#about_box h2 {
-  text-align: center;
-  padding-top: 1em;
-}
-
 #about_box p {
   padding: 1em;
   font-size: 1.2em;
   margin-bottom: 1em;
+}
+
+#about_h2 {
+  text-align: center;
+  padding-top: 1em;
 }
 
 /* contact.html styles */
@@ -412,14 +412,10 @@ textarea:focus {
     padding-top: 2em;
   }
 
-  #mobile_about_h2 {
-    display: none;
-  }
-
-  #desktop_about_h2 {
+  #about_h2 {
     display: block;
     text-align: center;
-    padding-top: 2em;
+    padding: 1.5em 0 0.5em 0;
   }
 
   /* Projects and grid styling (index.html) */
