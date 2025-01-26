@@ -7,10 +7,11 @@ Portfolio
 buttons that detail the technology used
 add box shadows
 canva logo (new one?)
-adjust tablet and desktop views
+adjust tablet view
 add favicons
 add animations to button hovers and box hovers
-add color to button hovers
+remove px values in CSS and replace them
+carousel?
 
 Rock Paper Scissors
 --------------------
