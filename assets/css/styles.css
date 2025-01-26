@@ -134,10 +134,12 @@ p {
   color: white;
   font-size: 1.5em;
   text-decoration: underline;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
 }
 
 #footer_box a:hover {
   color: #faa18b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 /* Hamburger, nav, and menu styling */
@@ -164,10 +166,12 @@ p {
 
 .off_screen_menu a {
   color: white;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
 }
 
 .off_screen_menu a:hover {
   color: #faa18b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 nav {
@@ -301,11 +305,14 @@ nav {
   border-radius: 15px;
   font-size: 1.5em;
   margin-top: 2em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .button:hover {
   background-color: #516877;
   color: white;
+  transform: translateY(-10px); /* Makes the item pop out by moving it up */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 /* about.html styles */
@@ -315,6 +322,7 @@ nav {
   display: block; /* Make image a block-level element */
   margin: 0 auto; /* Center image horizontally */
   padding-top: 2em;
+  border-radius: 15px;
 }
 
 #about_box p {
@@ -367,18 +375,21 @@ textarea {
 }
 
 button.submit_btn {
-  width: 100%;
+  width: 30%;
   padding: 10px;
   background-color: #faa18b;
   border: none;
   border-radius: 15px;
   font-size: 1.2em;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .submit_btn:hover {
   background-color: #516877;
   color: white;
+  transform: translateY(-10px); /* Makes the item pop out by moving it up */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 input:focus,
@@ -577,7 +588,7 @@ textarea:focus {
   /* contact.html styles */
   .contact_container {
     max-width: 1000px;
-    padding: 6em;
+    padding: 9em;
     margin-top: 5em;
   }
 }
