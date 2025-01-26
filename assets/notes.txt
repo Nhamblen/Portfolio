@@ -1,6 +1,7 @@
 ALL
 ---
 update comments
+remove px values in CSS and replace them with rem/em
 
 Portfolio
 ---------
@@ -10,7 +11,6 @@ canva logo (new one?)
 adjust tablet view
 add favicons
 add animations to button hovers and box hovers
-remove px values in CSS and replace them
 carousel?
 
 Rock Paper Scissors
