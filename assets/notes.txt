@@ -12,16 +12,15 @@ adjust tablet view
 add favicons
 add animations to button hovers and box hovers
 carousel?
+hover coral color on logo and hamburger icons
 
 Rock Paper Scissors
 --------------------
 win screen/animation when you win or lose
-add favicons
 
 Maki's Corner
 -------------
 add more ways to break up big paragraphs (hobby page)
-fix no video thumbnail on mobile hobbies page
 
 Entertainment List
 ------------------
