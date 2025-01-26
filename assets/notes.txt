@@ -7,9 +7,8 @@ Portfolio
 ---------
 buttons that detail the technology used
 add box shadows
-canva logo (new one?)
+canva logo (new one? and change favicon)
 adjust tablet view
-add favicons
 add animations to button hovers and box hovers
 carousel?
 hover coral color on logo and hamburger icons
