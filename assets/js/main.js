@@ -44,5 +44,6 @@ form.addEventListener("submit", function (event) {
     })
     .catch((error) => {
       alert("Thank you for your message! I will get back to you soon.");
+      form.reset(); // Clear the form fields
     });
 });

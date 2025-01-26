@@ -262,6 +262,11 @@ nav {
   margin-top: 2em;
 }
 
+.button:hover {
+  background-color: #1e242a;
+  color: white;
+}
+
 /* about.html styles */
 #about_box img {
   width: 80%;
@@ -328,6 +333,11 @@ button.submit_btn {
   border-radius: 15px;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: #1e242a;
+  color: white;
 }
 
 input:focus,
