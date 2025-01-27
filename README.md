@@ -26,7 +26,7 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 
 ## 💻 Technologies Used
 
-- **Frontend**: HTML5, CSS, JavaScript
+- **Frontend**: HTML, CSS, JavaScript
 - **Backend**:
 - **Hosting**: GitHub Pages, Squarespace
 
