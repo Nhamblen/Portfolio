@@ -11,6 +11,7 @@ custom message when you submit contact form (javascript?)
 
 Rock Paper Scissors
 --------------------
+lower volume of win, lose, and tie sounds
 win screen/animation when you win or lose the game
 battle animation for winning or losing rounds
 

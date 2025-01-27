@@ -93,13 +93,13 @@ function display_results() {
 
   if (user_score > computer_score) {
     final_message = "YOU WIN THE GAME! 🎉";
-    play_sound("win_game");
+    play_sound("win_game", 0.3);
   } else if (user_score === computer_score) {
     final_message = "You tied the game. 🤔";
-    play_sound("tie_game");
+    play_sound("tie_game", 0.3);
   } else {
     final_message = "You lose the game. 😭";
-    play_sound("lose_game");
+    play_sound("lose_game", 0.3);
   }
 
   // update the final result message on the page
@@ -107,8 +107,9 @@ function display_results() {
 }
 
 // takes the sound file and plays it with function
-function play_sound(sound) {
+function play_sound(sound, volume = 1.0) {
   const audio = new Audio(`sounds/${sound}.wav`); // path to the sound file
+  audio.volume = volume; // Set the volume (default is 1.0, max volume)
   audio.play();
 }
 
