@@ -93,10 +93,13 @@ function display_results() {
 
   if (user_score > computer_score) {
     final_message = "YOU WIN THE GAME! 🎉";
+    play_sound("win_game");
   } else if (user_score === computer_score) {
     final_message = "You tied the game. 🤔";
+    play_sound("tie_game");
   } else {
     final_message = "You lose the game. 😭";
+    play_sound("lose_game");
   }
 
   // update the final result message on the page

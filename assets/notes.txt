@@ -1,7 +1,6 @@
 ALL
 ---
 update comments
-remove px values in CSS and replace them with rem/em
 
 Portfolio
 ---------
