@@ -11,7 +11,6 @@ some personality elements (youtube music in footer or favorite game cards)
 mobile favicon
 fix weird padding under footer in mobile
 custom message when you submit contact form (javascript?)
-remove some padding from the top of contact page on mobile
 
 Rock Paper Scissors
 --------------------
