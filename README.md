@@ -40,9 +40,9 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 
 **Brand Kit**:
 
-Primary (header and footer): #1e242a
-Secondary (buttons and borders): #faa18b
-Secondary (sections and hover): #516877
-border-radius: 15px;
-Heading Font: Merriweather
-Body Font: Nunito
+- Primary (header and footer): #1e242a
+- Secondary (buttons and borders): #faa18b
+- Secondary (sections and hover): #516877
+- border-radius: 15px;
+- Heading Font: Merriweather
+- Body Font: Nunito
