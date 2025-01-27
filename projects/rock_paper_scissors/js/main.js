@@ -94,6 +94,7 @@ function display_results() {
   if (user_score > computer_score) {
     final_message = "YOU WIN THE GAME! 🎉";
     play_sound("win_game", 0.3);
+    trigger_confetti(); // Call the confetti function
   } else if (user_score === computer_score) {
     final_message = "You tied the game. 🤔";
     play_sound("tie_game", 0.3);
@@ -104,6 +105,32 @@ function display_results() {
 
   // update the final result message on the page
   document.getElementById("result").textContent = final_message;
+}
+
+function trigger_confetti() {
+  const duration = 3 * 1000; // 3 seconds
+  const animationEnd = Date.now() + duration;
+  const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
+
+  const interval = setInterval(() => {
+    const timeLeft = animationEnd - Date.now();
+
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      return;
+    }
+
+    const particleCount = 300 * (timeLeft / duration);
+    confetti(
+      Object.assign({}, defaults, {
+        particleCount,
+        origin: {
+          x: Math.random(),
+          y: Math.random() - 0.2, // Confetti slightly above screen center
+        },
+      })
+    );
+  }, 250);
 }
 
 // takes the sound file and plays it with function
