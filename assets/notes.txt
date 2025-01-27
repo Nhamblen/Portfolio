@@ -7,10 +7,16 @@ Portfolio
 ---------
 buttons that detail the technology used
 canva logo (new one? and change favicon)
+some personality elements (youtube music in footer or favorite game cards)
+mobile favicon
+fix weird padding under footer in mobile
+custom message when you submit contact form (javascript?)
+remove some padding from the top of contact page on mobile
 
 Rock Paper Scissors
 --------------------
-win screen/animation when you win or lose
+win screen/animation when you win or lose the game
+battle animation for winning or losing rounds
 
 Maki's Corner
 -------------
