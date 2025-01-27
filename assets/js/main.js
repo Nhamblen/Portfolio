@@ -22,9 +22,12 @@ overlay.addEventListener("click", () => {
   hamburger_button.classList.remove("active"); // Reset the hamburger animation
 });
 
-// JavaScript to block redirect and thank user for submitting form
+// Get modal and form elements
+const modal = document.getElementById("thank_you_modal");
+const closeModalBtn = document.getElementById("close_modal");
 const form = document.getElementById("contact_form");
 
+// Show the modal after form submission
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent default form submission
 
@@ -35,17 +38,28 @@ form.addEventListener("submit", function (event) {
   })
     .then((response) => {
       if (response.ok) {
-        alert("Thank you for your message! I will get back to you soon.");
-        form.reset(); // Clear the form fields
+        modal.style.display = "flex"; // Show modal
+        form.reset(); // Clear form fields
       } else {
         alert(
           "There was an issue sending your message. Please try again later."
         );
       }
     })
-    // Error occurs, but form is still sent so thank you message is added
-    .catch((error) => {
-      alert("Thank you for your message! I will get back to you soon.");
-      form.reset(); // Clear the form fields
+    .catch(() => {
+      modal.style.display = "flex"; // Show modal even if there’s an error
+      form.reset();
     });
+});
+
+// Close the modal when the close button is clicked
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none"; // Hide modal
+});
+
+// Close the modal if the user clicks outside the modal content
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
 });
