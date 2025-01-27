@@ -333,7 +333,7 @@ nav {
 
 /* about.html styles */
 #about_box img {
-  width: 80%;
+  width: 20em;
   height: auto;
   display: block; /* Make image a block-level element */
   margin: 0 auto; /* Center image horizontally */
@@ -508,7 +508,7 @@ textarea:focus {
 
   /* about.html styles */
   #about_box img {
-    width: 50%;
+    width: 25em;
   }
 
   /* contact.html styles */
@@ -560,7 +560,7 @@ textarea:focus {
   /* about.html styles */
   #about_box {
     display: flex;
-    padding: 0 15em;
+    padding: 0 15em 0 15em;
     justify-content: center;
     align-items: center;
   }
@@ -572,7 +572,7 @@ textarea:focus {
   }
 
   #about_box img {
-    width: 100%;
+    width: 25em;
     height: auto;
     display: block; /* Make image a block-level element */
     margin-top: 0em;
