@@ -9,7 +9,6 @@ buttons that detail the technology used
 canva logo (new one? and change favicon)
 some personality elements (youtube music in footer or favorite game cards)
 mobile favicon
-fix weird padding under footer in mobile
 custom message when you submit contact form (javascript?)
 
 Rock Paper Scissors
