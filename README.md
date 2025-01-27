@@ -27,7 +27,7 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 ## 💻 Technologies Used
 
 - **Frontend**: HTML5, CSS, JavaScript
-- **Backend**: Python
+- **Backend**:
 - **Hosting**: GitHub Pages, Squarespace
 
 ## 📞 Contact
@@ -36,7 +36,7 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 
-**Updated**: 1/22/25 - Removed work in progress projects (to be added back later).
+**Updated**: 1/22/25 - Remove Python from technologies (to be added later).
 
 **Brand Kit**:
 
