@@ -13,6 +13,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Merriweather Font */
@@ -62,11 +63,11 @@ main {
 
 /* Link styles */
 a {
-  color: black;
+  color: white;
   font-size: 2rem;
 }
 a:visited {
-  color: black;
+  color: white;
 }
 
 /* font styles */
@@ -90,9 +91,9 @@ p {
   position: relative;
   top: 0;
   z-index: 5000;
-  border-bottom: 0.1875rem solid #faa18b;
+  border-bottom: 0.1875rem solid #472a2c;
   box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-  background-color: #1e242a;
+  background-color: #222222;
   padding: 0.5em;
 }
 
@@ -119,7 +120,8 @@ p {
 }
 
 #nh_logo:hover {
-  background-color: #faa18b;
+  background-color: #472a2c;
+  border: 2px solid gold;
   border-radius: 20em;
   transform: translateY(
     -0.1875rem
@@ -135,8 +137,8 @@ p {
   position: relative;
   bottom: 0;
   z-index: 1000;
-  border-top: 0.1875rem solid #faa18b;
-  background-color: #1e242a;
+  border-top: 0.1875rem solid #472a2c;
+  background-color: #222222;
   padding: 1em;
 }
 
@@ -148,7 +150,7 @@ p {
 }
 
 #footer_box a:hover {
-  color: #faa18b;
+  color: gold;
   transform: translateY(
     -0.1875rem
   ); /* Makes the item pop out by moving it up */
@@ -157,7 +159,7 @@ p {
 
 /* Hamburger, nav, and menu styling */
 .off_screen_menu {
-  background-color: #1e242a;
+  background-color: #222222;
   height: 100vh;
   width: 100%;
   max-width: 12.5rem;
@@ -174,7 +176,7 @@ p {
   justify-content: flex-start;
   padding-top: 2em;
   z-index: 1;
-  border-left: 0.1875rem solid #faa18b;
+  border-left: 0.1875rem solid #472a2c;
 }
 
 .off_screen_menu a {
@@ -183,7 +185,7 @@ p {
 }
 
 .off_screen_menu a:hover {
-  color: #faa18b;
+  color: gold;
   transform: translateY(
     -0.1875rem
   ); /* Makes the item pop out by moving it up */
@@ -217,6 +219,7 @@ nav {
   height: 0.3125rem;
   width: 100%;
   background-color: white;
+  border: 1px solid #472a2c;
   border-radius: 0.9375rem;
   position: absolute;
   top: 50%;
@@ -226,7 +229,7 @@ nav {
 }
 
 .ham_menu:hover span {
-  background-color: #faa18b; /* Change color on hover */
+  background-color: gold; /* Change color on hover */
 }
 
 .ham_menu span:nth-child(1) {
@@ -316,7 +319,7 @@ nav {
 .project_item .button {
   display: inline-block;
   padding: 0.6em 1.5em;
-  background-color: #faa18b;
+  background-color: #472a2c;
   text-decoration: none;
   border-radius: 0.9375rem;
   font-size: 1.5em;
@@ -325,8 +328,9 @@ nav {
 }
 
 .button:hover {
-  background-color: #516877;
-  color: white;
+  background-color: #472a2c;
+  color: gold;
+  border: 2px solid gold;
   transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
@@ -393,7 +397,8 @@ textarea {
 button.submit_btn {
   width: 30%;
   padding: 0.625rem;
-  background-color: #faa18b;
+  background-color: #472a2c;
+  color: white;
   border: none;
   border-radius: 0.9375rem;
   font-size: 1.2em;
@@ -402,15 +407,16 @@ button.submit_btn {
 }
 
 .submit_btn:hover {
-  background-color: #516877;
-  color: white;
+  background-color: #472a2c;
+  color: gold;
+  border: 2px solid gold;
   transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 input:focus,
 textarea:focus {
-  border-color: #faa18b;
+  border-color: #472a2c;
   outline: none;
 }
 
@@ -441,19 +447,19 @@ textarea:focus {
 .modal_content h3 {
   font-size: 2em;
   font-family: "Merriweather", serif;
-  color: #1e242a;
+  color: #222222;
   margin-bottom: 1rem;
 }
 
 .modal_content p {
   font-size: 1.2em;
   font-family: "Nunito", sans-serif;
-  color: #516877;
+  color: #472a2c;
   margin-bottom: 2rem;
 }
 
 .close_btn {
-  background-color: #faa18b;
+  background-color: #472a2c;
   border: none;
   padding: 0.8em 1.5em;
   font-size: 1em;
@@ -465,7 +471,9 @@ textarea:focus {
 }
 
 .close_btn:hover {
-  background-color: #516877;
+  background-color: #472a2c;
+  color: gold;
+  border: 2px solid gold;
   transform: translateY(-0.1875rem); /* Slight hover effect */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4);
 }
@@ -542,7 +550,7 @@ textarea:focus {
   width: 12.5rem; /* Set a fixed width for each box */
   margin: 0 1.875rem;
   height: 3.125rem;
-  background-color: #516877;
+  background-color: #472a2c;
   display: flex;
   align-items: center;
   justify-content: center;
