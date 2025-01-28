@@ -7,7 +7,6 @@ Portfolio
 buttons that detail the technology used
 canva logo (new one? and change favicon)
 some personality elements (youtube music in footer or favorite game cards)
-fix hover links and carousel color (black on outside burgundy on inside)
 hamburger menu cant use links when zoomed in
 
 graphic design project (after degree)

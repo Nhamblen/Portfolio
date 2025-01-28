@@ -306,7 +306,7 @@ nav {
   border: 0.125rem solid #aaaaaa;
 }
 
-.project_item img {
+.project_item .project_preview {
   width: 100%;
   height: auto;
   border-radius: 0.9375rem;
@@ -325,6 +325,30 @@ nav {
   font-size: 1.5em;
   margin-top: 2em;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.stack_box {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.stack {
+  display: flex;
+  width: 5.5rem;
+  height: 2rem;
+  background-color: #222222;
+  color: white;
+  border-radius: 0.9375rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack_img {
+  width: 1.25rem; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 0.3125rem; /* Add space between the image and text */
+  vertical-align: middle; /* Align the image with the text */
 }
 
 .button:hover {
