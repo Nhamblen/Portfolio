@@ -121,7 +121,7 @@ p {
 
 #nh_logo:hover {
   background-color: #472a2c;
-  border: 2px solid gold;
+  border: 0.125rem solid gold;
   border-radius: 20em;
   transform: translateY(
     -0.1875rem
@@ -219,7 +219,7 @@ nav {
   height: 0.3125rem;
   width: 100%;
   background-color: white;
-  border: 1px solid #472a2c;
+  border: 0.0625rem solid #472a2c;
   border-radius: 0.9375rem;
   position: absolute;
   top: 50%;
@@ -330,7 +330,7 @@ nav {
 .button:hover {
   background-color: #472a2c;
   color: gold;
-  border: 2px solid gold;
+  border: 0.125rem solid gold;
   transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
@@ -409,7 +409,7 @@ button.submit_btn {
 .submit_btn:hover {
   background-color: #472a2c;
   color: gold;
-  border: 2px solid gold;
+  border: 0.125rem solid gold;
   transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
@@ -473,7 +473,7 @@ textarea:focus {
 .close_btn:hover {
   background-color: #472a2c;
   color: gold;
-  border: 2px solid gold;
+  border: 0.125rem solid gold;
   transform: translateY(-0.1875rem); /* Slight hover effect */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4);
 }
@@ -531,10 +531,6 @@ textarea:focus {
 .boxes:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.boxes:hover .boxes_slide {
-  animation-play-state: paused;
 }
 
 /* Updated width for the sliding container */
@@ -619,6 +615,10 @@ textarea:focus {
   .boxes:before,
   .boxes:after {
     width: 15.625rem; /* Set width of the gradient */
+  }
+
+  .boxes:hover .boxes_slide {
+    animation-play-state: paused; /* Pause carousel on hover (desktop only) */
   }
 
   /* about.html styles */
