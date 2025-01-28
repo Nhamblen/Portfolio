@@ -337,6 +337,7 @@ nav {
   display: flex;
   min-width: 6rem;
   max-width: 8rem;
+  font-size: 0.8125rem;
   flex: 1 1 auto;
   height: 2rem;
   background-color: #222222;
@@ -695,6 +696,11 @@ textarea:focus {
   }
   .projects h2 {
     padding-bottom: 0.5em;
+  }
+
+  .stack {
+    min-width: 6rem;
+    max-width: 8rem;
   }
 
   /* Resume iframe styling (resume.html) */
