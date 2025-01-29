@@ -116,13 +116,13 @@ p {
   height: auto;
   width: 2em;
   margin: 0.2em 0.5em 0 0.2em;
+  background-color: #472a2c;
+  border-radius: 20em;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #nh_logo:hover {
-  background-color: #472a2c;
   border: 0.125rem solid gold;
-  border-radius: 20em;
   transform: translateY(
     -0.1875rem
   ); /* Makes the item pop out by moving it up */
