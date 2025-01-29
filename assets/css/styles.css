@@ -574,7 +574,7 @@ textarea:focus {
   width: 12.5rem; /* Set a fixed width for each box */
   margin: 0 1.875rem;
   height: 3.125rem;
-  background-color: #472a2c;
+  background-color: #222222;
   display: flex;
   align-items: center;
   justify-content: center;
