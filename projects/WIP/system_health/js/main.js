@@ -3,5 +3,5 @@ function updateStats() {
   document.getElementById("ram").innerText = Math.floor(Math.random() * 100);
   document.getElementById("disk").innerText = Math.floor(Math.random() * 100);
 }
-setInterval(updateStats, 3000); // Update every 3 seconds
+setInterval(updateStats, 1000); // Update every 1 second
 updateStats();
