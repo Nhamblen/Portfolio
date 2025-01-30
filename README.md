@@ -1,6 +1,7 @@
 # Noah's Portfolio
 
-Welcome to my portfolio! This repository showcases my web development projects and serves as a platform to explore my skills and creativity. Built with HTML, CSS, JavaScript, and more. Portfolio was made with a mobile-first design
+Welcome to my portfolio! This repository showcases my web development projects and serves as a platform to explore my skills and creativity. Throughout these projects I've expanded my skills of flexbox, grid, and JavaScript.
+Built with HTML, CSS, JavaScript, and more. Portfolio was made with a mobile-first design.
 
 ## 🚀 Live Demo
 
