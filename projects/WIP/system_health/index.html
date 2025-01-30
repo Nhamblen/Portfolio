@@ -25,12 +25,24 @@
 <body>
   <!-- Includes logo, title, nav, styling, and any other images/information at the top -->
   <header>
-
+    <h1>System Health Dashboard</h1>
   </header>
 
 
   <!-- Main content of the page -->
   <main>
+    <div id="stats">
+      <p>CPU Usage: <span id="cpu">Loading...</span>%</p>
+      <p>RAM Usage: <span id="ram">Loading...</span>%</p>
+      <p>Disk Space: <span id="disk">Loading...</span>%</p>
+    </div>
+
+    <div id="chatbot">
+      <h2>Tech Support Chatbot</h2>
+      <div id="chatbox"></div>
+      <input type="text" id="userInput" placeholder="Ask me a question...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
   </main>
 
   <!-- Footer -->
