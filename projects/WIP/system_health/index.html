@@ -31,17 +31,19 @@
 
   <!-- Main content of the page -->
   <main>
-    <div id="stats">
-      <p>CPU Usage: <span id="cpu">Loading...</span>%</p>
-      <p>RAM Usage: <span id="ram">Loading...</span>%</p>
-      <p>Disk Space: <span id="disk">Loading...</span>%</p>
-    </div>
+    <div id="main_box">
+      <div id="stats">
+        <p>CPU Usage: <span id="cpu">Loading...</span>%</p>
+        <p>RAM Usage: <span id="ram">Loading...</span>%</p>
+        <p>Disk Space: <span id="disk">Loading...</span>%</p>
+      </div>
 
-    <div id="chatbot">
-      <h2>Tech Support Chatbot</h2>
-      <div id="chatbox"></div>
-      <input type="text" id="userInput" placeholder="Ask me a question...">
-      <button onclick="sendMessage()">Send</button>
+      <div id="chat_bot">
+        <h2>Tech Support Chatbot</h2>
+        <div id="chat_box"></div>
+        <input type="text" id="user_input" placeholder="Ask me a question...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
     </div>
   </main>
 
