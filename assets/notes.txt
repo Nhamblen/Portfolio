@@ -15,8 +15,7 @@ tech shop webiste project (or website sales?)
 more personal website / less professional
 wordpress site?
 more web dev technologies
-IT projects?
-system health with tech help chat bot
+system health with tech help chat bot (build it as electron app and a home page to download the app)
 
 Rock Paper Scissors
 --------------------
@@ -25,6 +24,10 @@ battle animation for winning or losing rounds
 Maki's Corner
 -------------
 
+System Health
+--------------
+html, css, js, electron, electron packager, node
+link it 
 
 Entertainment List
 ------------------

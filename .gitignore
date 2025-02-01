@@ -1,0 +1,15 @@
+# Ignore electron exe and packaged app files
+*.exe
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore output directories (e.g., dist, build)
+dist/
+
+# Ignore log files
+*.log
+
+# Ignore other OS-generated files (e.g., DS_Store on Mac)
+.DS_Store"node_modules/" 
+"node_modules/" 

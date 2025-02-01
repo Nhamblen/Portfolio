@@ -1,6 +1,6 @@
 <!--
   Author Name: Noah Hamblen
-  File Name: index.html
+  File Name: template.html
   Date: 1/29/25
 -->
 
@@ -30,33 +30,12 @@
 
   <!-- Main content of the page -->
   <main>
-    <div id="main_box">
-      <div id="stats">
-        <p>CPU Usage: <span id="cpu">Loading...</span>%</p>
-        <p>RAM Usage: <span id="ram">Loading...</span>%</p>
-        <p>Disk Space: <span id="disk">Loading...</span>%</p>
-      </div>
-
-      <div id="chat_bot">
-        <h2>Tech Support Chatbot</h2>
-        <div id="chat_box"></div>
-        <input type="text" id="user_input" placeholder="Ask me a question...">
-        <button onclick="sendMessage()">Send</button>
-      </div>
-    </div>
   </main>
 
   <!-- Footer -->
   <footer>
   </footer>
 
-  <script>
-    const { ipcRenderer } = require('electron');
-    setInterval(() => {
-      document.getElementById('cpu').innerText = Math.floor(Math.random() * 100) + '%';
-      document.getElementById('ram').innerText = Math.floor(Math.random() * 16) + 'GB / 16GB';
-    }, 2000);
-  </script>
 </body>
 
 </html>

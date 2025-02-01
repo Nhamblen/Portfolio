@@ -1,7 +1,18 @@
-function updateStats() {
-  document.getElementById("cpu").innerText = Math.floor(Math.random() * 100);
-  document.getElementById("ram").innerText = Math.floor(Math.random() * 100);
-  document.getElementById("disk").innerText = Math.floor(Math.random() * 100);
+const { app, BrowserWindow } = require("electron");
+const path = require("path");
+
+function createWindow() {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+    },
+  });
+  win.loadFile("index.html");
 }
-setInterval(updateStats, 1000); // Update every 1 second
-updateStats();
+
+app.whenReady().then(createWindow);
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});
