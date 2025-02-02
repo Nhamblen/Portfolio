@@ -1,18 +1,58 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+const si = require("systeminformation");
+
+let mainWindow;
 
 function createWindow() {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+  mainWindow = new BrowserWindow({
+    width: 1500,
+    height: 1000,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false, // Allow `require` in renderer.js
     },
   });
-  win.loadFile("index.html");
+
+  mainWindow.loadFile("index.html");
+
+  mainWindow.on("closed", () => {
+    mainWindow = null;
+  });
 }
 
 app.whenReady().then(createWindow);
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
+});
+
+// Handle system health requests from frontend
+ipcMain.handle("get-system-info", async () => {
+  const cpu = await si.cpu();
+  const mem = await si.mem();
+  const disk = await si.fsSize();
+  const osInfo = await si.osInfo();
+
+  return {
+    cpu: {
+      manufacturer: cpu.manufacturer,
+      brand: cpu.brand,
+      speed: cpu.speed + " GHz",
+      cores: cpu.cores,
+    },
+    memory: {
+      free: (mem.free / 1024 / 1024).toFixed(2) + " MB",
+      total: (mem.total / 1024 / 1024).toFixed(2) + " MB",
+      used: ((mem.used / mem.total) * 100).toFixed(2) + "%",
+    },
+    disk: {
+      total: (disk[0].size / 1024 / 1024 / 1024).toFixed(2) + " GB",
+      used: ((disk[0].used / disk[0].size) * 100).toFixed(2) + "%",
+    },
+    os: {
+      platform: osInfo.platform,
+      distro: osInfo.distro,
+      release: osInfo.release,
+    },
+  };
 });

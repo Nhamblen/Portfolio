@@ -32,9 +32,9 @@
   <main>
     <div id="main_box">
       <div id="stats">
-        <p>CPU Usage: <span id="cpu">Loading...</span>%</p>
-        <p>RAM Usage: <span id="ram">Loading...</span>%</p>
-        <p>Disk Space: <span id="disk">Loading...</span>%</p>
+        <p>CPU Usage: <span id="cpu">Loading...</span></p>
+        <p>RAM Usage: <span id="ram">Loading...</span></p>
+        <p>Disk Space: <span id="disk">Loading...</span></p>
       </div>
 
       <div id="chat_bot">
@@ -50,13 +50,7 @@
   <footer>
   </footer>
 
-  <script>
-    const { ipcRenderer } = require('electron');
-    setInterval(() => {
-      document.getElementById('cpu').innerText = Math.floor(Math.random() * 100) + '%';
-      document.getElementById('ram').innerText = Math.floor(Math.random() * 16) + 'GB / 16GB';
-    }, 2000);
-  </script>
+  <script src="js/renderer.js"></script>
 </body>
 
 </html>
