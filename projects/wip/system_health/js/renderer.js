@@ -11,20 +11,30 @@ async function updateSystemStats() {
   try {
     const systemInfo = await ipcRenderer.invoke("get-system-info");
 
-    // Format CPU information
+    // CPU Info
     document.getElementById("cpu").innerHTML = `
       <strong>CPU:</strong> ${systemInfo.cpu.brand} (${systemInfo.cpu.speed} GHz, ${systemInfo.cpu.cores} cores)
     `;
 
-    // Format RAM information with conversion to GB
+    // RAM Info (make sure it's formatted properly)
     document.getElementById("ram").innerHTML = `
-      <strong>RAM:</strong> ${systemInfo.memory.used} / ${systemInfo.memory.total} (${systemInfo.memory.percentUsed}%)
+      <strong>RAM:</strong> ${systemInfo.memory.used} / ${systemInfo.memory.total} (${systemInfo.memory.usedPercentage}%)
     `;
 
-    // Format Disk information with conversion to GB
-    document.getElementById("disk").innerHTML = `
-      <strong>Disk:</strong> ${systemInfo.disk.used} / ${systemInfo.disk.total} (${systemInfo.disk.percentUsed}%)
-    `;
+    // Disk Info
+    const diskListElement = document.getElementById("disk-list");
+    diskListElement.innerHTML = "";
+
+    systemInfo.disks.forEach((disk) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${disk.name}</td>
+        <td>${disk.type}</td>
+        <td>${disk.size}</td>
+        <td>${disk.usedPercentage}</td>
+      `;
+      diskListElement.appendChild(row);
+    });
 
     // OS Info
     document.getElementById("os").innerHTML = `

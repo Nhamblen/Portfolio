@@ -36,30 +36,45 @@ app.on("window-all-closed", () => {
 ipcMain.handle("get-system-info", async () => {
   const cpu = await si.cpu();
   const mem = await si.mem();
-  const disk = await si.fsSize();
   const osInfo = await si.osInfo();
+  const diskLayout = await si.diskLayout();
+  const diskUsage = await si.fsSize();
+
+  // Calculate disk usage percentages
+  const disks = diskLayout.map((disk) => {
+    const diskStats = diskUsage.find((d) => d.mount === disk.mount);
+    const usedPercentage = diskStats
+      ? ((diskStats.used / diskStats.size) * 100).toFixed(2)
+      : 0;
+
+    return {
+      name: disk.device,
+      type: disk.type,
+      size: (disk.size / 1024 / 1024 / 1024).toFixed(2) + " GB",
+      mount: disk.mount,
+      usedPercentage: usedPercentage + "%", // Display used percentage
+    };
+  });
 
   return {
     cpu: {
+      manufacturer: cpu.manufacturer,
       brand: cpu.brand,
-      speed: cpu.speed.toFixed(2), // Round to 2 decimals
+      speed: cpu.speed + " GHz",
       cores: cpu.cores,
     },
     memory: {
-      used: (mem.used / 1024 / 1024 / 1024).toFixed(2) + " GB",
-      total: (mem.total / 1024 / 1024 / 1024).toFixed(2) + " GB",
-      percentUsed: ((mem.used / mem.total) * 100).toFixed(2) + "%",
-    },
-    disk: {
-      used: (disk[0].used / 1024 / 1024 / 1024).toFixed(2) + " GB",
-      total: (disk[0].size / 1024 / 1024 / 1024).toFixed(2) + " GB",
-      percentUsed: ((disk[0].used / disk[0].size) * 100).toFixed(2) + "%",
+      free: (mem.free / 1024 / 1024).toFixed(2) + " MB",
+      total: (mem.total / 1024 / 1024).toFixed(2) + " MB",
+      used: ((mem.used / mem.total) * 100).toFixed(2) + "%",
+      usedPercentage: ((mem.used / mem.total) * 100).toFixed(2), // Added this to track RAM usage percentage
     },
     os: {
       platform: osInfo.platform,
       distro: osInfo.distro,
       release: osInfo.release,
     },
+    disks: disks,
   };
 });
 
