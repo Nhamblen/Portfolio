@@ -41,24 +41,24 @@ ipcMain.handle("get-system-info", async () => {
 
   return {
     cpu: {
-      manufacturer: cpu.manufacturer,
       brand: cpu.brand,
-      speed: cpu.speed + " GHz",
+      speed: cpu.speed.toFixed(2), // Round to 2 decimals
       cores: cpu.cores,
     },
     memory: {
-      free: (mem.free / 1024 / 1024).toFixed(2) + " MB",
-      total: (mem.total / 1024 / 1024).toFixed(2) + " MB",
-      used: ((mem.used / mem.total) * 100).toFixed(2) + "%",
+      used: (mem.used / 1024 / 1024 / 1024).toFixed(2) + " GB",
+      total: (mem.total / 1024 / 1024 / 1024).toFixed(2) + " GB",
+      percentUsed: ((mem.used / mem.total) * 100).toFixed(2) + "%",
     },
     disk: {
+      used: (disk[0].used / 1024 / 1024 / 1024).toFixed(2) + " GB",
       total: (disk[0].size / 1024 / 1024 / 1024).toFixed(2) + " GB",
-      used: ((disk[0].used / disk[0].size) * 100).toFixed(2) + "%",
+      percentUsed: ((disk[0].used / disk[0].size) * 100).toFixed(2) + "%",
     },
     os: {
       platform: osInfo.platform,
       distro: osInfo.distro,
       release: osInfo.release,
-    },
+    }
   };
 });

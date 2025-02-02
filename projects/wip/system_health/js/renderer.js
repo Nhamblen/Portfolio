@@ -8,17 +8,35 @@ const { ipcRenderer } = require("electron");
 
 // Function to update system health data
 async function updateSystemStats() {
-  const systemInfo = await ipcRenderer.invoke("get-system-info");
+  try {
+    const systemInfo = await ipcRenderer.invoke("get-system-info");
 
-  document.getElementById(
-    "cpu"
-  ).innerText = `${systemInfo.cpu.speed} (${systemInfo.cpu.cores} cores)`;
-  document.getElementById(
-    "ram"
-  ).innerText = `${systemInfo.memory.used} used / ${systemInfo.memory.total}`;
-  document.getElementById(
-    "disk"
-  ).innerText = `${systemInfo.disk.used} used / ${systemInfo.disk.total}`;
+    // Format CPU information
+    document.getElementById("cpu").innerHTML = `
+      <strong>CPU:</strong> ${systemInfo.cpu.brand} (${systemInfo.cpu.speed} GHz, ${systemInfo.cpu.cores} cores)
+    `;
+
+    // Format RAM information with conversion to GB
+    document.getElementById("ram").innerHTML = `
+      <strong>RAM:</strong> ${systemInfo.memory.used} / ${systemInfo.memory.total} (${systemInfo.memory.percentUsed}%) used
+    `;
+
+    // Format Disk information with conversion to GB
+    document.getElementById("disk").innerHTML = `
+      <strong>Disk:</strong> ${systemInfo.disk.used} / ${systemInfo.disk.total} (${systemInfo.disk.percentUsed}%) used
+    `;
+
+    // OS Info
+    document.getElementById("os").innerHTML = `
+      <strong>OS:</strong> ${systemInfo.os.platform} - ${systemInfo.os.distro} (${systemInfo.os.release})
+    `;
+  } catch (error) {
+    console.error("Error fetching system stats:", error);
+    document.getElementById("cpu").innerText = "Error loading CPU data";
+    document.getElementById("ram").innerText = "Error loading RAM data";
+    document.getElementById("disk").innerText = "Error loading Disk data";
+    document.getElementById("os").innerText = "Error loading OS data";
+  }
 }
 
 // Update system stats every 2 seconds
