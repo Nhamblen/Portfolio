@@ -20,19 +20,20 @@ body {
   text-align: center;
 }
 
+/* desktop app */
+/* General styles */
 header {
   padding: 1rem 0;
+}
+/* System stats styles */
+#stats {
+  margin-bottom: 1.25rem;
 }
 
 #main_box {
   display: flex;
   justify-content: space-between;
   margin: 5rem 20rem;
-}
-
-/* System stats styles */
-#stats {
-  margin-bottom: 1.25rem;
 }
 
 /* Chatbot styles */
@@ -60,4 +61,45 @@ button {
   border: none;
   padding: 0.3125rem 0.625rem;
   cursor: pointer;
+}
+
+/* download.html page */
+/* Styles for hero image */
+#hero_img {
+  position: relative;
+  background-image: url("../img/hero.png"); /* Replace with your hero image path */
+  background-size: cover;
+  background-position: center;
+  height: 70vh; /* viewport height */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hero_img h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#hero_img p,
+h1 {
+  padding-left: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* shadow to the text */
+  max-width: 25%;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+#hero_img p {
+  padding: 1.5rem 2rem;
+}
+
+#hero_img button {
+  margin-left: 2rem;
+}
+
+header {
+  padding: 0;
 }
