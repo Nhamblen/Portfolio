@@ -27,7 +27,10 @@ Maki's Corner
 System Health
 --------------
 html, css, js, electron, electron packager, node
-link it 
+link it
+css to style and layout
+fix disk percentage not displaying properly
+build out download page and allow downloading of the app when finished
 
 Entertainment List
 ------------------

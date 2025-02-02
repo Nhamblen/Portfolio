@@ -38,14 +38,19 @@ ipcMain.handle("get-system-info", async () => {
   const mem = await si.mem();
   const osInfo = await si.osInfo();
   const diskLayout = await si.diskLayout();
-  const diskUsage = await si.fsSize();
+  const diskUsage = await si.fsSize(); // This retrieves the disk usage data
+
+  console.log("Disk Layout:", diskLayout);
+  console.log("Disk Usage:", diskUsage);
 
   // Calculate disk usage percentages
   const disks = diskLayout.map((disk) => {
     const diskStats = diskUsage.find((d) => d.mount === disk.mount);
-    const usedPercentage = diskStats
-      ? ((diskStats.used / diskStats.size) * 100).toFixed(2)
-      : 0;
+
+    let usedPercentage = 0;
+    if (diskStats && diskStats.used && diskStats.size) {
+      usedPercentage = ((diskStats.used / diskStats.size) * 100).toFixed(2);
+    }
 
     return {
       name: disk.device,
