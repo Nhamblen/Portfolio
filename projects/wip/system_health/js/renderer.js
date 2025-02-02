@@ -18,12 +18,12 @@ async function updateSystemStats() {
 
     // Format RAM information with conversion to GB
     document.getElementById("ram").innerHTML = `
-      <strong>RAM:</strong> ${systemInfo.memory.used} / ${systemInfo.memory.total} (${systemInfo.memory.percentUsed}%) used
+      <strong>RAM:</strong> ${systemInfo.memory.used} / ${systemInfo.memory.total} (${systemInfo.memory.percentUsed}%)
     `;
 
     // Format Disk information with conversion to GB
     document.getElementById("disk").innerHTML = `
-      <strong>Disk:</strong> ${systemInfo.disk.used} / ${systemInfo.disk.total} (${systemInfo.disk.percentUsed}%) used
+      <strong>Disk:</strong> ${systemInfo.disk.used} / ${systemInfo.disk.total} (${systemInfo.disk.percentUsed}%)
     `;
 
     // OS Info
@@ -76,3 +76,35 @@ function sendMessage() {
   // Clear input field
   document.getElementById("user_input").value = "";
 }
+
+// Function to fetch and display running processes
+async function updateProcessList() {
+  const processes = await ipcRenderer.invoke("get-processes");
+
+  const processListElement = document.getElementById("process-list");
+  processListElement.innerHTML = "";
+
+  processes.forEach((proc) => {
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>${proc.name}</td>
+      <td>${proc.cpu}</td>
+      <td>${proc.memory}</td>
+      <td><button onclick="killProcess(${proc.pid})">End Task</button></td>
+    `;
+
+    processListElement.appendChild(row);
+  });
+}
+
+// Function to kill a process
+async function killProcess(pid) {
+  const response = await ipcRenderer.invoke("kill-process", pid);
+  alert(response.message);
+  updateProcessList();
+}
+
+// Update process list every 5 seconds
+setInterval(updateProcessList, 5000);
+updateProcessList();

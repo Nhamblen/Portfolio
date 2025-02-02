@@ -59,6 +59,32 @@ ipcMain.handle("get-system-info", async () => {
       platform: osInfo.platform,
       distro: osInfo.distro,
       release: osInfo.release,
-    }
+    },
   };
+});
+
+// Fetch system processes
+ipcMain.handle("get-processes", async () => {
+  const processData = await si.processes();
+
+  return processData.list.map((proc) => ({
+    name: proc.name,
+    pid: proc.pid,
+    cpu: proc.cpu.toFixed(2) + "%",
+    memory: (proc.memRss / 1024 / 1024).toFixed(2) + " MB",
+    running: proc.running,
+  }));
+});
+
+// Kill a process
+ipcMain.handle("kill-process", async (event, pid) => {
+  try {
+    process.kill(pid);
+    return { success: true, message: `Process ${pid} terminated.` };
+  } catch (err) {
+    return {
+      success: false,
+      message: `Failed to kill process: ${err.message}`,
+    };
+  }
 });
