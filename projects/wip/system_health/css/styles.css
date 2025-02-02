@@ -57,7 +57,7 @@ input {
   width: 50%;
   padding: 0.3125rem;
 }
-button {
+#chat_bot button {
   border: none;
   padding: 0.3125rem 0.625rem;
   cursor: pointer;
