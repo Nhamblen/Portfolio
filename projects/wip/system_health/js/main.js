@@ -1,3 +1,9 @@
+// Author Name: Noah Hamblen
+// File Name: main.js
+// Date: 2/2/25
+
+// This script sets up the Electron app, creates the window, and fetches system health data using systeminformation.
+
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const si = require("systeminformation");

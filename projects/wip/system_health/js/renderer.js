@@ -1,3 +1,9 @@
+// Author Name: Noah Hamblen
+// File Name: main.js
+// Date: 2/2/25
+
+// This script runs in the renderer process (i.e., the UI), fetching system stats and handling chatbot interactions.
+
 const { ipcRenderer } = require("electron");
 
 // Function to update system health data
