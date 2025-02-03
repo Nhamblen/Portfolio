@@ -1,6 +1,7 @@
 ALL
 ---
 update comments
+custom 404 page
 
 Portfolio
 ---------
