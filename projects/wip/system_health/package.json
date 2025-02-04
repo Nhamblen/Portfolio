@@ -3,14 +3,31 @@
   "version": "1.0.0",
   "main": "js/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-builder --dir",
+    "make": "electron-builder"
+  },  "build": {
+    "appId": "noah.systemhealth",
+    "productName": "System Health",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^34.0.2"
+    "electron": "^34.0.2",
+    "electron-builder": "^25.1.8"
   },
   "dependencies": {
     "systeminformation": "^5.25.11"

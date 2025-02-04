@@ -64,6 +64,12 @@ input {
 }
 
 /* download.html page */
+/* General styles */
+
+h2 {
+  font-size: 3rem;
+}
+
 /* Styles for hero image and content */
 #hero_img {
   position: relative;
@@ -115,7 +121,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 5rem;
+  margin: 10rem 10rem;
 }
 
 #main_box_2 {
@@ -123,11 +129,11 @@ header {
   flex-direction: column;
   align-items: flex-end;
   text-align: left;
-  margin: 5rem;
+  margin: 10rem 10rem;
 }
 
 #main_box_2 h2 {
-  margin-right: 28.7rem;
+  margin-right: 16.3rem;
 }
 
 #main_box_3 {
@@ -135,5 +141,5 @@ header {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 5rem;
+  margin: 10rem 10rem;
 }
