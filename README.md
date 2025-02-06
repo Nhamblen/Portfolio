@@ -45,9 +45,9 @@ A download page for a dynamic, real-time monitoring dashboard designed to track 
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 
-**Updated**: 1/22/25 - Remove Python from technologies (to be added later).
+**Updated**: 2/6/25 - Added new project
 
-**Brand Kit**:
+**Portfolio Brand Kit**:
 
 - Primary (header and footer): #222222;
 - Secondary (buttons): #472a2c
