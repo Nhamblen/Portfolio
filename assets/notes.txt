@@ -2,17 +2,21 @@ ALL
 ---
 update comments
 custom 404 page
+make longer project descriptions in the README
+ensure the README has proper links
 
 Portfolio
 ---------
-buttons that detail the technology used
-canva logo (new one? and change favicon)
+ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
+regular nav for desktop?
 
+New Project Ideas
+-----------------
 graphic design project (after degree)
 game project
-tech shop webiste project (or website sales?)
+tech shop website project (or website sales?)
 more personal website / less professional
 wordpress site?
 more web dev technologies

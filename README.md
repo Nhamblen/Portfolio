@@ -25,6 +25,14 @@ A simple, interactive web game where users can play rock-paper-scissors against 
 - **Live Demo**: [Rock Paper Scissors](https://www.noahhamblen.com/projects/rock_paper_scissors/index.html)
 - **Repository**: [Rock Paper Scissors Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/rock_paper_scissors)
 
+#### 3. System Health
+
+A download page for a dynamic, real-time monitoring dashboard designed to track and display key system metrics. It also features an interactive tech support chatbot to assist with troubleshooting common IT issues.
+
+- **Technologies**: HTML, CSS, JavaScript, Node, Electron
+- **Live Demo**: [System Health](https://www.noahhamblen.com/projects/rock_paper_scissors/index.html)
+- **Repository**: [System Health Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/rock_paper_scissors)
+
 ## 💻 Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
