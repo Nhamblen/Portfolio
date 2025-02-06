@@ -44,6 +44,7 @@ A download page for a dynamic, real-time monitoring dashboard designed to track 
 - **Email**: [nhamblen21@gmail.com](mailto:nhamblen21@gmail.com)
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
+- **GitHub**: [github.com/Nhamblen](https://github.com/Nhamblen)
 
 **Updated**: 2/6/25 - Added new project
 
