@@ -17,6 +17,7 @@ more personal website / less professional
 wordpress site?
 more web dev technologies
 system health with tech help chat bot (build it as electron app and a home page to download the app)
+health or pet company project
 
 Rock Paper Scissors
 --------------------
