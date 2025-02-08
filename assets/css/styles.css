@@ -335,7 +335,7 @@ nav {
 
 .stack {
   display: flex;
-  min-width: 6rem;
+  min-width: 5.3rem;
   max-width: 8rem;
   font-size: 0.8125rem;
   flex: 1 1 auto;
@@ -349,7 +349,7 @@ nav {
 }
 
 .stack_img {
-  width: 1.25rem; /* Adjust the width as needed */
+  width: 1rem; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 0.3125rem; /* Add space between the image and text */
   vertical-align: middle; /* Align the image with the text */
@@ -603,6 +603,15 @@ textarea:focus {
   .contact_container {
     max-width: 42.5rem;
   }
+
+  .stack {
+    min-width: 6rem;
+    max-width: 8rem;
+  }
+
+  .stack_img {
+    width: 1.25rem; /* Adjust the width as needed */
+  }
 }
 
 /* Styles for desktops and larger devices */
@@ -701,6 +710,10 @@ textarea:focus {
   .stack {
     min-width: 6rem;
     max-width: 8rem;
+  }
+
+  .stack_img {
+    width: 1.25rem; /* Adjust the width as needed */
   }
 
   /* Resume iframe styling (resume.html) */
