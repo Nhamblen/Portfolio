@@ -148,3 +148,11 @@ header {
 #main_box_2 h2 {
   margin-right: 16.3rem;
 }
+
+main button {
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
