@@ -133,6 +133,7 @@ header {
   display: flex;
   flex-direction: column; /* Stack h2 and li vertically */
   justify-content: flex-start;
+  padding: 5rem;
 }
 
 #main_box_1,
