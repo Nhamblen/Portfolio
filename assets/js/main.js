@@ -1,6 +1,8 @@
 // Author Name: Noah Hamblen
 // File Name: main.js
-// Date: 1/18/25
+
+// Enables strict mode to catch common coding mistakes and prevent the use of potentially unsafe features.
+"use strict";
 
 // Get the hamburger elements
 const hamburger_button = document.querySelector(".ham_menu"); // The hamburger button

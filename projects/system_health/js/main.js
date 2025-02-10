@@ -1,6 +1,8 @@
 // Author Name: Noah Hamblen
 // File Name: main.js
-// Date: 2/2/25
+
+// Enables strict mode to catch common coding mistakes and prevent the use of potentially unsafe features.
+"use strict";
 
 // This script sets up the Electron app, creates the window, and fetches system health data using systeminformation.
 

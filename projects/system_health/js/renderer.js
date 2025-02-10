@@ -1,6 +1,8 @@
 // Author Name: Noah Hamblen
-// File Name: main.js
-// Date: 2/2/25
+// File Name: renderer.js
+
+// Enables strict mode to catch common coding mistakes and prevent the use of potentially unsafe features.
+"use strict";
 
 // This script runs in the renderer process (i.e., the UI), fetching system stats and handling chatbot interactions.
 
