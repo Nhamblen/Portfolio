@@ -126,6 +126,17 @@ header {
 }
 
 /* Styles for main content */
+.main_box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.main_box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 #main_box_1 > div,
 #main_box_2 > div,
 #main_box_3 > div {
