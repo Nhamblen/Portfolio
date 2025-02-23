@@ -11,6 +11,7 @@ ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
 regular nav for desktop?
+upload IT and webdev resume
 
 New Project Ideas
 -----------------
