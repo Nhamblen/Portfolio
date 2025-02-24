@@ -39,6 +39,7 @@ css to style and layout
 fix disk percentage not displaying properly
 build out download page and allow downloading of the app when finished
 find custom icon for the download website, application, and package.json
+separate css files and js files for download page and app
 
 Entertainment List
 ------------------

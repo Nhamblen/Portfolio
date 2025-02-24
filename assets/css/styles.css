@@ -31,7 +31,6 @@
 html,
 body {
   height: 100%;
-  margin: 0; /* Remove any margin from the body */
   display: flex;
   flex-direction: column;
 }
@@ -157,6 +156,14 @@ p {
 }
 
 /* Hamburger, nav, and menu styling */
+#mobile_nav {
+  display: block;
+}
+
+#desktop_nav {
+  display: none;
+}
+
 .off_screen_menu {
   background-color: #222222;
   height: 100vh;
@@ -630,6 +637,49 @@ textarea:focus {
   }
 
   /* Hamburger, nav, and menu styling */
+  #mobile_nav {
+    display: none;
+  }
+
+  #desktop_nav {
+    display: flex;
+    justify-content: center; /* Center the nav container horizontally */
+    align-items: center; /* Center the nav container vertically */
+  }
+
+  #desktop_nav nav {
+    display: flex;
+    flex-direction: row; /* Ensure the nav items are in a row */
+  }
+
+  #desktop_nav ul {
+    display: flex;
+    flex-direction: row; /* Align the list items in a row */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  #desktop_nav li {
+    margin: 0 1.5rem; /* Add space between the list items */
+    text-align: center;
+  }
+
+  #desktop_nav a {
+    color: white;
+    text-decoration: underline;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    display: inline-block; /* Enables transform effects */
+  }
+
+  #desktop_nav a:hover {
+    color: gold;
+    transform: translateY(
+      -0.1875rem
+    ); /* Makes the item pop out by moving it up */
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  }
+
   .off_screen_menu {
     max-width: 15.625rem;
   }
