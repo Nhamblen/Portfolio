@@ -10,8 +10,8 @@ Portfolio
 ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
-regular nav for desktop?
-upload IT and webdev resume
+regular nav for desktop
+upload IT and webdev resume (2 on 1 page)
 
 New Project Ideas
 -----------------
