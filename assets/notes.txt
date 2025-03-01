@@ -15,6 +15,7 @@ animated timeline for my skills
 sort by function for projects (old , new(default), type of project)
 remake home page
 button to switch between IT and web dev resume
+fix resume button
 
 New Project Ideas
 -----------------

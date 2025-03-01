@@ -532,7 +532,7 @@ textarea:focus {
 
 #toggle_resume {
   align-content: center;
-  width: 10%;
+  width: 10rem;
   padding: 0.625rem;
   background-color: #472a2c;
   color: white;
