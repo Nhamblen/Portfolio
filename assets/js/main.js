@@ -65,3 +65,21 @@ window.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("toggle_resume");
+  const resume_frame = document.getElementById("resume");
+
+  let is_web_dev_resume = true;
+
+  button.addEventListener("click", function () {
+    if (is_web_dev_resume) {
+      resume_frame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT resume
+      button.textContent = "Web Dev Resume";
+    } else {
+      resume_frame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev resume
+      button.textContent = "IT Resume";
+    }
+    is_web_dev_resume = !is_web_dev_resume;
+  });
+});

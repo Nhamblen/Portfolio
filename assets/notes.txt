@@ -14,6 +14,7 @@ upload IT and webdev resume (2 on 1 page)
 animated timeline for my skills
 sort by function for projects (old , new(default), type of project)
 remake home page
+button to switch between IT and web dev resume
 
 New Project Ideas
 -----------------
