@@ -1,6 +1,6 @@
 <!--
   Author Name: Noah Hamblen
-  File Name: index.html
+  File Name: about.html
 -->
 
 <!DOCTYPE html>
@@ -40,6 +40,7 @@
 </head>
 
 <body>
+
   <!-- Includes logo, title, nav, styling, and any other images/information at the top -->
   <header>
 
@@ -59,7 +60,7 @@
             <nav>
               <ul>
                 <li><a href="./">Home</a></li>
-                <li><a href="assets/pages/about">About</a></li>
+                <li><a href="assets/pages/projects">Projects</a></li>
                 <li><a href="assets/pages/resume">Resume</a></li>
                 <li><a href="assets/pages/contact">Contact</a></li>
               </ul>
@@ -79,7 +80,7 @@
           <nav>
             <ul>
               <li><a href="./">Home</a></li>
-              <li><a href="assets/pages/about">About</a></li>
+              <li><a href="assets/pages/projects">Projects</a></li>
               <li><a href="assets/pages/resume">Resume</a></li>
               <li><a href="assets/pages/contact">Contact</a></li>
             </ul>
@@ -92,65 +93,80 @@
   </header>
 
 
-  <!-- Main content of the page -->
+  <!-- Main content of the page-->
   <main>
     <!-- Dark overlay when hamburger menu is active -->
     <div class="overlay"></div>
-    <!-- Links and descriptions of projects -->
-    <section class="projects">
-      <h2>My Projects</h2>
-      <div class="projects_grid">
+    <h2 id="about_h2">About Me</h2>
+    <div id="about_box">
+      <img src="assets/img/noah_about.jpg" alt="A picture of Noah Hamblen and his dog Pancake">
+      <p>Hi, my name is Noah 😊. Thank you for visiting my website. I'm a passionate IT enthusiast, web developer, and
+        designer currently studying Web Development at Bellevue University. I specialize in creating websites and
+        applications that are not only functional but also visually appealing. I'm always excited to take on new
+        projects and continue honing my skills.
+        <br><br>
+        In my free time, you'll find me going on runs, playing video games, and constantly exploring
+        ways to improve both personally and professionally.
+      </p>
+    </div>
 
-        <div class="project_item">
-          <a href="projects/makis_corner/"><img class="project_preview" src="assets/img/maki_preview.JPG"
-              alt="Screenshot of Maki's Corner, a personal biography website created by Noah Hamblen"></a>
-          <div class="stack_box">
-            <div class="stack"><img src="assets/img/html_logo.png" class="stack_img" alt="Logo for HTML">HTML</div>
-            <div class="stack"><img src="assets/img/css_logo.png" class="stack_img" alt="Logo for CSS">CSS</div>
-          </div>
-          <h3>Maki's Corner</h3>
-          <p>A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean
-            and engaging design.</p>
-          <a class="button" href="projects/makis_corner/">View Project</a>
-        </div>
+    <!-- HTML Structure for logos sliding animation -->
+    <div class="boxes">
 
-        <div class="project_item">
-          <a href="projects/rock_paper_scissors/"><img class="project_preview" src="assets/img/rock_preview.JPG"
-              alt="Screenshot of Rock Paper Scissors game, a web-based interactive project by Noah Hamblen"></a>
-          <div class="stack_box">
-            <div class="stack"><img src="assets/img/html_logo.png" class="stack_img" alt="Logo for HTML">HTML</div>
-            <div class="stack"><img src="assets/img/css_logo.png" class="stack_img" alt="Logo for CSS">CSS</div>
-            <div class="stack"><img src="assets/img/js_logo.png" class="stack_img" alt="Logo for JavaScript">JavaScript
-            </div>
-          </div>
-          <h3>Rock Paper Scissors</h3>
-          <p>A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.</p>
-          <a class="button" href="projects/rock_paper_scissors/">View Project</a>
-        </div>
+      <!-- First set of boxes -->
+      <div class="boxes_slide">
 
-        <div class="project_item">
-          <a href="projects/system_health/pages/download"><img class="project_preview"
-              src="assets/img/system_preview.JPG"
-              alt="Screenshot of system health, a download page and dynamic app by Noah Hamblen"></a>
-          <div class="stack_box">
-            <div class="stack"><img src="assets/img/html_logo.png" class="stack_img" alt="Logo for HTML">HTML</div>
-            <div class="stack"><img src="assets/img/css_logo.png" class="stack_img" alt="Logo for CSS">CSS</div>
-            <div class="stack"><img src="assets/img/js_logo.png" class="stack_img" alt="Logo for JavaScript">JavaScript
-            </div>
-          </div>
-          <div class="stack_box">
-            <div class="stack"><img src="assets/img/node_logo.png" class="stack_img" alt="Logo for Node">Node</div>
-            <div class="stack"><img src="assets/img/electron_logo.png" class="stack_img"
-                alt="Logo for Electron">Electron</div>
-          </div>
-          <h3>System Health</h3>
-          <p>A download page for the System Health app. App is a dynamic monitoring dashboard, processes, and
-            a tech support chatbot. (wip)</p>
-          <a class="button" href="projects/system_health/pages/download">View Project</a>
-        </div>
+        <!-- box one () -->
+        <div>HTML</div>
+        <!-- box two () -->
+        <div>CSS</div>
+        <!-- box three () -->
+        <div>JavaScript</div>
+        <!-- box four () -->
+        <div>Python</div>
+        <!-- box five () -->
+        <div>Git</div>
+        <!-- box six () -->
+        <div>GoHighLevel</div>
+        <!-- box seven () -->
+        <div>Web Development</div>
+        <!-- box eight () -->
+        <div>Web Design</div>
+        <!-- box nine () -->
+        <div>SEO</div>
+        <!-- box ten () -->
+        <div>Troubleshooting</div>
 
       </div>
-    </section>
+
+      <!-- Second set of boxes (same set as above) -->
+      <div class="boxes_slide">
+
+        <!-- box one () -->
+        <div>HTML</div>
+        <!-- box two () -->
+        <div>CSS</div>
+        <!-- box three () -->
+        <div>JavaScript</div>
+        <!-- box four () -->
+        <div>Python</div>
+        <!-- box five () -->
+        <div>Git</div>
+        <!-- box six () -->
+        <div>GoHighLevel</div>
+        <!-- box seven () -->
+        <div>Web Development</div>
+        <!-- box eight () -->
+        <div>Web Design</div>
+        <!-- box nine () -->
+        <div>SEO</div>
+        <!-- box ten () -->
+        <div>Troubleshooting</div>
+
+
+      </div>
+
+    </div>
   </main>
 
   <!-- Footer -->
@@ -158,7 +174,7 @@
     <div id="footer_box">
       <a href="https://www.linkedin.com/in/noahhamblen" target="_blank">LinkedIn</a>
       <a href="https://github.com/Nhamblen" target="_blank">GitHub</a>
-      <a href="assets/pages/resume">Resume</a>
+      <a href="assets/pages/resume.html">Resume</a>
     </div>
   </footer>
 
