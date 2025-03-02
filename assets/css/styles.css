@@ -393,6 +393,18 @@ nav {
 #hero_img {
   height: 20rem;
   width: 100%;
+  background-image: url("../img/nasa_hero_image.jpg");
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: top;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  position: relative;
+}
+
+#hero_title {
+  color: white;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 /* contact.html styles */
@@ -646,6 +658,18 @@ textarea:focus {
   #hero_img {
     height: 40rem;
     width: 100%;
+    background-image: url("../img/nasa_hero_image.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: top;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    position: relative;
+  }
+
+  #hero_title {
+    color: white;
+    padding-bottom: 20rem;
   }
 
   /* contact.html styles */
@@ -781,6 +805,18 @@ textarea:focus {
   #hero_img {
     height: 60rem;
     width: 100%;
+    background-image: url("../img/nasa_hero_image.jpg");
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: top;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    position: relative;
+  }
+
+  #hero_title {
+    color: white;
+    padding-bottom: 25rem;
   }
 
   /* Projects and grid styling (index.html) */
