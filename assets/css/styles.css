@@ -370,7 +370,7 @@ nav {
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
-/* about.html styles */
+/* index.html styles */
 #about_box img {
   width: 20em;
   height: auto;
@@ -388,6 +388,11 @@ nav {
 #about_h2 {
   text-align: center;
   padding-top: 1em;
+}
+
+#hero_img {
+  height: 20rem;
+  width: 100%;
 }
 
 /* contact.html styles */
@@ -633,9 +638,14 @@ textarea:focus {
     height: 55rem;
   }
 
-  /* about.html styles */
+  /* index.html styles */
   #about_box img {
     width: 25em;
+  }
+
+  #hero_img {
+    height: 40rem;
+    width: 100%;
   }
 
   /* contact.html styles */
@@ -740,7 +750,7 @@ textarea:focus {
     animation-play-state: paused; /* Pause carousel on hover (desktop only) */
   }
 
-  /* about.html styles */
+  /* index.html styles */
   #about_box {
     display: flex;
     padding: 0 15em 0 15em;
@@ -766,6 +776,11 @@ textarea:focus {
     display: block;
     text-align: center;
     padding: 1.5em 0 0.5em 0;
+  }
+
+  #hero_img {
+    height: 60rem;
+    width: 100%;
   }
 
   /* Projects and grid styling (index.html) */
