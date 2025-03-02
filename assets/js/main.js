@@ -66,20 +66,41 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// Ensure the script runs only after the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("toggle_resume");
-  const resume_frame = document.getElementById("resume");
+  console.log("✅ Script is running!");
 
-  let is_web_dev_resume = true;
+  // Select button and iframe
+  const button = document.getElementById("toggleResume");
+  const resumeFrame = document.getElementById("resumeFrame");
 
+  // Confirm elements exist
+  if (!button || !resumeFrame) {
+    console.error("❌ Button or iframe not found!");
+    return;
+  }
+
+  console.log("✅ Button and iframe found!");
+
+  // Set initial state
+  let isWebDevResume = true;
+
+  // Add event listener to toggle resumes
   button.addEventListener("click", function () {
-    if (is_web_dev_resume) {
-      resume_frame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT resume
-      button.textContent = "Web Dev Resume";
+    console.log("🔄 Button clicked!");
+
+    if (isWebDevResume) {
+      resumeFrame.src = "pdf/it_resume.pdf"; // Switch to IT resume
+      button.textContent = "Switch to Web Dev Resume";
+      console.log("📂 Switched to IT resume");
     } else {
-      resume_frame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev resume
-      button.textContent = "IT Resume";
+      resumeFrame.src = "pdf/web_dev_resume.pdf"; // Switch to Web Dev resume
+      button.textContent = "Switch to IT Resume";
+      console.log("📂 Switched to Web Dev resume");
     }
-    is_web_dev_resume = !is_web_dev_resume;
+
+    isWebDevResume = !isWebDevResume; // Toggle state
   });
+
+  console.log("✅ Event listener attached!");
 });
