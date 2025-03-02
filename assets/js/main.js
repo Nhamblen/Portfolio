@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("✅ Script is running!");
 
   // Select button and iframe
-  const button = document.getElementById("toggleResume");
-  const resumeFrame = document.getElementById("resumeFrame");
+  const button = document.getElementById("toggle_resume");
+  const resume_frame = document.getElementById("resume_frame");
 
   // Confirm elements exist
-  if (!button || !resumeFrame) {
+  if (!button || !resume_frame) {
     console.error("❌ Button or iframe not found!");
     return;
   }
@@ -90,11 +90,11 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("🔄 Button clicked!");
 
     if (isWebDevResume) {
-      resumeFrame.src = "pdf/it_resume.pdf"; // Switch to IT resume
+      resume_frame.src = "../pdf/it_resume.pdf"; // Switch to IT resume
       button.textContent = "Switch to Web Dev Resume";
       console.log("📂 Switched to IT resume");
     } else {
-      resumeFrame.src = "pdf/web_dev_resume.pdf"; // Switch to Web Dev resume
+      resume_frame.src = "../pdf/web_dev_resume.pdf"; // Switch to Web Dev resume
       button.textContent = "Switch to IT Resume";
       console.log("📂 Switched to Web Dev resume");
     }
