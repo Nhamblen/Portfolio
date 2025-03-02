@@ -13,7 +13,6 @@ hamburger menu cant use links when zoomed in
 animated timeline for my skills
 sort by function for projects (old , new(default), type of project)
 remake home page
-hero image at the top of home page
 
 New Project Ideas
 -----------------

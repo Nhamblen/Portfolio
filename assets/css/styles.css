@@ -403,30 +403,85 @@ nav {
   position: relative;
 }
 
+#hero_button {
+  width: 10rem;
+  padding: 0.625rem;
+  background-color: #472a2c;
+  color: white;
+  border: none;
+  border-radius: 0.9375rem;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+#hero_button:hover {
+  background-color: #472a2c;
+  color: gold;
+  border: 0.125rem solid gold;
+  transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+}
+
 #hero_title {
   color: white;
   padding: 0rem 2rem 0rem 2rem;
 }
 
-.scrolling_text {
-  display: inline-block;
-  font-weight: bold;
-  color: white;
+#hero_title ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   position: relative;
+  height: 100px; /* Adjust the height to match the size of the list items */
+  overflow: hidden;
 }
 
-.scrolling_text::after {
-  content: "Web Development";
-  display: inline-block;
-  animation: scroll_words 10s infinite ease-in-out;
+#hero_title li {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  animation: slideIn 20s infinite;
 }
 
-@keyframes scroll_words {
+#hero_title li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#hero_title li:nth-child(2) {
+  animation-delay: 5s;
+}
+
+#hero_title li:nth-child(3) {
+  animation-delay: 10s;
+}
+
+#hero_title li:nth-child(4) {
+  animation-delay: 15s;
+}
+
+@keyframes slideIn {
   0% {
-    content: "Web Development";
+    opacity: 0;
+    transform: translateY(100%);
   }
-  50% {
-    content: "Information Technology";
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  35% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
 }
 
