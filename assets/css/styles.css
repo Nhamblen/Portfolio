@@ -45,7 +45,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span {
   font-family: "Merriweather", sans-serif;
 }
 
@@ -405,6 +406,28 @@ nav {
 #hero_title {
   color: white;
   padding: 0rem 2rem 0rem 2rem;
+}
+
+.scrolling_text {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+.scrolling_text::after {
+  content: "Web Development";
+  display: inline-block;
+  animation: scroll_words 10s infinite ease-in-out;
+}
+
+@keyframes scroll_words {
+  0% {
+    content: "Web Development";
+  }
+  50% {
+    content: "Information Technology";
+  }
 }
 
 /* contact.html styles */
