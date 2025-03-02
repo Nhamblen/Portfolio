@@ -99,6 +99,7 @@
     <!-- Dark overlay when hamburger menu is active -->
     <div class="overlay"></div>
     <div id="resume_container">
+      <p>Current:</p>
       <button id="toggle_resume">IT Resume</button>
       <iframe id="resume" src="../pdf/noah_hamblen_portfolio_resume1.pdf"></iframe>
     </div>
@@ -113,6 +114,33 @@
     </div>
   </footer>
 
+  <script>
+    // Script included in HTML to fix issues
+    window.onload = function () {
+
+      // Get button and iframe elements
+      const button = document.getElementById("toggle_resume");
+      const resumeFrame = document.getElementById("resume");
+
+      let isWebDevResume = true; // Tracks the current resume state
+
+      // Add event listener for the button click
+      button.addEventListener("click", function () {
+
+        if (isWebDevResume) {
+          resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT Resume
+          button.textContent = "Web Development Resume";
+          button.classList.toggle("expanded"); // Toggle the expanded class for button
+        } else {
+          resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev Resume
+          button.textContent = "IT Resume";
+          button.classList.remove("expanded") // Remove the expanded class for button
+        }
+
+        isWebDevResume = !isWebDevResume; // Toggle state
+      });
+    };
+  </script>
 
 </body>
 
