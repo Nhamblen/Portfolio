@@ -392,27 +392,27 @@ nav {
 }
 
 #hero_img {
-  height: 20rem;
+  height: 25rem;
   width: 100%;
   background-image: url("../img/nasa_hero_image.jpg");
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: top;
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Aligns content to the left */
   align-items: center; /* Centers the content vertically */
   position: relative;
-  padding-bottom: 20rem;
+  padding-bottom: 2rem;
 }
 
 #hero_button {
   width: 10rem;
   padding: 0.625rem;
-  margin-left: 4rem;
   background-color: #472a2c;
   color: white;
   border: none;
   border-radius: 0.9375rem;
-  font-size: 1.2em;
+  font-size: 1.25rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
@@ -427,7 +427,8 @@ nav {
 
 #hero_title {
   color: white;
-  padding: 0rem 2rem 2rem 4rem;
+  padding: 1rem;
+  font-size: 2.5rem;
 }
 
 #hero_title ol {
@@ -435,7 +436,7 @@ nav {
   margin: 0;
   list-style-type: none;
   position: relative;
-  height: 100px; /* Adjust the height to match the size of the list items */
+  height: 125px; /* Adjust the height to match the size of the list items */
   overflow: hidden;
 }
 
@@ -739,12 +740,24 @@ textarea:focus {
     background-position: top;
     display: flex;
     justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    align-items: flex-start; /* Centers the content vertically */
     position: relative;
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+
+  #hero_button {
+    margin-left: 4rem;
   }
 
   #hero_title {
     color: white;
+    font-size: 3em;
+    padding: 0rem 2rem 0rem 4rem;
+  }
+
+  #hero_title ol {
+    height: 100px;
   }
 
   /* contact.html styles */
@@ -888,10 +901,21 @@ textarea:focus {
     align-items: flex-start; /* Centers the content vertically */
     position: relative;
     flex-direction: column;
+    padding-bottom: 20rem;
+  }
+
+  #hero_button {
+    margin-left: 4rem;
   }
 
   #hero_title {
     color: white;
+    font-size: 3em;
+    padding: 0rem 2rem 2rem 4rem;
+  }
+
+  #hero_title ol {
+    height: 100px;
   }
 
   /* Projects and grid styling (index.html) */
