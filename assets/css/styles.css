@@ -398,14 +398,16 @@ nav {
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: top;
   display: flex;
-  justify-content: center; /* Centers the content horizontally */
+  justify-content: center; /* Aligns content to the left */
   align-items: center; /* Centers the content vertically */
   position: relative;
+  padding-bottom: 20rem;
 }
 
 #hero_button {
   width: 10rem;
   padding: 0.625rem;
+  margin-left: 4rem;
   background-color: #472a2c;
   color: white;
   border: none;
@@ -425,7 +427,7 @@ nav {
 
 #hero_title {
   color: white;
-  padding: 0rem 2rem 0rem 2rem;
+  padding: 0rem 2rem 2rem 4rem;
 }
 
 #hero_title ol {
@@ -443,7 +445,7 @@ nav {
   top: 0;
   left: 0;
   transform: translateY(100%);
-  animation: slideIn 20s infinite;
+  animation: slideIn 15s infinite;
 }
 
 #hero_title li:nth-child(1) {
@@ -456,10 +458,6 @@ nav {
 
 #hero_title li:nth-child(3) {
   animation-delay: 10s;
-}
-
-#hero_title li:nth-child(4) {
-  animation-delay: 15s;
 }
 
 @keyframes slideIn {
@@ -747,7 +745,6 @@ textarea:focus {
 
   #hero_title {
     color: white;
-    padding-bottom: 20rem;
   }
 
   /* contact.html styles */
@@ -888,13 +885,13 @@ textarea:focus {
     background-position: top;
     display: flex;
     justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    align-items: flex-start; /* Centers the content vertically */
     position: relative;
+    flex-direction: column;
   }
 
   #hero_title {
     color: white;
-    padding-bottom: 25rem;
   }
 
   /* Projects and grid styling (index.html) */
