@@ -436,7 +436,7 @@ nav {
   margin: 0;
   list-style-type: none;
   position: relative;
-  height: 125px; /* Adjust the height to match the size of the list items */
+  height: 7.8125rem; /* Adjust the height to match the size of the list items */
   overflow: hidden;
 }
 
@@ -757,7 +757,7 @@ textarea:focus {
   }
 
   #hero_title ol {
-    height: 100px;
+    height: 6.25rem;
   }
 
   /* contact.html styles */
@@ -915,7 +915,7 @@ textarea:focus {
   }
 
   #hero_title ol {
-    height: 100px;
+    height: 6.25rem;
   }
 
   /* Projects and grid styling (index.html) */
