@@ -167,3 +167,73 @@ main button {
   border-radius: 0.3125rem;
   font-size: 1.5rem;
 }
+
+/* Style for smaller screens (mobile) */
+@media only screen and (max-width: 37.5rem) {
+  #main_box {
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin: 2rem 1rem;
+  }
+
+  #main_box_1,
+  #main_box_2,
+  #main_box_3 {
+    flex: 1 1 100%; /* Make each box take full width */
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  #main_box_1 > div,
+  #main_box_2 > div,
+  #main_box_3 > div {
+    padding: 1rem;
+  }
+
+  #main_box_2 h2 {
+    margin-right: 0;
+  }
+
+  .main_box img {
+    height: auto;
+    width: 100%; /* Make images responsive */
+    max-width: 20rem; /* Limit the maximum width */
+  }
+
+  #hero_img {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #hero_img h1 {
+    font-size: 3rem;
+  }
+
+  #hero_img p,
+  h1 {
+    max-width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #hero_img p {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  #hero_img button {
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  main button {
+    font-size: 1rem;
+  }
+
+  .back_button {
+    align-self: flex-start;
+  }
+}
