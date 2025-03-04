@@ -168,6 +168,7 @@ p {
   gap: 2rem;
   justify-content: center;
   padding-top: 1rem;
+  flex-wrap: wrap;
 }
 
 #social_media a img {
