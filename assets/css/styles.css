@@ -132,7 +132,8 @@ p {
 #footer_box {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
   position: relative;
   bottom: 0;
   z-index: 1000;
@@ -773,6 +774,11 @@ textarea:focus {
   .stack_img {
     width: 1.25rem; /* Adjust the width as needed */
   }
+
+  /* Footer styles */
+  #footer_box {
+    gap: 4rem;
+  }
 }
 
 /* Styles for desktops and larger devices */
@@ -850,6 +856,7 @@ textarea:focus {
   /* Footer styles */
   #footer_box {
     padding: 1em 20em;
+    gap: 4rem;
   }
 
   /* Carousel styles */
