@@ -140,6 +140,7 @@ p {
   border-top: 0.1875rem solid #472a2c;
   background-color: #222222;
   padding: 1em;
+  gap: 3rem;
 }
 
 #footer_box a {
@@ -160,6 +161,33 @@ p {
 #footer_box p {
   color: white;
   font-size: 1.5em;
+}
+
+#social_media {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#social_media a img {
+  width: auto;
+  height: 3rem;
+}
+
+#footer_box nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer_box nav ul li {
+  margin: 0 0.2rem;
+}
+
+#footer_nav {
+  display: none; /* Hide footer nav to save space on mobile */
+  justify-content: center;
 }
 
 /* Hamburger, nav, and menu styling */
@@ -782,7 +810,7 @@ textarea:focus {
 
   /* Footer styles */
   #footer_box {
-    padding: 1em 10em;
+    padding: 1em 0.5em;
     flex-direction: row;
     align-items: center;
   }
