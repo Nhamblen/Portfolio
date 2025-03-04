@@ -375,6 +375,7 @@ nav {
 
 .stack_box {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-evenly;
   margin-bottom: 0.5rem;
