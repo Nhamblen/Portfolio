@@ -782,7 +782,50 @@ textarea:focus {
 
   /* Footer styles */
   #footer_box {
+    padding: 1em 10em;
     flex-direction: row;
+    align-items: center;
+  }
+
+  #social_media {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  #social_media a img {
+    width: auto;
+    height: 3rem;
+  }
+
+  #footer_box nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer_box nav ul li {
+    margin: 0 1rem;
+  }
+
+  #footer_nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #footer_nav a {
+    color: white;
+    text-decoration: underline;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    display: inline-block; /* Enables transform effects */
+  }
+
+  #footer_nav a:hover {
+    color: gold;
+    transform: translateY(
+      -0.1875rem
+    ); /* Makes the item pop out by moving it up */
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
   }
 }
 
@@ -862,6 +905,53 @@ textarea:focus {
   #footer_box {
     padding: 1em 10em;
     flex-direction: row;
+    align-items: center;
+  }
+
+  #social_media {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  #social_media a img {
+    width: auto;
+    height: 3rem;
+  }
+
+  #social_media a img:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(99%) saturate(746%)
+      hue-rotate(1deg) brightness(102%) contrast(102%); /* Yellow color filter */
+  }
+
+  #footer_box nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer_box nav ul li {
+    margin: 0 1rem;
+  }
+
+  #footer_nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #footer_nav a {
+    color: white;
+    text-decoration: underline;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    display: inline-block; /* Enables transform effects */
+  }
+
+  #footer_nav a:hover {
+    color: gold;
+    transform: translateY(
+      -0.1875rem
+    ); /* Makes the item pop out by moving it up */
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
   }
 
   /* Carousel styles */
