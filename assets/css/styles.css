@@ -737,14 +737,14 @@ textarea:focus {
 /* Updated width for the sliding container */
 .boxes_slide {
   display: inline-flex; /* Use inline-flex to maintain layout */
-  animation: slide 30s infinite linear; /* Adjust duration as needed */
+  animation: slide 40s infinite linear; /* Adjust duration as needed */
   width: calc(
-    (12.5rem + 1.875rem) * 10
+    (17rem + 1.875rem) * 18
   ); /* (box width + margin) * number of boxes */
 }
 
 .boxes_slide div {
-  width: 12.5rem; /* Set a fixed width for each box */
+  width: 17rem; /* Set a fixed width for each box */
   margin: 0 1.875rem;
   height: 3.125rem;
   background-color: #222222;
@@ -756,6 +756,11 @@ textarea:focus {
   text-align: center;
   border-radius: 0.9375rem;
   font-size: 1.1rem; /* Increase font size for better visibility */
+}
+
+/* Highlights web development and information technology in the carousel */
+.boxes_slide div.highlight {
+  font-size: 1.2rem; /* Slightly larger font size */
 }
 
 /* Styles for tablets */
