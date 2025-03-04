@@ -17,6 +17,8 @@ include image links for github, linkedin, resume, and email in footer
 link to other parts of the page in footer
 name in footer
 copyright in footer
+professional photo - then personal section when button pressed (emoji pops out when button is pressed and mroe details about me)
+hidden secrets (a game or something)
 
 
 New Project Ideas
