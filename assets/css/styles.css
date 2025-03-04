@@ -131,9 +131,9 @@ p {
 /* Footer styles */
 #footer_box {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   position: relative;
   bottom: 0;
   z-index: 1000;
@@ -782,7 +782,7 @@ textarea:focus {
 
   /* Footer styles */
   #footer_box {
-    gap: 4rem;
+    flex-direction: row;
   }
 }
 
@@ -860,8 +860,8 @@ textarea:focus {
 
   /* Footer styles */
   #footer_box {
-    padding: 1em 20em;
-    gap: 4rem;
+    padding: 1em 10em;
+    flex-direction: row;
   }
 
   /* Carousel styles */
