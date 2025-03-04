@@ -175,6 +175,10 @@ p {
   height: 3rem;
 }
 
+#social_media p {
+  align-self: center;
+}
+
 #footer_box nav ul {
   display: flex;
   justify-content: center;
