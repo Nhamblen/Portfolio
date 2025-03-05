@@ -15,7 +15,7 @@ Check out the live version of my portfolio: [noahhamblen.com](https://www.noahha
 A download page for a dynamic, real-time monitoring dashboard designed to track and display key system metrics. It also features an interactive tech support chatbot to assist with troubleshooting common IT issues.
 
 - **Technologies**: HTML, CSS, JavaScript, Node, Electron
-- **Live Demo**: [System Health](https://www.noahhamblen.com/projects/system_health/download)
+- **Live Demo**: [System Health](https://www.noahhamblen.com/projects/system_health/pages/download)
 - **Repository**: [System Health Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/system_health)
 
 #### 2. Maki's Corner
