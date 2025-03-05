@@ -768,6 +768,16 @@ textarea:focus {
   font-size: 1.2rem; /* Slightly larger font size */
 }
 
+/* 404.html styles */
+#error_404_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes the full height of the parent */
+  text-align: center; /* Center text inside the box */
+}
+
 /* Styles for tablets */
 @media (min-width: 48rem) {
   /* Resume iframe styling (resume.html) */
