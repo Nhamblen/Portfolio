@@ -815,6 +815,28 @@ textarea:focus {
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
+/* Styles for sort dropdown */
+.sort_dropdown {
+  text-align: right; /* Align the dropdown to the right */
+  margin-bottom: 1rem;
+}
+
+.sort_dropdown label {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  color: #222222;
+}
+
+.sort_dropdown select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
 /* Styles for tablets */
 @media (min-width: 48rem) {
   /* Resume iframe styling (resume.html) */
@@ -1144,26 +1166,6 @@ textarea:focus {
 
   .stack_img {
     width: 1.25rem; /* Adjust the width as needed */
-  }
-
-  /* Styles for sort dropdown */
-  .sort_dropdown {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
-  .sort_dropdown label {
-    margin-right: 0.5rem;
-    font-size: 1rem;
-    color: #222222;
-  }
-
-  .sort_dropdown select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    cursor: pointer;
   }
 
   /* Resume iframe styling (resume.html) */
