@@ -1,6 +1,7 @@
 # Noah's Portfolio
 
-Welcome to my portfolio! This repository showcases my web development projects and serves as a platform to explore my skills and creativity. Throughout these projects I've expanded my skills of flexbox, grid, and JavaScript.
+Welcome to my portfolio! This repository showcases me, my projects, and serves as a platform to explore my skills and creativity. Throughout these projects I've expanded my skills.
+
 Built with HTML, CSS, JavaScript, and more. Portfolio was made with a mobile-first design.
 
 ## 🚀 Live Demo
@@ -9,7 +10,15 @@ Check out the live version of my portfolio: [noahhamblen.com](https://www.noahha
 
 ## 📚 Projects
 
-#### 1. Maki's Corner
+#### 1. System Health
+
+A download page for a dynamic, real-time monitoring dashboard designed to track and display key system metrics. It also features an interactive tech support chatbot to assist with troubleshooting common IT issues.
+
+- **Technologies**: HTML, CSS, JavaScript, Node, Electron
+- **Live Demo**: [System Health](https://www.noahhamblen.com/projects/system_health/download)
+- **Repository**: [System Health Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/system_health)
+
+#### 2. Maki's Corner
 
 A biography site dedicated to my girlfriend, Maki, showcasing her story and personality through a clean and engaging design.
 
@@ -17,21 +26,13 @@ A biography site dedicated to my girlfriend, Maki, showcasing her story and pers
 - **Live Demo**: [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/)
 - **Repository**: [Maki's Corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
 
-#### 2. Rock Paper Scissors
+#### 3. Rock Paper Scissors
 
 A simple, interactive web game where users can play rock-paper-scissors against a computer opponent.
 
 - **Technologies**: HTML, CSS, JavaScript
 - **Live Demo**: [Rock Paper Scissors](https://www.noahhamblen.com/projects/rock_paper_scissors/)
 - **Repository**: [Rock Paper Scissors Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/rock_paper_scissors)
-
-#### 3. System Health
-
-A download page for a dynamic, real-time monitoring dashboard designed to track and display key system metrics. It also features an interactive tech support chatbot to assist with troubleshooting common IT issues.
-
-- **Technologies**: HTML, CSS, JavaScript, Node, Electron
-- **Live Demo**: [System Health](https://www.noahhamblen.com/projects/system_health/download)
-- **Repository**: [System Health Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/system_health)
 
 ## 💻 Technologies Used
 
