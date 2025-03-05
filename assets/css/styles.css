@@ -770,12 +770,26 @@ textarea:focus {
 
 /* 404.html styles */
 #error_404_box {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%; /* Ensure it takes the full height of the parent */
+}
+
+#error_404_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center; /* Center text inside the box */
+}
+
+#error_404_box img {
+  width: auto;
+  height: 20rem;
+  margin: 3rem 0;
 }
 
 #error_404_box a {
@@ -902,6 +916,11 @@ textarea:focus {
       -0.1875rem
     ); /* Makes the item pop out by moving it up */
     box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
+  }
+
+  /* 404.html styles */
+  #error_404_box {
+    flex-direction: row;
   }
 }
 
@@ -1139,5 +1158,10 @@ textarea:focus {
     max-width: 62.5rem;
     padding: 9em;
     margin-top: 5em;
+  }
+
+  /* 404.html styles */
+  #error_404_box {
+    flex-direction: row;
   }
 }
