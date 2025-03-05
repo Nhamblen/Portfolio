@@ -1116,7 +1116,7 @@ textarea:focus {
     height: 6.25rem;
   }
 
-  /* Projects and grid styling (index.html) */
+  /* Projects and grid styling (projects.html) */
   .project_item {
     display: flex;
     flex-direction: column;
@@ -1144,6 +1144,26 @@ textarea:focus {
 
   .stack_img {
     width: 1.25rem; /* Adjust the width as needed */
+  }
+
+  /* Styles for sort dropdown */
+  .sort_dropdown {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .sort_dropdown label {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: #222222;
+  }
+
+  .sort_dropdown select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
 
   /* Resume iframe styling (resume.html) */

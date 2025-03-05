@@ -24,44 +24,46 @@ overlay.addEventListener("click", () => {
   hamburger_button.classList.remove("active"); // Reset the hamburger animation
 });
 
-// Get modal and form elements
+// Ensure the elements exist before adding event listeners
 const modal = document.getElementById("thank_you_modal");
 const closeModalBtn = document.getElementById("close_modal");
 const form = document.getElementById("contact_form");
 
-// Show the modal after form submission
-form.addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent default form submission
+if (form && modal && closeModalBtn) {
+  // Show the modal after form submission
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
 
-  // Send form data using Fetch API
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-  })
-    .then((response) => {
-      if (response.ok) {
-        modal.style.display = "flex"; // Show modal
-        form.reset(); // Clear form fields
-      } else {
-        alert(
-          "There was an issue sending your message. Please try again later."
-        );
-      }
+    // Send form data using Fetch API
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
     })
-    .catch(() => {
-      modal.style.display = "flex"; // Show modal even if there’s an error
-      form.reset();
-    });
-});
+      .then((response) => {
+        if (response.ok) {
+          modal.style.display = "flex"; // Show modal
+          form.reset(); // Clear form fields
+        } else {
+          alert(
+            "There was an issue sending your message. Please try again later."
+          );
+        }
+      })
+      .catch(() => {
+        modal.style.display = "flex"; // Show modal even if there’s an error
+        form.reset();
+      });
+  });
 
-// Close the modal when the close button is clicked
-closeModalBtn.addEventListener("click", () => {
-  modal.style.display = "none"; // Hide modal
-});
+  // Close the modal when the close button is clicked
+  closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // Hide modal
+  });
 
-// Close the modal if the user clicks outside the modal content
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
+  // Close the modal if the user clicks outside the modal content
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}

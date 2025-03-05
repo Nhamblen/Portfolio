@@ -101,9 +101,18 @@
     <!-- Links and descriptions of projects -->
     <section class="projects">
       <h2>My Projects</h2>
+
+      <div class="sort_dropdown">
+        <label for="sort_projects">Sort by:</label>
+        <select id="sort_projects">
+          <option value="new">New</option>
+          <option value="old">Old</option>
+        </select>
+      </div>
+
       <div class="projects_grid">
 
-        <div class="project_item">
+        <div class="project_item" data-date="2025-01-28">
           <a href="../../projects/makis_corner/"><img class="project_preview" src="../img/maki_preview.JPG"
               alt="Screenshot of Maki's Corner, a personal biography website created by Noah Hamblen"></a>
           <div class="stack_box">
@@ -116,7 +125,7 @@
           <a class="button" href="../../projects/makis_corner/">View Project</a>
         </div>
 
-        <div class="project_item">
+        <div class="project_item" data-date="2024-08-31">
           <a href="../../projects/rock_paper_scissors/"><img class="project_preview" src="../img/rock_preview.JPG"
               alt="Screenshot of Rock Paper Scissors game, a web-based interactive project by Noah Hamblen"></a>
           <div class="stack_box">
@@ -130,7 +139,7 @@
           <a class="button" href="../../projects/rock_paper_scissors/">View Project</a>
         </div>
 
-        <div class="project_item">
+        <div class="project_item" data-date="2025-02-01">
           <a href="../../projects/system_health/pages/download"><img class="project_preview"
               src="../img/system_preview.JPG"
               alt="Screenshot of system health, a download page and dynamic app by Noah Hamblen"></a>
