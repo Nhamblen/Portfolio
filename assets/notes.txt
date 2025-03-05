@@ -10,7 +10,7 @@ ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
 animated timeline for my skills
-sort by function for projects (old , new(default), type of project)
+sort by type of project
 remake home page
 professional photo - then personal section when button pressed (emoji pops out when button is pressed and mroe details about me)
 hidden secrets (a game or something)
