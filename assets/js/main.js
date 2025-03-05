@@ -24,6 +24,13 @@ overlay.addEventListener("click", () => {
   hamburger_button.classList.remove("active"); // Reset the hamburger animation
 });
 
+// Updates the year for footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
+//
+// JavaScript for contact.html (manipulating form)
+//
+
 // Ensure the elements exist before adding event listeners
 const modal = document.getElementById("thank_you_modal");
 const closeModalBtn = document.getElementById("close_modal");
@@ -66,4 +73,65 @@ if (form && modal && closeModalBtn) {
       modal.style.display = "none";
     }
   });
+}
+
+//
+// JavaScript for resume.html (manipulating resume)
+//
+
+// Get button and iframe elements
+const button = document.getElementById("toggle_resume");
+const resumeFrame = document.getElementById("resume");
+
+if (button && resumeFrame) {
+  window.onload = function () {
+    let isWebDevResume = true; // Tracks the current resume state
+
+    // Add event listener for the button click
+    button.addEventListener("click", function () {
+      if (isWebDevResume) {
+        resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT Resume
+        button.textContent = "Web Development Resume";
+        button.classList.toggle("expanded"); // Toggle the expanded class for button
+      } else {
+        resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev Resume
+        button.textContent = "IT Resume";
+        button.classList.remove("expanded"); // Remove the expanded class for button
+      }
+
+      isWebDevResume = !isWebDevResume; // Toggle state
+    });
+  };
+}
+
+//
+// JavaScript for projects.html (sorting projects)
+//
+
+const sortDropdown = document.getElementById("sort_projects");
+
+if (sortDropdown) {
+  window.onload = function () {
+    const projectsGrid = document.querySelector(".projects_grid");
+    const projectItems = Array.from(
+      projectsGrid.querySelectorAll(".project_item")
+    );
+
+    if (sortDropdown && projectsGrid && projectItems) {
+      sortDropdown.addEventListener("change", function () {
+        sortProjects(sortDropdown.value);
+      });
+
+      function sortProjects(order) {
+        const sortedItems = projectItems.sort((a, b) => {
+          const dateA = new Date(a.getAttribute("data-date"));
+          const dateB = new Date(b.getAttribute("data-date"));
+          return order === "new" ? dateB - dateA : dateA - dateB;
+        });
+
+        projectsGrid.innerHTML = "";
+        sortedItems.forEach((item) => projectsGrid.appendChild(item));
+      }
+    }
+  };
 }
