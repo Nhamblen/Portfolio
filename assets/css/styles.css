@@ -879,7 +879,7 @@ textarea:focus {
 /* Updated width for the sliding container */
 .boxes_slide {
   display: inline-flex; /* Use inline-flex to maintain layout */
-  animation: slide 40s infinite linear; /* Adjust duration as needed */
+  animation: slide 70s infinite linear; /* Adjust duration as needed */
   width: calc(
     (17rem + 1.875rem) * 18
   ); /* (box width + margin) * number of boxes */
