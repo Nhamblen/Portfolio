@@ -453,7 +453,7 @@ nav {
 .hover_box {
   flex: 1;
   /* Allow boxes to expand proportionally */
-  padding: 10rem;
+  padding: 3rem;
   /* Adjust height as needed */
   width: 100%;
   /* Allow full width */
@@ -1266,6 +1266,10 @@ textarea:focus {
 
   #hero_title ol {
     height: 6.25rem;
+  }
+
+  .hover_box {
+    padding: 10rem;
   }
 
   /* Projects and grid styling (projects.html) */
