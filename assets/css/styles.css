@@ -426,9 +426,145 @@ nav {
   margin-bottom: 1em;
 }
 
-#about_h2 {
+.index_h2 {
   text-align: center;
-  padding-top: 1em;
+  margin-top: 2rem;
+  font-size: 4rem;
+}
+
+.hover_paragraph {
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* Container for side-by-side boxes */
+.hover_container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+  /* Ensure the container spans the available width */
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+/* Default box styling */
+.hover_box {
+  flex: 1;
+  /* Allow boxes to expand proportionally */
+  padding: 10rem;
+  /* Adjust height as needed */
+  width: 100%;
+  /* Allow full width */
+  max-width: none;
+  /* Remove restrictions on max width */
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
+  background-color: #f3f4f0;
+  /* Default color */
+  color: black;
+  /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Hover effect to show image and change text color */
+.hover_box:hover {
+  background-color: transparent;
+  color: white !important;
+  /* Ensure text color turns white */
+}
+
+.hover_box.box_1:hover {
+  background-image: url("../img/portfolio.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hover_box.box_2:hover {
+  background-image: url("../img/resume.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hover_box.box_3:hover {
+  background-image: url("../img/contact.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hover_box.box_1 {
+  display: flex;
+  gap: 3rem;
+}
+
+.hover_box.box_2 {
+  display: flex;
+  gap: 3rem;
+}
+
+.hover_box.box_3 {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Ensure all text inside the box responds to hover */
+.hover_box * {
+  position: relative;
+  z-index: 2;
+  /* Ensures text is above the background image */
+  color: inherit;
+  /* Inherit color changes on hover */
+}
+
+/* Overlay effect for better text contrast */
+.hover_box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  /* Transparent initially */
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  /* Below the text but above the background */
+}
+
+.hover_box:hover:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adds a slight overlay on hover */
+}
+
+.hover_button {
+  margin-top: 2rem;
+  width: 13rem;
+  padding: 0.625rem;
+  background-color: #472a2c;
+  color: white;
+  border: none;
+  border-radius: 0.9375rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.hover_button:hover {
+  background-color: #472a2c;
+  color: gold;
+  border: 0.125rem solid gold;
+  transform: translateY(-0.625rem); /* Makes the item pop out by moving it up */
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.4); /* Adds a shadow to make it stand out */
 }
 
 #hero_img {
@@ -1102,12 +1238,6 @@ textarea:focus {
     display: block; /* Make image a block-level element */
     margin-top: 0em;
     margin-bottom: 2em;
-  }
-
-  #about_h2 {
-    display: block;
-    text-align: center;
-    padding: 1.5em 0 0.5em 0;
   }
 
   #hero_img {
