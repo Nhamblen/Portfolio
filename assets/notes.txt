@@ -2,7 +2,6 @@ ALL
 ---
 update comments
 make longer project descriptions in the README
-ensure the README has proper links
 
 Portfolio
 ---------
@@ -15,6 +14,7 @@ remake home page
 professional photo - then personal section when button pressed (emoji pops out when button is pressed and mroe details about me)
 hidden secrets (a game or something)
 creative 404 page? game or something?
+occasionally have a shooting star across the hero image
 
 
 New Project Ideas
