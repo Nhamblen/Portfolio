@@ -103,6 +103,13 @@ td button:hover {
   background-color: #ff1a1a27; /* Darker red on hover */
 }
 
+#sort_name,
+#sort_cpu,
+#sort_memory {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 /* Chatbot Section */
 #chat_bot {
   width: 320px;

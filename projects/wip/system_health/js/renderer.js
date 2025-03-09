@@ -8,6 +8,9 @@
 
 const { ipcRenderer } = require("electron");
 
+let currentSortDirection = "asc"; // Default sorting direction is ascending
+let currentSortColumn = "cpu"; // Default sorting column is cpu
+
 // Function to update system health data
 async function updateSystemStats() {
   try {
@@ -51,9 +54,6 @@ async function updateSystemStats() {
   }
 }
 
-// Update system stats every 2 seconds
-setInterval(updateSystemStats, 2000);
-
 // Event listener if user presses enter to the chatbot
 document
   .getElementById("user_input")
@@ -92,7 +92,16 @@ function sendMessage() {
   }
 }
 
-// Function to fetch and display running processes
+// Reapply sorting after the table is updated every 2 seconds
+function updateTable() {
+  // Update the process list
+  updateProcessList().then(() => {
+    // After updating rows, reapply the sorting based on the current sorting state
+    sortTable(currentSortColumn);
+  });
+}
+
+// Update process list with newly fetched processes
 async function updateProcessList() {
   const processes = await ipcRenderer.invoke("get-processes");
 
@@ -113,13 +122,72 @@ async function updateProcessList() {
   });
 }
 
-// Function to kill a process
-async function killProcess(pid) {
-  const response = await ipcRenderer.invoke("kill-process", pid);
-  alert(response.message);
-  updateProcessList();
+// Update processes every 2 seconds
+setInterval(updateTable, 2000);
+
+// Update system stats every 2 seconds
+setInterval(updateSystemStats, 2000);
+
+// Update process sorting every 2 seconds
+setInterval(sortTable, 2001);
+
+// Initial sort by CPU when the page is loaded
+window.addEventListener("load", () => {
+  sortTable("cpu");
+});
+
+// Sorting functionality
+function sortTable(column) {
+  const processListElement = document.getElementById("process-list");
+  const rows = Array.from(processListElement.querySelectorAll("tr"));
+
+  // If the same column is clicked, toggle the sort direction
+  if (column === currentSortColumn) {
+    currentSortDirection = currentSortDirection === "asc" ? "desc" : "asc";
+  } else {
+    // Default to ascending order if a new column is clicked
+    currentSortDirection = "asc";
+  }
+
+  // Sort the rows
+  const sortedRows = rows.sort((a, b) => {
+    const aText = a.querySelector(
+      `td:nth-child(${getColumnIndex(column)})`
+    ).textContent;
+    const bText = b.querySelector(
+      `td:nth-child(${getColumnIndex(column)})`
+    ).textContent;
+
+    if (column === "cpu" || column === "memory") {
+      // Parse values as numbers for CPU and memory
+      const aValue = parseFloat(aText);
+      const bValue = parseFloat(bText);
+      return currentSortDirection === "asc" ? aValue - bValue : bValue - aValue;
+    } else {
+      // Compare text for name column
+      return currentSortDirection === "asc"
+        ? aText.localeCompare(bText)
+        : bText.localeCompare(aText);
+    }
+  });
+
+  // Clear the table and append sorted rows
+  processListElement.innerHTML = "";
+  sortedRows.forEach((row) => processListElement.appendChild(row));
+
+  // Update the current sorted column
+  currentSortColumn = column;
 }
 
-// Update process list every 2 seconds
-setInterval(updateProcessList, 2000);
-updateProcessList();
+function getColumnIndex(column) {
+  switch (column) {
+    case "name":
+      return 1;
+    case "cpu":
+      return 2;
+    case "memory":
+      return 3;
+    default:
+      return 1;
+  }
+}
