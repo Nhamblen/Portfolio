@@ -88,13 +88,15 @@ ipcMain.handle("get-system-info", async () => {
 ipcMain.handle("get-processes", async () => {
   const processData = await si.processes();
 
-  return processData.list.map((proc) => ({
-    name: proc.name,
-    pid: proc.pid,
-    cpu: proc.cpu.toFixed(2) + "%",
-    memory: (proc.memRss / 1024 / 1024).toFixed(2) + " MB",
-    running: proc.running,
-  }));
+  return processData.list
+    .filter((proc) => proc.name.toLowerCase() !== "system idle process") // Filter out "System Idle Process"
+    .map((proc) => ({
+      name: proc.name,
+      pid: proc.pid,
+      cpu: proc.cpu.toFixed(2) + "%",
+      memory: (proc.memRss / 1024 / 1024).toFixed(2) + " MB",
+      running: proc.running,
+    }));
 });
 
 // Kill a process
