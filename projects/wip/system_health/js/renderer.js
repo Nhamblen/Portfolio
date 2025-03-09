@@ -54,39 +54,42 @@ async function updateSystemStats() {
 // Update system stats every 2 seconds
 setInterval(updateSystemStats, 2000);
 
+// Event listener if user presses enter to the chatbot
+document
+  .getElementById("user_input")
+  .addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      sendMessage();
+    }
+  });
+
 // Chatbot functionality
 function sendMessage() {
-  const userInput = document.getElementById("user_input").value.trim();
-  const chatBox = document.getElementById("chat_box");
+  const userInput = document.getElementById("user_input").value;
 
-  if (userInput === "") return;
+  if (userInput.trim() !== "") {
+    // Add the user's message to the chat box
+    const chatBox = document.getElementById("chat_box");
+    const userMessage = document.createElement("div");
+    userMessage.classList.add("user-message");
+    userMessage.textContent = `You: ${userInput}`;
+    chatBox.appendChild(userMessage);
 
-  // Display user message
-  const userMessage = document.createElement("p");
-  userMessage.innerHTML = `<strong>You:</strong> ${userInput}`;
-  chatBox.appendChild(userMessage);
+    // Clear the input field
+    document.getElementById("user_input").value = "";
 
-  // Generate bot response
-  let botResponse = "I'm not sure how to answer that.";
-  if (userInput.toLowerCase().includes("cpu"))
-    botResponse = "Your CPU usage is being monitored.";
-  if (userInput.toLowerCase().includes("ram"))
-    botResponse = "Your RAM usage is displayed on the dashboard.";
-  if (userInput.toLowerCase().includes("disk"))
-    botResponse = "Your disk space usage is also displayed.";
-  if (userInput.toLowerCase().includes("help"))
-    botResponse = "Try restarting your computer or checking Task Manager.";
+    // Scroll to the bottom of the chat box
+    chatBox.scrollTop = chatBox.scrollHeight;
 
-  // Display bot response
-  const botMessage = document.createElement("p");
-  botMessage.innerHTML = `<strong>Bot:</strong> ${botResponse}`;
-  chatBox.appendChild(botMessage);
+    // Simulate a response (you can replace this with actual chatbot logic)
+    const botResponse = document.createElement("div");
+    botResponse.classList.add("bot-response");
+    botResponse.textContent = `Bot: I received your message: ${userInput}`;
+    chatBox.appendChild(botResponse);
 
-  // Scroll chat box to the latest message
-  chatBox.scrollTop = chatBox.scrollHeight;
-
-  // Clear input field
-  document.getElementById("user_input").value = "";
+    // Scroll to the bottom of the chat box after bot response
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
 }
 
 // Function to fetch and display running processes
