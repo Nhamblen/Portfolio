@@ -51,8 +51,8 @@ async function updateSystemStats() {
   }
 }
 
-// Update system stats every 5 seconds
-setInterval(updateSystemStats, 5000);
+// Update system stats every 2 seconds
+setInterval(updateSystemStats, 2000);
 
 // Chatbot functionality
 function sendMessage() {
@@ -117,6 +117,6 @@ async function killProcess(pid) {
   updateProcessList();
 }
 
-// Update process list every 10 seconds
-setInterval(updateProcessList, 10000);
+// Update process list every 2 seconds
+setInterval(updateProcessList, 2000);
 updateProcessList();
