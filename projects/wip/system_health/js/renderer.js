@@ -129,7 +129,7 @@ setInterval(updateTable, 2000);
 setInterval(updateSystemStats, 2000);
 
 // Update process sorting every 2 seconds
-setInterval(sortTable, 2001);
+// setInterval(sortTable, 2001);
 
 // Initial sort by CPU when the page is loaded
 window.addEventListener("load", () => {
