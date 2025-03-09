@@ -94,6 +94,15 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
+td button {
+  padding: 0.5rem 1rem;
+}
+
+td button:hover {
+  padding: 0.5rem 1rem;
+  background-color: #ff1a1a27; /* Darker red on hover */
+}
+
 /* Chatbot Section */
 #chat_bot {
   width: 320px;
