@@ -92,18 +92,16 @@ function sendMessage() {
   }
 }
 
-// Reapply sorting after the table is updated every 2 seconds
-function updateTable() {
-  // Update the process list
-  updateProcessList().then(() => {
-    // After updating rows, reapply the sorting based on the current sorting state
-    sortTable(currentSortColumn);
-  });
-}
-
-// Update process list with newly fetched processes
+// Update process list with sorted processes
 async function updateProcessList() {
   const processes = await ipcRenderer.invoke("get-processes");
+
+  // Ensure that CPU values are treated as numbers for sorting
+  processes.sort((a, b) => {
+    const cpuA = parseFloat(a.cpu);
+    const cpuB = parseFloat(b.cpu);
+    return cpuB - cpuA; // Always sort descending by CPU
+  });
 
   const processListElement = document.getElementById("process-list");
   processListElement.innerHTML = "";
@@ -123,71 +121,12 @@ async function updateProcessList() {
 }
 
 // Update processes every 2 seconds
-setInterval(updateTable, 2000);
+setInterval(updateProcessList, 2000); // Just update process list directly
 
 // Update system stats every 2 seconds
 setInterval(updateSystemStats, 2000);
 
-// Update process sorting every 2 seconds
-// setInterval(sortTable, 2001);
-
 // Initial sort by CPU when the page is loaded
 window.addEventListener("load", () => {
-  sortTable("cpu");
+  updateProcessList(); // Directly call this when the page loads
 });
-
-// Sorting functionality
-function sortTable(column) {
-  const processListElement = document.getElementById("process-list");
-  const rows = Array.from(processListElement.querySelectorAll("tr"));
-
-  // If the same column is clicked, toggle the sort direction
-  if (column === currentSortColumn) {
-    currentSortDirection = currentSortDirection === "asc" ? "desc" : "asc";
-  } else {
-    // Default to ascending order if a new column is clicked
-    currentSortDirection = "asc";
-  }
-
-  // Sort the rows
-  const sortedRows = rows.sort((a, b) => {
-    const aText = a.querySelector(
-      `td:nth-child(${getColumnIndex(column)})`
-    ).textContent;
-    const bText = b.querySelector(
-      `td:nth-child(${getColumnIndex(column)})`
-    ).textContent;
-
-    if (column === "cpu" || column === "memory") {
-      // Parse values as numbers for CPU and memory
-      const aValue = parseFloat(aText);
-      const bValue = parseFloat(bText);
-      return currentSortDirection === "asc" ? aValue - bValue : bValue - aValue;
-    } else {
-      // Compare text for name column
-      return currentSortDirection === "asc"
-        ? aText.localeCompare(bText)
-        : bText.localeCompare(aText);
-    }
-  });
-
-  // Clear the table and append sorted rows
-  processListElement.innerHTML = "";
-  sortedRows.forEach((row) => processListElement.appendChild(row));
-
-  // Update the current sorted column
-  currentSortColumn = column;
-}
-
-function getColumnIndex(column) {
-  switch (column) {
-    case "name":
-      return 1;
-    case "cpu":
-      return 2;
-    case "memory":
-      return 3;
-    default:
-      return 1;
-  }
-}
