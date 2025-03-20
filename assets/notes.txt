@@ -1,20 +1,39 @@
 ALL
----
+----
 update comments
 make longer project descriptions in the README
 
 Portfolio
----------
+----------
 ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
 animated timeline for my skills
-sort by type of project
 remake home page
-professional photo - then personal section when button pressed (emoji pops out when button is pressed and mroe details about me)
+professional photo - then personal section when button pressed (picture changes from professional to personal) (emoji pops out when button is pressed and mroe details about me)
 hidden secrets (a game or something)
 creative 404 page? game or something?
 occasionally have a shooting star across the hero image
+
+Rock Paper Scissors
+--------------------
+battle animation for winning or losing rounds
+
+Maki's Corner
+--------------
+
+System Health
+--------------
+find custom icon for the download website, application, and package.json
+
+Med Assist
+-----------
+
+
+
+
+
+
 
 
 New Project Ideas
@@ -27,23 +46,6 @@ wordpress site?
 more web dev technologies
 system health with tech help chat bot (build it as electron app and a home page to download the app)
 health or pet company project
-
-Rock Paper Scissors
---------------------
-battle animation for winning or losing rounds
-
-Maki's Corner
--------------
-
-System Health
---------------
-html, css, js, electron, electron packager, node
-link it
-css to style and layout
-fix disk percentage not displaying properly
-build out download page and allow downloading of the app when finished
-find custom icon for the download website, application, and package.json
-separate css files and js files for download page and app
 
 Entertainment List
 ------------------
