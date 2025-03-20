@@ -71,8 +71,8 @@ function sendMessage() {
     // Add the user's message to the chat box
     const chatBox = document.getElementById("chat_box");
     const userMessage = document.createElement("div");
-    userMessage.classList.add("user-message");
-    userMessage.textContent = `You: ${userInput}`;
+    userMessage.classList.add("user_message");
+    userMessage.innerHTML = `<span class="user_label">You:</span> ${userInput}`;
     chatBox.appendChild(userMessage);
 
     // Clear the input field
@@ -83,8 +83,8 @@ function sendMessage() {
 
     // Simulate a response (you can replace this with actual chatbot logic)
     const botResponse = document.createElement("div");
-    botResponse.classList.add("bot-response");
-    botResponse.textContent = `Bot: I received your message: ${userInput}`;
+    botResponse.classList.add("bot_response");
+    botResponse.innerHTML = `<span class="bot_label">Bot:</span> I received your message: ${userInput}`;
     chatBox.appendChild(botResponse);
 
     // Scroll to the bottom of the chat box after bot response

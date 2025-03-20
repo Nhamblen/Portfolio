@@ -123,6 +123,25 @@ td button:hover {
   background-color: #f9f9f9;
 }
 
+/* Chatbox styles */
+.user_label {
+  color: gray; /* Gray for "You:" */
+  font-weight: bold;
+}
+
+.bot_label {
+  color: #1e90ff; /* Blue for "Bot:" */
+  font-weight: bold;
+}
+
+.user_message {
+  margin: 0.5rem 0;
+}
+
+.bot_response {
+  margin: 0.5rem 0;
+}
+
 #user_input {
   width: 100%;
   padding: 0.75rem;
