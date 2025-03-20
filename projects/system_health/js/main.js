@@ -45,20 +45,19 @@ ipcMain.handle("get-system-info", async () => {
   console.log("Disk Usage:", diskUsage);
 
   // Calculate disk usage percentages
-  const disks = diskLayout.map((disk) => {
-    const diskStats = diskUsage.find((d) => d.mount === disk.mount);
+  const disks = diskUsage.map((disk) => {
+    let usedPercentage = "N/A"; // Default value
 
-    let usedPercentage = 0;
-    if (diskStats && diskStats.used && diskStats.size) {
-      usedPercentage = ((diskStats.used / diskStats.size) * 100).toFixed(2);
+    if (disk.used > 0 && disk.size > 0) {
+      usedPercentage = ((disk.used / disk.size) * 100).toFixed(2) + "%";
     }
 
     return {
-      name: disk.device,
-      type: disk.type,
+      name: disk.fs || "Unknown", // Use fs (filesystem name) as a fallback
+      type: disk.type || "Unknown",
       size: (disk.size / 1024 / 1024 / 1024).toFixed(2) + " GB",
       mount: disk.mount,
-      usedPercentage: usedPercentage + "%", // Display used percentage
+      usedPercentage: usedPercentage,
     };
   });
 
