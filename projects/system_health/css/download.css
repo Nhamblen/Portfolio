@@ -71,16 +71,33 @@ h1 {
   font-size: 1.5rem;
 }
 
-#hero_img a {
-  margin-left: 2rem;
-  padding: 0.5rem 1rem;
-  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
-  border-radius: 0.3125rem;
-  font-size: 1.5rem;
-}
-
 header {
   padding: 0;
+}
+
+/* Styles for the download button */
+.download_button {
+  display: inline-block;
+  margin: 0 0 2rem 2rem;
+  padding: 1rem 2rem; /* Increase padding for a larger button */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  font-weight: bold;
+  color: white; /* White text color */
+  background-color: #007bff; /* Blue background color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.download_button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.download_button:active {
+  background-color: #003f7f; /* Even darker blue when clicked */
+  transform: translateY(0); /* Reset lift effect */
 }
 
 /* Styles for main content */
@@ -117,14 +134,6 @@ header {
   margin-right: 16.3rem;
 }
 
-main a {
-  margin-bottom: 2rem;
-  padding: 0.5rem 1rem;
-  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.6);
-  border-radius: 0.3125rem;
-  font-size: 1.5rem;
-}
-
 /* Style for smaller screens (mobile) */
 @media only screen and (max-width: 37.5rem) {
   #main_box {
@@ -157,7 +166,7 @@ main a {
   }
 
   #hero_img {
-    height: 50vh;
+    height: 70vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -177,17 +186,6 @@ main a {
   #hero_img p {
     padding: 1rem;
     font-size: 1.2rem;
-  }
-
-  #hero_img a {
-    margin-left: 0;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-  }
-
-  main a {
-    font-size: 1rem;
   }
 
   .back_button {
@@ -248,17 +246,6 @@ main a {
   #hero_img p {
     padding: 1.5rem;
     font-size: 1.4rem;
-  }
-
-  #hero_img a {
-    margin-left: 0;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-  }
-
-  main a {
-    font-size: 1.25rem;
   }
 
   .back_button {
