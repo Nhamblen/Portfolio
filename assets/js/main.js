@@ -96,18 +96,22 @@ if (showMoreButton && aboutImage && aboutText) {
           showMoreButton.textContent = "See Personal Life";
         }
 
+        // Toggle the state
         isExpanded = !isExpanded;
 
-        // Force reflow before fade-in animation
+        // Force reflow to restart the animation
         void aboutImage.offsetWidth;
         void aboutText.offsetWidth;
 
-        // Apply fade-in effect
-        aboutImage.classList.remove("hidden");
-        aboutText.classList.remove("hidden");
+        // Reapply the fade-in effect
         aboutImage.classList.add("visible");
         aboutText.classList.add("visible");
-      }, 500); // Match fade-out duration
+      }, 600); // Match the duration of the fade-out animation
+
+      setTimeout(() => {
+        aboutImage.classList.remove("hidden", "visible");
+        aboutText.classList.remove("hidden", "visible");
+      }, 1000); // Delay before removing both classes "visible" and "hidden"
     });
   };
 }
