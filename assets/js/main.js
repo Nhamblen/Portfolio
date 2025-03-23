@@ -28,6 +28,72 @@ overlay.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 //
+// JavaScript for index.html (show more button)
+//
+
+const showMoreButton = document.getElementById("show_more_button");
+const aboutImage = document.getElementById("about_img");
+const aboutText = document.getElementById("about_txt");
+
+if (showMoreButton && aboutImage && aboutText) {
+  window.onload = function () {
+    let isExpanded = false; // Track whether the additional details are shown
+
+    // Calculate age dynamically based on birthdate
+    const birthDate = new Date(1998, 7, 4); // August 4, 1998 (Month is 0-indexed: 7 = August)
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    // Check if the birthday has not occurred yet this year
+    const hasBirthdayPassed =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+    if (!hasBirthdayPassed) {
+      age--; // Subtract 1 if the birthday hasn't occurred yet this year
+    }
+
+    showMoreButton.addEventListener("click", function () {
+      if (!isExpanded) {
+        // Expand the content
+        aboutImage.src = "assets/img/noah_casual.jpg"; // Change to a new image
+        aboutImage.alt = "A picture of Noah Hamblen and his dog Pancake"; // Update alt text
+        aboutText.innerHTML = `
+        Hi, my name is Noah 😊. I appreciate you taking the time to visit my website! I’m ${age} years old, I was born and
+        raised in Omaha, Nebraska, and I’ve lived here my whole life.
+        <br><br>
+        In my free time, you'll find me going on runs, reading, or playing video games. I enjoy a lot of games,
+        but a childhood favorite of mine is World of Warcraft.
+        <br><br>
+        My passion for technology began as a young lad with my own PC and video games, eventually
+        evolving into IT and web development. I have my grandpa to thank for that,
+        he would often give my brother and I a new gaming console, or an old Windows 98 PC to use.
+        This sparked a deeper interest in problem-solving.
+        <br><br>
+        Feel free to explore my website and reach out—I’d love to connect!
+      `;
+        showMoreButton.textContent = "See Professional Life"; // Update button text
+      } else {
+        // Collapse the content
+        aboutImage.src = "assets/img/noah_about.jpg"; // Revert to the original image
+        aboutImage.alt = "A professional picture of Noah Hamblen"; // Revert alt text
+        aboutText.innerHTML = `
+        Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT enthusiast and web developer
+        currently studying at Bellevue University.
+        <br><br>
+        In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
+        it's advancing my education, earning new certifications, or working on hands-on projects, I'm looking for
+        opportunities to expand my knowledge and sharpen my skills.
+      `;
+        showMoreButton.textContent = "See Personal Life"; // Update button text
+      }
+
+      isExpanded = !isExpanded; // Toggle the state
+    });
+  };
+}
+
+//
 // JavaScript for contact.html (manipulating form)
 //
 
