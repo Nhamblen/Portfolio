@@ -84,6 +84,9 @@ if (showMoreButton && aboutImage && aboutText) {
         In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
         it's advancing my education, earning new certifications, or working on hands-on projects, I'm looking for
         opportunities to expand my knowledge and sharpen my skills.
+        <br><br>
+        Feel free to explore my website, and don’t hesitate to reach out—I’d be happy to
+        connect and discuss opportunities.
       `;
         showMoreButton.textContent = "See Personal Life"; // Update button text
       }
