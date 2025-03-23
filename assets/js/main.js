@@ -54,44 +54,60 @@ if (showMoreButton && aboutImage && aboutText) {
     }
 
     showMoreButton.addEventListener("click", function () {
-      if (!isExpanded) {
-        // Expand the content
-        aboutImage.src = "assets/img/noah_casual.jpg"; // Change to a new image
-        aboutImage.alt = "A picture of Noah Hamblen and his dog Pancake"; // Update alt text
-        aboutText.innerHTML = `
-        Hi, my name is Noah 😊. I appreciate you taking the time to visit my website! I’m ${age} years old, I was born and
-        raised in Omaha, Nebraska, and I’ve lived here my whole life.
-        <br><br>
-        In my free time, you'll find me going on runs, reading, or playing video games. I enjoy a lot of games,
-        but a childhood favorite of mine is World of Warcraft.
-        <br><br>
-        My passion for technology began as a young lad with my own PC and video games, eventually
-        evolving into IT and web development. I have my grandpa to thank for that,
-        he would often give my brother and I a new gaming console, or an old Windows 98 PC to use.
-        This sparked a deeper interest in problem-solving.
-        <br><br>
-        Feel free to explore my website and reach out—I’d love to connect!
-      `;
-        showMoreButton.textContent = "See Professional Life"; // Update button text
-      } else {
-        // Collapse the content
-        aboutImage.src = "assets/img/noah_about.jpg"; // Revert to the original image
-        aboutImage.alt = "A professional picture of Noah Hamblen"; // Revert alt text
-        aboutText.innerHTML = `
-        Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT enthusiast and web developer
-        currently studying at Bellevue University.
-        <br><br>
-        In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
-        it's advancing my education, earning new certifications, or working on hands-on projects, I'm looking for
-        opportunities to expand my knowledge and sharpen my skills.
-        <br><br>
-        Feel free to explore my website, and don’t hesitate to reach out—I’d be happy to
-        connect and discuss opportunities.
-      `;
-        showMoreButton.textContent = "See Personal Life"; // Update button text
-      }
+      // Trigger fade-out
+      aboutImage.classList.add("hidden");
+      aboutText.classList.add("hidden");
 
-      isExpanded = !isExpanded; // Toggle the state
+      setTimeout(() => {
+        if (!isExpanded) {
+          // Expand the content
+          aboutImage.src = "assets/img/noah_casual.jpg";
+          aboutImage.alt = "A picture of Noah Hamblen and his dog Pancake";
+          aboutText.innerHTML = `
+            Hi, my name is Noah 😊. I appreciate you taking the time to visit my website! I’m ${age} years old, I was born and
+            raised in Omaha, Nebraska, and I’ve lived here my whole life.
+            <br><br>
+            In my free time, you'll find me going on runs, reading, or playing video games. I enjoy a lot of games,
+            but a childhood favorite of mine is World of Warcraft.
+            <br><br>
+            My passion for technology began as a young lad with my own PC and video games, eventually
+            evolving into IT and web development. I have my grandpa to thank for that,
+            he would often give my brother and I a new gaming console, or an old Windows 98 PC to use.
+            This sparked a deeper interest in problem-solving.
+            <br><br>
+            Feel free to explore my website and reach out—I’d love to connect!
+          `;
+          showMoreButton.textContent = "See Professional Life";
+        } else {
+          // Collapse the content
+          aboutImage.src = "assets/img/noah_about.jpg";
+          aboutImage.alt = "A professional picture of Noah Hamblen";
+          aboutText.innerHTML = `
+            Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT enthusiast and web developer
+            currently studying at Bellevue University.
+            <br><br>
+            In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
+            it's advancing my education, earning new certifications, or working on hands-on projects, I'm looking for
+            opportunities to expand my knowledge and sharpen my skills.
+            <br><br>
+            Feel free to explore my website, and don’t hesitate to reach out—I’d be happy to
+            connect and discuss opportunities.
+          `;
+          showMoreButton.textContent = "See Personal Life";
+        }
+
+        isExpanded = !isExpanded;
+
+        // Force reflow before fade-in animation
+        void aboutImage.offsetWidth;
+        void aboutText.offsetWidth;
+
+        // Apply fade-in effect
+        aboutImage.classList.remove("hidden");
+        aboutText.classList.remove("hidden");
+        aboutImage.classList.add("visible");
+        aboutText.classList.add("visible");
+      }, 500); // Match fade-out duration
     });
   };
 }
