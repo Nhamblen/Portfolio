@@ -157,12 +157,12 @@ if (button && resumeFrame) {
     button.addEventListener("click", function () {
       if (isWebDevResume) {
         resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT Resume
-        button.textContent = "Web Development Resume";
-        button.classList.toggle("expanded"); // Toggle the expanded class for button
+        button.textContent = "IT Resume";
+        button.classList.remove("expanded"); // Toggle the expanded class for button
       } else {
         resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev Resume
-        button.textContent = "IT Resume";
-        button.classList.remove("expanded"); // Remove the expanded class for button
+        button.textContent = "Web Development Resume";
+        button.classList.toggle("expanded"); // Remove the expanded class for button
       }
 
       isWebDevResume = !isWebDevResume; // Toggle state
