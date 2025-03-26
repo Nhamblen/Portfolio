@@ -864,7 +864,7 @@ textarea:focus {
 }
 
 #toggle_resume.expanded {
-  width: 20rem; /* Expanded width */
+  width: 21rem; /* Expanded width */
 }
 
 /* Keyframes for sliding animation */

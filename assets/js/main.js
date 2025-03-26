@@ -71,7 +71,7 @@ if (showMoreButton && aboutImage && aboutText) {
             but a childhood favorite of mine is World of Warcraft.
             <br><br>
             My passion for technology began as a young lad with my own PC and a gaming hobby, eventually
-            evolving into IT and web development. I have my grandpa to thank for that,
+            evolving into IT and web development. I have my grandpa to thank for that, as
             he would often give my brother and I a new gaming console, or an old Windows 98 PC to use.
             This sparked a deeper interest in problem-solving.
             <br><br>
@@ -83,11 +83,11 @@ if (showMoreButton && aboutImage && aboutText) {
           aboutImage.src = "assets/img/noah_about.jpg";
           aboutImage.alt = "A professional picture of Noah Hamblen";
           aboutText.innerHTML = `
-            Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT professional and web developer
+            Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT professional and web developer,
             currently studying at Bellevue University.
             <br><br>
             In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
-            it's advancing my education, earning new certifications, or working on hands-on projects, I'm looking for
+            it's advancing my education, or earning new certifications, I'm looking for
             opportunities to expand my knowledge and sharpen my skills.
             <br><br>
             Feel free to explore my website, and don’t hesitate to reach out—I’d be happy to
