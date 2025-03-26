@@ -67,13 +67,13 @@ if (showMoreButton && aboutImage && aboutText) {
             Hi, my name is Noah 😊. I appreciate you taking the time to visit my website! I’m ${age} years old, I was born and
             raised in Omaha, Nebraska, and I’ve lived here my whole life.
             <br><br>
-            In my free time, you'll find me going on runs, reading, or playing video games. I enjoy a lot of games,
-            but a childhood favorite of mine is World of Warcraft.
-            <br><br>
             My passion for technology began as a young lad with my own PC and a gaming hobby, eventually
             evolving into IT and web development. I have my grandpa to thank for that, as
             he would often give my brother and I a new gaming console, or an old Windows 98 PC to use.
             This sparked a deeper interest in problem-solving.
+            <br><br>
+            In my free time, you'll find me going on runs, reading, or playing video games. I enjoy a lot of games,
+            but a childhood favorite of mine is World of Warcraft.
             <br><br>
             Feel free to explore my website and reach out—I’d love to connect!
           `;
