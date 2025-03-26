@@ -477,11 +477,12 @@ nav {
 .hover_container {
   padding: 5rem 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   max-width: 100%;
   /* Ensure the container spans the available width */
   margin: 0 auto;
+  gap: 5rem;
 }
 
 /* Default box styling */
@@ -1300,6 +1301,12 @@ textarea:focus {
 
   .hover_box {
     padding: 10rem;
+  }
+
+  /* Container for side-by-side boxes */
+  .hover_container {
+    flex-direction: row;
+    gap: 0;
   }
 
   /* Projects and grid styling (projects.html) */
