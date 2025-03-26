@@ -171,6 +171,7 @@ if (form && modal && closeModalBtn) {
 // Get button and iframe elements
 const button = document.getElementById("toggle_resume");
 const resumeFrame = document.getElementById("resume");
+const current = document.getElementById("current");
 
 if (button && resumeFrame) {
   window.onload = function () {
@@ -180,11 +181,11 @@ if (button && resumeFrame) {
     button.addEventListener("click", function () {
       if (isWebDevResume) {
         resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume2.pdf"; // IT Resume
-        button.textContent = "IT Resume";
+        button.textContent = "View IT Resume";
         button.classList.remove("expanded"); // Toggle the expanded class for button
       } else {
         resumeFrame.src = "../pdf/noah_hamblen_portfolio_resume1.pdf"; // Web Dev Resume
-        button.textContent = "Web Development Resume";
+        button.textContent = "View Web Development Resume";
         button.classList.toggle("expanded"); // Remove the expanded class for button
       }
 
