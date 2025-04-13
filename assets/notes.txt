@@ -9,8 +9,6 @@ ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
 animated timeline for my skills
-remake home page
-professional photo - then personal section when button pressed (picture changes from professional to personal) (emoji pops out when button is pressed and mroe details about me)
 hidden secrets (a game or something)
 creative 404 page? game or something?
 occasionally have a shooting star across the hero image

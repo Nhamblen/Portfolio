@@ -60,7 +60,7 @@ if (showMoreButton && aboutImage && aboutText) {
 
       setTimeout(() => {
         if (!isExpanded) {
-          // Expand the content
+          // Displays casual content
           aboutImage.src = "assets/img/noah_casual.jpg";
           aboutImage.alt = "A picture of Noah Hamblen and his dog Pancake";
           aboutText.innerHTML = `
@@ -79,7 +79,7 @@ if (showMoreButton && aboutImage && aboutText) {
           `;
           showMoreButton.textContent = "See Professional Life";
         } else {
-          // Collapse the content
+          // Displays professional content
           aboutImage.src = "assets/img/noah_about.jpg";
           aboutImage.alt = "A professional picture of Noah Hamblen";
           aboutText.innerHTML = `
