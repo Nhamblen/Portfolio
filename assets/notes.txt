@@ -26,6 +26,10 @@ find custom icon for the download website, application, and package.json
 
 Med Assist
 -----------
+statistics/create ticket/my tickets/logout/logon
+functional tickets
+icons for the side links
+animations for clicking on icons
 
 
 
