@@ -22,18 +22,49 @@
 </head>
 
 <body>
-  <!-- Includes logo, title, nav, styling, and any other images/information at the top -->
+  <!-- Includes title and nav -->
   <header>
+    <div class="logo">Med Assist</div>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Create Ticket</a></li>
+        <li><a href="#">My Tickets</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
   </header>
 
 
   <!-- Main content of the page -->
   <main>
+    <!-- Create Ticket Form -->
+    <section id="create_ticket">
+      <h2>Create a Support Ticket</h2>
+      <form id="ticket_form">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="submit">Submit Ticket</button>
+      </form>
+    </section>
+
+    <!-- Ticket List -->
+    <section id="ticket-dashboard">
+      <h2>My Tickets</h2>
+      <div id="ticketList">
+        <!-- Tickets will be dynamically added here via JS -->
+      </div>
+    </section>
 
   </main>
 
   <!-- Footer -->
   <footer>
+    <p>&copy; 2025 Med Assist. All rights reserved.</p>
   </footer>
 
 </body>
