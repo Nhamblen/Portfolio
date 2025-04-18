@@ -28,8 +28,8 @@
     <nav>
       <ul class="nav_top">
         <li><a href="."><img src="img/home.png" alt="home icon"></a></li>
-        <li><a href="#"><img src="img/my_ticket.png" alt="my tickets icon"></a></li>
-        <li><a href="#"><img src="img/create_ticket.png" alt="create ticket icon"></a></li>
+        <li><a href="pages/tickets"><img src="img/my_ticket.png" alt="my tickets icon"></a></li>
+        <li><a href="pages/new_ticket"><img src="img/create_ticket.png" alt="create ticket icon"></a></li>
       </ul>
       <ul class="nav_bottom">
         <li><a href="#"><img src="img/logout.png" alt="logout icon"></a></li>
@@ -38,36 +38,40 @@
   </header>
 
 
-  <!-- Main content of the page -->
-  <main>
-    <!-- Create Ticket Form -->
-    <section id="create_ticket">
-      <h2>Create a Support Ticket</h2>
-      <form id="ticket_form">
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
+  <div id="content_container">
 
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
+    <!-- Main content of the page -->
+    <main>
+      <!-- Create Ticket Form -->
+      <section id="create_ticket">
+        <h2>Create a Support Ticket</h2>
+        <form id="ticket_form">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
 
-        <button type="submit">Submit Ticket</button>
-      </form>
-    </section>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
 
-    <!-- Ticket List -->
-    <section id="ticket_dashboard">
-      <h2>My Tickets</h2>
-      <div id="ticket_list">
-        <!-- Tickets will be dynamically added here via JS -->
-      </div>
-    </section>
+          <button type="submit">Submit Ticket</button>
+        </form>
+      </section>
 
-  </main>
+      <!-- Ticket List -->
+      <section id="ticket_dashboard">
+        <h2>My Tickets</h2>
+        <div id="ticket_list">
+          <!-- Tickets will be dynamically added here via JS -->
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Med Assist. All rights reserved.</p>
-  </footer>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Med Assist. All rights reserved.</p>
+    </footer>
+
+  </div>
 
 </body>
 

@@ -86,6 +86,12 @@ main {
   flex: 1; /* Allow the main content to grow and take up available space */
 }
 
+#content_container {
+  display: flex;
+  flex-direction: column; /* Stack main and footer vertically */
+  flex: 1; /* Allow the content-container to grow and take up available space */
+}
+
 section {
   background: white;
   padding: 1rem;
@@ -96,5 +102,7 @@ section {
 
 footer {
   padding: 0.5rem;
-  margin-top: auto; /* Push the footer to the bottom */
+  width: 50vw; /* Ensure the footer spans the full width */
+  text-align: center; /* Center the text horizontally */
+  align-self: flex-end; /* Push the footer to the bottom of the container */
 }
