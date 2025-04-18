@@ -29,7 +29,6 @@ body {
 }
 
 header {
-  width: 15rem; /* Set the width of the header */
   height: 100%; /* Make the header take up the full height */
   background: #00bfa6;
   display: flex;
@@ -43,6 +42,7 @@ header {
 header h1 {
   font-size: 2rem;
   margin-bottom: 2rem; /* Add spacing below the title */
+  border-bottom: 2px solid black;
 }
 
 nav ul {
@@ -52,6 +52,11 @@ nav ul {
   display: flex;
   flex-direction: column; /* Stack navigation links vertically */
   gap: 1rem;
+}
+
+nav img {
+  height: auto;
+  width: 5rem;
 }
 
 nav a {
