@@ -30,7 +30,7 @@ body {
 
 header {
   height: 100%; /* Make the header take up the full height */
-  background: #00ffdd;
+  background: #5a8fba;
   display: flex;
   flex-direction: column; /* Stack header content vertically */
   justify-content: flex-start; /* Distribute space between items */
@@ -73,6 +73,10 @@ nav img {
 
 nav img:hover {
   transform: scale(1.1); /* Make the image grow by 10% */
+}
+
+.active {
+  opacity: 50%;
 }
 
 nav a {
