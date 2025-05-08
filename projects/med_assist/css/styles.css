@@ -115,3 +115,34 @@ footer {
   text-align: center; /* Center the text horizontally */
   align-self: flex-end; /* Push the footer to the bottom of the container */
 }
+
+.ticket_card {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-left: 4px solid #012e66;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+
+.status.open {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.resolved {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background-color: #012e66;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #071930;
+}
