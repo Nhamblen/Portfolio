@@ -14,7 +14,7 @@ Check out the live version of my portfolio: [noahhamblen.com](https://www.noahha
 
 IMS is a collaborative full-stack inventory management application focused on managing products, suppliers, and inventory across a shared system. It allows users to view, create, update, search, and delete inventory and supplier records through a structured interface connected to a centralized backend.
 
-The project was built as a team effort and emphasizes clean data flow between the client and server, consistency across features, and reliability through testing. This was created by Noah Hamblen and John Kuronya as part of the Bellevue University full-stack learning experience.
+The project was built as a team effort and emphasizes clean data flow between the client and server, consistency across features, and reliability through testing. This was created by myself and John Kuronya as part of the Bellevue University full-stack learning experience.
 
 - **Technologies**: MongoDB, Express, Angular, Node.js
 - **Live Demo**: [Inventory Management System](https://helios-ims.onrender.com/)
@@ -57,6 +57,15 @@ The project focuses on interactivity, basic game logic, and responsive user feed
 - **Desktop**: Electron
 - **Hosting**: GitHub Pages, Squarespace
 
+**Portfolio Brand Kit**:
+
+- Primary (header and footer): #222222
+- Secondary (buttons): #472a2c
+- Accent (gold trim): gold
+- Border Radius: 15px
+- Heading Font: Merriweather
+- Body Font: Nunito
+
 ## 📞 Contact
 
 - **Email**: [nhamblen21@gmail.com](mailto:nhamblen21@gmail.com)
@@ -64,13 +73,4 @@ The project focuses on interactivity, basic game logic, and responsive user feed
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 - **GitHub**: [github.com/Nhamblen](https://github.com/Nhamblen)
 
-**Updated**: 1/1/26 - Revamped README and added new academic project
-
-**Portfolio Brand Kit**:
-
-- Primary (header and footer): #222222;
-- Secondary (buttons): #472a2c
-- Secondary (gold trim): gold
-- border-radius: 15px;
-- Heading Font: Merriweather
-- Body Font: Nunito
+**Last Updated**: 1/1/26 — Revamped README and added new academic project
