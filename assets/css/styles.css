@@ -841,6 +841,12 @@ textarea:focus {
   margin: 3rem 0;
 }
 
+#cert_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #toggle_resume {
   align-content: center;
   width: 12rem;
