@@ -62,7 +62,7 @@ if (showMoreButton && aboutImage && aboutText) {
         if (!isExpanded) {
           // Displays casual content
           aboutImage.src = "assets/img/noah_casual.jpg";
-          aboutImage.alt = "A picture of Noah Hamblen and his dog Pancake";
+          aboutImage.alt = "A picture of Noah Hamblen and his cat Sweet Tea";
           aboutText.innerHTML = `
             Hi, my name is Noah 😊. I appreciate you taking the time to visit my website! I’m ${age} years old, I was born and
             raised in Omaha, Nebraska, and I’ve lived here my whole life.
