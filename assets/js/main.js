@@ -82,8 +82,8 @@ if (showMoreButton && aboutImage && aboutText) {
           aboutImage.src = "assets/img/noah_about.jpg";
           aboutImage.alt = "A professional picture of Noah Hamblen";
           aboutText.innerHTML = `
-            Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT professional and web developer,
-            currently studying at Bellevue University.
+            Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT
+            professional, currently studying at Bellevue University, and I enjoy doing web development on the side.
             <br><br>
             In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
             it's advancing my education, or earning new certifications, I'm looking for
