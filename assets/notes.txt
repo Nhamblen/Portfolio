@@ -5,7 +5,6 @@ make longer project descriptions in the README
 
 Portfolio
 ----------
-ensure favicon is working
 some personality elements (youtube music in footer or favorite game cards)
 hamburger menu cant use links when zoomed in
 animated timeline for my skills
@@ -48,7 +47,7 @@ wordpress site?
 more web dev technologies
 system health with tech help chat bot (build it as electron app and a home page to download the app)
 health or pet company project
-a web dashboard for managing devices really exciting—combining both uses of APIs in one (IT and web dev)
+a web dashboard for managing devices - combining both uses of APIs in one (IT and web dev)
 
 Entertainment List
 ------------------
