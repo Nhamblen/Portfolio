@@ -83,7 +83,7 @@ if (showMoreButton && aboutImage && aboutText) {
           aboutImage.alt = "A professional picture of Noah Hamblen";
           aboutText.innerHTML = `
             Hi, my name is Noah, and I want to thank you for visiting my website. I'm a passionate IT
-            professional, currently studying at Bellevue University, and I enjoy doing web development on the side.
+            professional, and I enjoy doing web development on the side.
             <br><br>
             In my free time, you'll find me constantly exploring ways to improve both personally and professionally. Whether
             it's advancing my education, or earning new certifications, I'm looking for
@@ -140,7 +140,7 @@ if (form && modal && closeModalBtn) {
           form.reset(); // Clear form fields
         } else {
           alert(
-            "There was an issue sending your message. Please try again later."
+            "There was an issue sending your message. Please try again later.",
           );
         }
       })
@@ -203,7 +203,7 @@ if (sortDropdown) {
   window.onload = function () {
     const projectsGrid = document.querySelector(".projects_grid");
     const projectItems = Array.from(
-      projectsGrid.querySelectorAll(".project_item")
+      projectsGrid.querySelectorAll(".project_item"),
     );
 
     if (sortDropdown && projectsGrid && projectItems) {
