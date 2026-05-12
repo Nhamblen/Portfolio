@@ -73,4 +73,4 @@ The project focuses on interactivity, basic game logic, and responsive user feed
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 - **GitHub**: [github.com/Nhamblen](https://github.com/Nhamblen)
 
-**Last Updated**: 1/1/26 — Revamped README and added new academic project
+**Last Updated**: 5/12/26 — Updated email
