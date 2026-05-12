@@ -68,7 +68,7 @@ The project focuses on interactivity, basic game logic, and responsive user feed
 
 ## 📞 Contact
 
-- **Email**: [nhamblen21@gmail.com](mailto:nhamblen21@gmail.com)
+- **Email**: [contact@noahhamblen.com](mailto:contact@noahhamblen.com)
 - **Portfolio**: [noahhamblen.com](https://www.noahhamblen.com)
 - **LinkedIn**: [linkedin.com/in/noahhamblen](https://www.linkedin.com/in/noahhamblen)
 - **GitHub**: [github.com/Nhamblen](https://github.com/Nhamblen)
