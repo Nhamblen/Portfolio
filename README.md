@@ -30,17 +30,7 @@ The dashboard also includes an interactive tech support chatbot that assists use
 - **Live Demo**: [System Health](https://www.noahhamblen.com/projects/system_health/pages/download)
 - **Repository**: [System Health Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/system_health)
 
-#### 3. Maki's Corner
-
-Maki’s Corner is a personal biography website dedicated to telling Maki’s story in a thoughtful and visually engaging way. The site presents biographical information, personal highlights, and meaningful details through a clean layout that focuses on readability, aesthetics, and emotional tone.
-
-The project emphasizes simple navigation, visual harmony, and a design that feels personal rather than corporate. It was created as a creative web design project that balances technical structure with storytelling and presentation.
-
-- **Technologies**: HTML, CSS
-- **Live Demo**: [Maki's Corner](https://www.noahhamblen.com/projects/makis_corner/)
-- **Repository**: [Maki's Corner Repository](https://github.com/Nhamblen/Portfolio/tree/main/projects/makis_corner)
-
-#### 4. Rock Paper Scissors
+#### 3. Rock Paper Scissors
 
 This is a simple, interactive web game where users can play rock-paper-scissors against a computer opponent. The game handles user input, generates randomized computer choices, and determines the outcome of each round based on the rules of the game.
 
