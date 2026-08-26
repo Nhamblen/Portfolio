@@ -4,8 +4,188 @@
   CSS made with a desktop-first approach (tablet and mobile views at the bottom)
 */
 
+/* ----------Main----------  */
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+h1 {
+  color: #1f2937;
+}
+
+#header_wrapper {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back_button {
+  position: absolute;
+  left: 10rem;
+}
+
+/* ----------Scrolling Images----------  */
+.project_gallery_section {
+  max-width: 1600px;
+  margin: 5rem auto;
+  color: #1f2937;
+}
+
+.section_subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel_container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+/* Custom Horizontal Scrollbar Styling */
+.carousel_container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.carousel_container::-webkit-scrollbar-thumb {
+  background: #0284c7;
+  border-radius: 4px;
+}
+
+.carousel_track {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.carousel_card {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.carousel_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.image_wrapper {
+  width: 100%;
+  height: 200px;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.image_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel_card:hover .image_wrapper img {
+  transform: scale(1.05);
+}
+
+.card_caption {
+  padding: 1rem;
+}
+
+.card_caption h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.card_caption p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+/* ----------Lightbox Modal Background----------  */
+.lightbox_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+/* Lightbox Image */
+.lightbox_content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+}
+
+/* Caption Text */
+.lightbox_caption_text {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #f8fafc;
+  padding: 15px 0;
+  font-size: 1rem;
+}
+
+/* Close Button */
+.lightbox_close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f5f9;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.lightbox_close:hover {
+  color: #38bdf8;
+}
+
+/* Pointer Cursor on Carousel Cards */
+.carousel_card {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .carousel_card {
+    flex: 0 0 400px;
+  }
 }

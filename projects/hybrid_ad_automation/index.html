@@ -13,7 +13,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description"
     content="A look into a hybrid cloud lab simulating an enterprise migration from on-premises Active Directory to Microsoft Entra ID with automated PowerShell provisioning and RBAC enforcement.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automated Hybrid Identity & Azure Cloud</title>
   <script src="js/main.js" defer></script>
   <link rel="stylesheet" href="css/styles.css">
@@ -23,12 +22,114 @@
   <link rel="manifest" href="img/site.webmanifest">
 </head>
 
+
 <body>
 
   <header>
-    <a href="../../assets/pages/projects" class="back_button">← Back</a>
-    <h1>Automated Hybrid Identity & Azure Cloud Infrastructure</h1>
+    <div id="header_wrapper">
+      <a href="../../assets/pages/projects" class="back_button">← Back</a>
+      <h1>Automated Hybrid Identity & Azure Cloud Infrastructure</h1>
+    </div>
   </header>
+
+  <main>
+    <!-- Hybrid Identity Project Section -->
+    <section class="project_gallery_section">
+      <h2>Infrastructure & Implementation Screenshots</h2>
+      <p class="section_subtitle">Scroll through VM configurations, PowerShell AD setup,
+        troubleshooting, and cloud synchronization steps.</p>
+
+      <div class="carousel_container">
+        <div class="carousel_track">
+
+          <!-- Card 1 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/1.JPG" alt="VirtualBox VM Configuration Details" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>1. Domain Controller VM Allocation</h4>
+              <p>Provisioned VirtualBox VM environment with 4GB RAM, 2 vCPUs, 50GB VDI, and NAT networking.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/2.JPG" alt="Installation Error Milestone" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>2. Media & ISO Boot Troubleshooting</h4>
+              <p>Resolved ISO image mounting errors and unattended installation license failures during setup.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/5.JPG" alt="Windows Server Installation Progress" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>3. Windows Server 2022 Deployment</h4>
+              <p>Successfully installed base Windows Server 2022 operating system to build the domain
+                controller.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/8.JPG" alt="PowerShell Script Execution and AD OUs" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>4. Automated User & OU Provisioning</h4>
+              <p>Executed PowerShell script, parsing userdata.csv to populate departmental OUs (IT, Marketing, Sales) in
+                AD.</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/9.JPG" alt="DNS Manager Forwarders Configuration" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>5. DNS & Outbound Network Routing</h4>
+              <p>Configured public DNS forwarders (8.8.8.8, 1.1.1.1) to ensure reliable external name resolution for
+                cloud sync.</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="carousel_card">
+            <div class="image_wrapper">
+              <img src="img/10.JPG" alt="Microsoft Entra ID Synced Users" loading="lazy">
+            </div>
+            <div class="card_caption">
+              <h4>6. Entra ID Hybrid Synchronization</h4>
+              <p>Verified real-time attribute sync from local AD to Microsoft Entra ID (showing On-premises sync =
+                Yes).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+
+  <!-- Lightbox Modal Overlay -->
+  <div id="image_lightbox" class="lightbox_modal" onclick="closeLightbox()">
+    <span class="lightbox_close">&times;</span>
+    <img class="lightbox_content" id="lightbox_img" alt="Screenshot Preview">
+    <div id="lightbox_caption" class="lightbox_caption_text"></div>
+  </div>
 
 
 </body>
