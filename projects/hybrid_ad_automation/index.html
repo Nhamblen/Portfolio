@@ -37,85 +37,89 @@
     <section class="project_gallery_section">
       <h2>Infrastructure & Implementation Screenshots</h2>
       <p class="section_subtitle">Scroll through VM configurations, PowerShell AD setup,
-        troubleshooting, and cloud synchronization steps.</p>
+        troubleshooting, and cloud synchronization screenshots.</p>
 
-      <div class="carousel_container">
-        <div class="carousel_track">
+      <div class="carousel_wrapper">
+        <button class="carousel_btn btn_left" id="scroll_left_btn" aria-label="Scroll left">&#10094;</button>
+        <div class="carousel_container" id="project_carousel">
+          <div class="carousel_track">
+            <!-- Card 1 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/1.JPG" alt="VirtualBox VM Configuration Details" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>1. Domain Controller VM Allocation</h4>
+                <p>Provisioned VirtualBox VM environment (4GB RAM, 2 vCPUs, 50GB VDI) with NAT networking for outbound
+                  cloud sync.</p>
+              </div>
+            </div>
 
-          <!-- Card 1 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/1.JPG" alt="VirtualBox VM Configuration Details" loading="lazy">
+            <!-- Card 2 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/2.JPG" alt="Installation Error Milestone" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>2. Media & ISO Boot Troubleshooting</h4>
+                <p>Resolved ISO image mounting errors and unattended installation license failures during setup.
+                </p>
+              </div>
             </div>
-            <div class="card_caption">
-              <h4>1. Domain Controller VM Allocation</h4>
-              <p>Provisioned a Windows Server VM in VirtualBox (4GB RAM, 2 vCPUs, 50GB VDI) using NAT networking for
-                outbound cloud sync. Configured a static IPv4 assignment and local loopback DNS (127.0.0.1) to support
-                Active Directory Domain Services (AD DS) and DNS server roles.</p>
+
+            <!-- Card 3 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/5.JPG" alt="Windows Server Installation Progress" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>3. Windows Server 2022 Deployment</h4>
+                <p>Successfully installed base Windows Server 2022 operating system to build the domain
+                  controller.</p>
+              </div>
             </div>
+
+            <!-- Card 4 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/8.JPG" alt="PowerShell Script Execution and AD OUs" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>4. Automated User & OU Provisioning</h4>
+                <p>Executed PowerShell script, parsing userdata.csv to populate departmental OUs (IT, Marketing, Sales)
+                  in
+                  AD.</p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/9.JPG" alt="DNS Manager Forwarders Configuration" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>5. DNS & Outbound Network Routing</h4>
+                <p>Configured public DNS forwarders (8.8.8.8, 1.1.1.1) to ensure reliable external name resolution for
+                  cloud sync.</p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="carousel_card">
+              <div class="image_wrapper">
+                <img src="img/10.JPG" alt="Microsoft Entra ID Synced Users" loading="lazy">
+              </div>
+              <div class="card_caption">
+                <h4>6. Entra ID Hybrid Synchronization</h4>
+                <p>Verified real-time attribute sync from local AD to Microsoft Entra ID (showing On-premises sync =
+                  Yes).</p>
+              </div>
+            </div>
+
           </div>
-
-          <!-- Card 2 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/2.JPG" alt="Installation Error Milestone" loading="lazy">
-            </div>
-            <div class="card_caption">
-              <h4>2. Media & ISO Boot Troubleshooting</h4>
-              <p>Resolved ISO image mounting errors and unattended installation license failures during setup.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/5.JPG" alt="Windows Server Installation Progress" loading="lazy">
-            </div>
-            <div class="card_caption">
-              <h4>3. Windows Server 2022 Deployment</h4>
-              <p>Successfully installed base Windows Server 2022 operating system to build the domain
-                controller.</p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/8.JPG" alt="PowerShell Script Execution and AD OUs" loading="lazy">
-            </div>
-            <div class="card_caption">
-              <h4>4. Automated User & OU Provisioning</h4>
-              <p>Executed PowerShell script, parsing userdata.csv to populate departmental OUs (IT, Marketing, Sales) in
-                AD.</p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/9.JPG" alt="DNS Manager Forwarders Configuration" loading="lazy">
-            </div>
-            <div class="card_caption">
-              <h4>5. DNS & Outbound Network Routing</h4>
-              <p>Configured public DNS forwarders (8.8.8.8, 1.1.1.1) to ensure reliable external name resolution for
-                cloud sync.</p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="carousel_card">
-            <div class="image_wrapper">
-              <img src="img/10.JPG" alt="Microsoft Entra ID Synced Users" loading="lazy">
-            </div>
-            <div class="card_caption">
-              <h4>6. Entra ID Hybrid Synchronization</h4>
-              <p>Verified real-time attribute sync from local AD to Microsoft Entra ID (showing On-premises sync =
-                Yes).</p>
-            </div>
-          </div>
-
         </div>
+
+        <button class="carousel_btn btn_right" id="scroll_right_btn" aria-label="Scroll right">&#10095;</button>
       </div>
     </section>
   </main>
@@ -129,7 +133,9 @@
   <!-- Lightbox Modal Overlay -->
   <div id="image_lightbox" class="lightbox_modal" onclick="closeLightbox()">
     <span class="lightbox_close">&times;</span>
+    <button class="lightbox_nav nav_prev" id="lightbox_prev_btn" onclick="navigateLightbox(event, -1)">&#10094;</button>
     <img class="lightbox_content" id="lightbox_img" alt="Screenshot Preview">
+    <button class="lightbox_nav nav_next" id="lightbox_next_btn" onclick="navigateLightbox(event, 1)">&#10095;</button>
     <div id="lightbox_caption" class="lightbox_caption_text"></div>
   </div>
 
