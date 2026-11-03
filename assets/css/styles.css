@@ -953,9 +953,9 @@ textarea:focus {
 }
 
 .boxes_slide div {
-  width: 20rem; /* Set a fixed width for each box */
+  width: 30rem; /* Set a fixed width for each box */
   margin: 0 1.875rem;
-  height: 3.125rem;
+  height: 3.5rem;
   background-color: #222222;
   display: flex;
   align-items: center;
@@ -964,7 +964,7 @@ textarea:focus {
   font-weight: bold;
   text-align: center;
   border-radius: 0.9375rem;
-  font-size: 1.1rem; /* Increase font size for better visibility */
+  font-size: 1rem;
 }
 
 /* Highlights web development and information technology in the carousel */
