@@ -117,7 +117,9 @@ p {
   margin: 0.2em 0.5em 0 0.2em;
   background-color: #472a2c;
   border-radius: 20em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #nh_logo:hover {
@@ -147,7 +149,9 @@ p {
   color: white;
   font-size: 1.5em;
   text-decoration: underline;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #footer_box a:hover {
@@ -227,7 +231,9 @@ p {
 
 .off_screen_menu a {
   color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .off_screen_menu a:hover {
@@ -271,7 +277,9 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 .ham_menu:hover span {
@@ -340,7 +348,9 @@ nav {
   padding: 1rem;
   border-radius: 0.9375rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .project_item:hover {
@@ -370,7 +380,9 @@ nav {
   border-radius: 0.9375rem;
   font-size: 1.5em;
   margin-top: 2em;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .stack_box {
@@ -429,13 +441,17 @@ nav {
 .hidden {
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .visible {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+  transition:
+    opacity 0.6s ease-in,
+    transform 0.6s ease-in;
 }
 
 /* Styles for the Show More button */
@@ -451,7 +467,9 @@ nav {
   font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #show_more_button:hover {
@@ -506,7 +524,9 @@ nav {
   /* Default color */
   color: black;
   /* Default text color */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -592,7 +612,9 @@ nav {
   font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .hover_button:hover {
@@ -627,7 +649,9 @@ nav {
   font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #hero_button:hover {
@@ -750,7 +774,9 @@ button.submit_btn {
   border-radius: 0.9375rem;
   font-size: 1.2em;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 .submit_btn:hover {
@@ -814,7 +840,9 @@ textarea:focus {
   color: white;
   border-radius: 0.9375rem;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .close_btn:hover {
@@ -857,7 +885,9 @@ textarea:focus {
   border-radius: 0.9375rem;
   font-size: 1.2em;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
   margin-bottom: 2rem;
 }
 
@@ -923,7 +953,7 @@ textarea:focus {
 }
 
 .boxes_slide div {
-  width: 17rem; /* Set a fixed width for each box */
+  width: 20rem; /* Set a fixed width for each box */
   margin: 0 1.875rem;
   height: 3.125rem;
   background-color: #222222;
@@ -977,7 +1007,9 @@ textarea:focus {
   font-size: 1.25rem;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
 #error_404_box a:hover {
@@ -1102,7 +1134,9 @@ textarea:focus {
   #footer_nav a {
     color: white;
     text-decoration: underline;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
     display: inline-block; /* Enables transform effects */
   }
 
@@ -1167,7 +1201,9 @@ textarea:focus {
   #desktop_nav a {
     color: white;
     text-decoration: underline;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
     display: inline-block; /* Enables transform effects */
   }
 
@@ -1233,7 +1269,9 @@ textarea:focus {
   #footer_nav a {
     color: white;
     text-decoration: underline;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
     display: inline-block; /* Enables transform effects */
   }
 
